@@ -26,7 +26,7 @@ export function SiteHeader() {
             alt="BAWISA logo"
             width={56}
             height={56}
-            className="rounded-full"
+            className="rounded-md"
           />
           <span className="flex flex-col leading-none">
             <span className="font-display text-sm font-bold tracking-wide text-foreground">

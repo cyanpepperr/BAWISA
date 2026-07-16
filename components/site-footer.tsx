@@ -26,7 +26,7 @@ export function SiteFooter() {
                 alt="BAWISA logo"
                 width={100}
                 height={100}
-                className="rounded-full"
+                className="rounded-md"
               />
               <span className="font-display text-lg font-bold text-foreground">
                 BAWISA

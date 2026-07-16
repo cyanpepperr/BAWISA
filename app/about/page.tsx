@@ -145,7 +145,7 @@ export default function AboutPage() {
       <section className="mx-auto max-w-4xl px-4 py-16 text-center md:px-6 md:py-20">
         <p className="leading-relaxed text-muted-foreground">
           Interested in hosting a BAWISA event at your company or space?{' '}
-          
+          <a
             href={LINKS.hostForm}
             target="_blank"
             rel="noopener noreferrer"
