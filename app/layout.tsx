@@ -13,8 +13,12 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: 'Bay Area Women in Space and Aerospace',
   description:
-    'BAWISA is a community connecting, celebrating, and empowering women across the Bay Area space and aerospace industry through events, mentorship, and member spotlights.',
+    'BAWISA is a community connecting, celebrating, and empowering women across the Bay Area space and aerospace industry through events and mentorship.',
   generator: 'v0.app',
+  icons: {
+    icon: '/logo.jpg',
+    apple: '/logo.jpg',
+  },
 }
 
 export const viewport: Viewport = {
