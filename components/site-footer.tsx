@@ -20,19 +20,19 @@ export function SiteFooter() {
 
         <div className="grid gap-8 border-t border-border/60 pt-10 md:grid-cols-3">
           <div>
-            <Link href="/" className="flex items-center gap-2">
+            <Link href="/" className="flex flex-col items-center gap-2 text-center">
               <Image
                 src="/logo.jpg"
                 alt="BAWISA logo"
-                width={64}
-                height={64}
+                width={96}
+                height={96}
                 className="rounded-full"
               />
-              <span className="font-display text-x1 font-bold text-foreground">
+              <span className="font-display text-lg font-bold text-foreground">
                 BAWISA
               </span>
             </Link>
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground text-center mx-auto">
               Bay Area Women in Space and Aerospace — connecting, celebrating,
               and empowering women across the industry.
             </p>
