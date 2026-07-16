@@ -69,35 +69,35 @@
   --card-foreground: #DFD4EC;
   --popover: #0C447C;
   --popover-foreground: #DFD4EC;
-  /* baltic blue primary */
-  --primary: #185FA5;
+  /* yale blue primary (darker than baltic blue) */
+  --primary: #0C447C;
   --primary-foreground: #DCEBF9;
-  /* indigo velvet secondary */
-  --secondary: #583880;
+  /* dark amethyst secondary (darker than indigo velvet) */
+  --secondary: #311F47;
   --secondary-foreground: #DFD4EC;
   --muted: #311F47;
   --muted-foreground: #AA8ECD;
-  /* deep lilac accent */
-  --accent: #8055B4;
+  /* indigo velvet accent (darker than deep lilac) */
+  --accent: #583880;
   --accent-foreground: #DFD4EC;
   --destructive: oklch(0.62 0.22 20);
   --border: #85B7EB40;
   --input: #85B7EB45;
-  --ring: #185FA5;
-  --chart-1: #185FA5;
-  --chart-2: #8055B4;
+  --ring: #0C447C;
+  --chart-1: #0C447C;
+  --chart-2: #583880;
   --chart-3: #85B7EB;
   --chart-4: #AA8ECD;
-  --chart-5: #0C447C;
+  --chart-5: #072A4B;
   --radius: 0.625rem;
   --sidebar: #0C447C;
   --sidebar-foreground: #DFD4EC;
-  --sidebar-primary: #185FA5;
+  --sidebar-primary: #0C447C;
   --sidebar-primary-foreground: #DCEBF9;
-  --sidebar-accent: #8055B4;
+  --sidebar-accent: #583880;
   --sidebar-accent-foreground: #DFD4EC;
   --sidebar-border: #85B7EB40;
-  --sidebar-ring: #185FA5;
+  --sidebar-ring: #0C447C;
 }
 
 @layer base {
