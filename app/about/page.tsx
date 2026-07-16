@@ -100,8 +100,8 @@ export default function AboutPage() {
         <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 md:grid-cols-[auto_1fr] md:items-center md:px-6 md:py-20">
           <div className="mx-auto w-48 shrink-0 overflow-hidden rounded-2xl border border-border/60 md:w-60">
             <Image
-              src="/images/founder.png"
-              alt="Jeanette, founder of BAWISA"
+              src="/jeanette.jpg"
+              alt="Jeanette Quinlan, founder of BAWISA"
               width={400}
               height={500}
               className="h-full w-full object-cover"
@@ -129,6 +129,14 @@ export default function AboutPage() {
               &ldquo;When we build community, we build the future of this
               industry.&rdquo;
             </blockquote>
+            
+              href="https://www.linkedin.com/in/jeanettequinlan/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+            >
+              Connect with Jeanette on LinkedIn <ArrowRight className="h-4 w-4" />
+            </a>
           </div>
         </div>
       </section>
@@ -147,22 +155,6 @@ export default function AboutPage() {
           </a>
           .
         </p>
-      </section>
-
-      {/* Join us CTA */}
-      <section className="mx-auto max-w-4xl px-4 py-16 text-center md:px-6 md:py-20">
-        <h2 className="text-balance font-display text-3xl font-bold text-foreground">
-          Ready to join us?
-        </h2>
-        <p className="mx-auto mt-4 max-w-xl leading-relaxed text-muted-foreground">
-          Become part of a community that connects and inspires women and
-          gender minorities across space and aerospace.
-        </p>
-        <div className="mt-8 flex justify-center">
-          <ButtonLink href={LINKS.joinForm} external size="lg">
-            Join the Community <ArrowRight />
-          </ButtonLink>
-        </div>
       </section>
     </>
   )

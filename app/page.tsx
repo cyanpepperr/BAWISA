@@ -52,7 +52,7 @@ export default function HomePage() {
           </h1>
           <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground md:text-xl">
             BAWISA connects, celebrates, and empowers women across the Bay Area
-            space and aerospace community — through events, mentorship, and
+            space and aerospace community through events, support, and
             shared ambition.
           </p>
           <div className="mt-9 flex flex-wrap gap-4">
