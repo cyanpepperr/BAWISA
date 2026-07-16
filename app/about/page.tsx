@@ -22,11 +22,6 @@ const values = [
     title: 'Where we are',
     body: 'Hosted at startups and incubators throughout the Bay Area, and virtually.',
   },
-  {
-    icon: Heart,
-    title: 'Why it matters',
-    body: 'We help with hiring, retention, and community in a historically male-dominated field. Because representation matters, it inspires, and can changes careers.',
-  },
 ]
 
 export default function AboutPage() {
