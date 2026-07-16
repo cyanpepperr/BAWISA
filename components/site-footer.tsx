@@ -28,7 +28,7 @@ export function SiteFooter() {
                 height={64}
                 className="rounded-full"
               />
-              <span className="font-display text-sm font-bold text-foreground">
+              <span className="font-display text-lg font-bold text-foreground">
                 BAWISA
               </span>
             </Link>
