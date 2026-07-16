@@ -9,14 +9,12 @@ export const NAV_LINKS = [
 
 // Replace these placeholder URLs with your real links.
 export const LINKS = {
-  joinForm: 'https://forms.gle/your-join-form',
-  nominateForm: 'https://forms.gle/your-nominate-form',
-  nomineeFollowUpForm: 'https://forms.gle/your-nominee-followup-form',
-  hostForm: 'https://forms.gle/your-host-signup-form',
+  joinForm: 'https://forms.gle/KmwVYrtfotnWqHow8',
+  nominateForm: 'https://forms.gle/KHo39ThnnUACxFhr8',
+  nomineeFollowUpForm: 'https://forms.gle/QDzthjLEqBBXdBdo9',
+  hostForm: 'https://forms.gle/CgCm3PCM8z39UrU27',
+  // need to update eventbrite link for each event! //
   eventbrite: 'https://www.eventbrite.com/o/bawisa',
-  slack: 'https://app.slack.com/client/T7HDHSJ1E/C7J14B9JP',
-  linkedin: 'https://www.linkedin.com/company/bawisa',
-  email: 'mailto:hello@bawisa.org',
 }
 
 export const QUOTES = [

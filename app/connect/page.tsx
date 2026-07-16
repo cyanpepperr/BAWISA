@@ -1,11 +1,5 @@
 import type { Metadata } from 'next'
-import {
-  ArrowRight,
-  Briefcase,
-  Globe,
-  Mail,
-  MessagesSquare,
-} from 'lucide-react'
+import { ArrowRight, Briefcase } from 'lucide-react'
 import { PageHero } from '@/components/page-hero'
 import { ButtonLink } from '@/components/button-link'
 import { LINKS } from '@/lib/site'
@@ -13,40 +7,16 @@ import { LINKS } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Connect | BAWISA',
   description:
-    'Join the BAWISA community on Slack and our email list, follow us on LinkedIn, and stay in the loop with job postings and events.',
+    'Join the BAWISA community and stay in the loop with events, community updates, and career opportunities.',
 }
-
-const channels = [
-  {
-    icon: MessagesSquare,
-    title: 'Slack',
-    body: 'Our most active space — join channels for job postings, events, mentorship, and everyday conversation with the community.',
-    cta: 'Join our Slack',
-    href: LINKS.slack,
-  },
-  {
-    icon: Globe,
-    title: 'LinkedIn',
-    body: 'Follow BAWISA for community highlights, member features, and professional updates from across the industry.',
-    cta: 'Follow on LinkedIn',
-    href: LINKS.linkedin,
-  },
-  {
-    icon: Mail,
-    title: 'Newsletter',
-    body: 'Get our email newsletter with upcoming events, member spotlights, and opportunities delivered to your inbox.',
-    cta: 'Email us to subscribe',
-    href: LINKS.email,
-  },
-]
 
 export default function ConnectPage() {
   return (
     <>
       <PageHero
         eyebrow="Connect"
-        title="Join the conversation"
-        description="Become part of the BAWISA community across Slack, LinkedIn, and email — and never miss a job posting, event, or spotlight."
+        title="Join the community"
+        description="Become part of the BAWISA community, a group of women supporting women."
       >
         <ButtonLink href={LINKS.joinForm} external size="lg">
           Join the Community <ArrowRight />
@@ -60,7 +30,7 @@ export default function ConnectPage() {
             Join the community
           </h2>
           <p className="mx-auto mt-4 max-w-xl leading-relaxed text-muted-foreground">
-            Sign up to be added to our Slack and email list. It only takes a
+            Sign up to be added to our community channels. It only takes a
             minute, and it is how we welcome new members.
           </p>
           <div className="mt-8 flex justify-center">
@@ -68,39 +38,6 @@ export default function ConnectPage() {
               Sign up now <ArrowRight />
             </ButtonLink>
           </div>
-        </div>
-      </section>
-
-      {/* Channels */}
-      <section className="mx-auto max-w-6xl px-4 pb-16 md:px-6 md:pb-24">
-        <div className="grid gap-6 md:grid-cols-3">
-          {channels.map((channel) => (
-            <div
-              key={channel.title}
-              className="flex flex-col rounded-xl border border-border/60 bg-card p-6"
-            >
-              <channel.icon
-                className="mb-4 h-7 w-7 text-primary"
-                aria-hidden="true"
-              />
-              <h3 className="font-display text-xl font-semibold text-foreground">
-                {channel.title}
-              </h3>
-              <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
-                {channel.body}
-              </p>
-              <div className="mt-6">
-                <ButtonLink
-                  href={channel.href}
-                  external
-                  variant="outline"
-                  size="sm"
-                >
-                  {channel.cta}
-                </ButtonLink>
-              </div>
-            </div>
-          ))}
         </div>
       </section>
 
@@ -119,12 +56,12 @@ export default function ConnectPage() {
                 </h2>
               </div>
               <p className="leading-relaxed text-muted-foreground">
-                Members share job openings, events, and opportunities in our
-                Slack every week. It is one of the best reasons to join.
+                Members share events, news, job openings, 
+                other opportunities in our community.
               </p>
             </div>
-            <ButtonLink href={LINKS.slack} external>
-              Browse in Slack <ArrowRight />
+            <ButtonLink href={LINKS.joinForm} external>
+              Join to see opportunities <ArrowRight />
             </ButtonLink>
           </div>
         </div>
