@@ -142,7 +142,7 @@ export default function AboutPage() {
       </section>
 
       {/* Host an event CTA */}
-      <section className="mx-auto max-w-4xl px-4 pb-16 text-center md:px-6 md:pb-20">
+      <section className="mx-auto max-w-4xl px-4 py-16 text-center md:px-6 md:py-20">
         <p className="leading-relaxed text-muted-foreground">
           Interested in hosting a BAWISA event at your company or space?{' '}
           
