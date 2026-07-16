@@ -24,8 +24,8 @@ export function SiteFooter() {
               <Image
                 src="/logo.jpg"
                 alt="BAWISA logo"
-                width={36}
-                height={36}
+                width={56}
+                height={56}
                 className="rounded-full"
               />
               <span className="font-display text-sm font-bold text-foreground">

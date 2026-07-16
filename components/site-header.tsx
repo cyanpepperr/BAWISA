@@ -1,9 +1,10 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
-import { Menu, X, Rocket } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { NAV_LINKS, LINKS } from '@/lib/site'
 import { ButtonLink } from '@/components/button-link'
@@ -20,9 +21,13 @@ export function SiteHeader() {
           className="flex items-center gap-2"
           onClick={() => setOpen(false)}
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-primary-foreground">
-            <Rocket className="h-5 w-5" aria-hidden="true" />
-          </span>
+          <Image
+            src="/logo.jpg"
+            alt="BAWISA logo"
+            width={36}
+            height={36}
+            className="rounded-full"
+          />
           <span className="flex flex-col leading-none">
             <span className="font-display text-sm font-bold tracking-wide text-foreground">
               BAWISA
