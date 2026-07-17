@@ -20,7 +20,7 @@ export function SiteFooter() {
 
         <div className="grid gap-8 border-t border-border/60 pt-10 md:grid-cols-3">
           <div>
-            <Link href="/" className="flex flex-col items-center gap-2 text-left">
+            <Link href="/" className="flex flex-col items-start gap-2 text-left">
               <Image
                 src="/logo.png"
                 alt="BAWISA logo"
