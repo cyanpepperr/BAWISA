@@ -9,6 +9,7 @@ import {
 } from 'lucide-react'
 import { ButtonLink } from '@/components/button-link'
 import { LINKS } from '@/lib/site'
+import { StarfieldBackground } from '@/components/starfield-background' 
 
 const announcements = [
   {
@@ -34,15 +35,8 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 -z-10">
-          <Image
-            src="/images/hero-space.png"
-            alt=""
-            fill
-            priority
-            className="object-cover opacity-60"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/80 to-background" />
-        </div>
+          <StarfieldBackground />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background" />
         <div className="mx-auto max-w-6xl px-4 py-24 md:px-6 md:py-36">
           <p className="mb-5 text-sm font-semibold uppercase tracking-widest text-primary">
             Bay Area Women in Space &amp; Aerospace
