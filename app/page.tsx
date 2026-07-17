@@ -33,7 +33,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[600px] overflow-hidden md:min-h-[700px]">
+      <section className="relative isolate min-h-[600px] overflow-hidden md:min-h-[700px]">
         <div className="absolute inset-0 -z-10">
           <StarfieldBackground />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background" />
