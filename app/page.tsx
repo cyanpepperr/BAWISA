@@ -59,7 +59,7 @@ export default function HomePage() {
             </ButtonLink>
           </div>
         </div>
-      </section>>
+      </section>
 
       {/* Mission statement band */}
       <section className="border-y border-border/60 bg-card/40">
