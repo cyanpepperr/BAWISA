@@ -9,7 +9,7 @@ import {
 } from 'lucide-react'
 import { ButtonLink } from '@/components/button-link'
 import { LINKS } from '@/lib/site'
-import { StarfieldBackground } from '@/components/starfield-background' 
+import { StarfieldBackground } from '@/components/starfield-background'
 
 const announcements = [
   {
@@ -31,13 +31,14 @@ const announcements = [
 
 export default function HomePage() {
   return (
-    <>
+    <div className="relative isolate">
+      {/* Page-wide starfield background */}
+      <div className="fixed inset-0 -z-10">
+        <StarfieldBackground />
+      </div>
+
       {/* Hero */}
-      <section className="relative isolate min-h-[600px] overflow-hidden md:min-h-[700px]">
-        <div className="absolute inset-0 -z-10">
-          <StarfieldBackground />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background" />
-        </div>
+      <section className="relative min-h-[600px] overflow-hidden md:min-h-[700px]">
         <div className="mx-auto max-w-6xl px-4 py-24 md:px-6 md:py-36">
           <p className="mb-5 text-sm font-semibold uppercase tracking-widest text-primary">
             Bay Area Women in Space &amp; Aerospace
@@ -107,7 +108,7 @@ export default function HomePage() {
       </section>
 
       {/* Next event */}
-      <section className="border-y border-border/60 bg-gradient-to-br from-accent/15 to-background">
+      <section className="border-y border-border/60">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 py-16 md:grid-cols-2 md:items-center md:px-6 md:py-20">
           <div>
             <div className="mb-4 flex items-center gap-3">
@@ -165,7 +166,7 @@ export default function HomePage() {
       </section>
 
       {/* Event recap */}
-      <section className="bg-gradient-to-br from-secondary/30 to-background">
+      <section>
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-2xl border border-border/60">
@@ -213,7 +214,7 @@ export default function HomePage() {
       </section>
 
       {/* Member spotlight teaser */}
-      <section className="border-t border-border/60 bg-gradient-to-br from-secondary/40 to-background">
+      <section className="border-t border-border/60">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
           <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
             <div className="max-w-xl">
@@ -242,6 +243,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   )
 }
