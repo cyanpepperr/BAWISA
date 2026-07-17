@@ -66,7 +66,7 @@ export function StarfieldBackground() {
         const opacity = 1 - star.z / width
 
         ctx.beginPath()
-        ctx.fillStyle = `rgba(255, 255, 255, ${opacity})`
+        ctx.fillStyle = `rgba(255, 255, 255, 1)`
         ctx.arc(sx, sy, size, 0, Math.PI * 2)
         ctx.fill()
       }
