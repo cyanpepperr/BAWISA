@@ -64,11 +64,18 @@ export function StarfieldBackground() {
         const size = depthRatio * 2.8 + 0.4
         const opacity = Math.min(1, depthRatio * 1.3 + 0.25)
 
+        // soft glow to mimic a real star's blur
+        ctx.shadowBlur = size * 3
+        ctx.shadowColor = `rgba(${STAR_COLOR}, ${opacity})`
+
         ctx.beginPath()
         ctx.fillStyle = `rgba(${STAR_COLOR}, ${opacity})`
         ctx.arc(sx, sy, size, 0, Math.PI * 2)
         ctx.fill()
       }
+
+      // reset shadow so it doesn't leak into next frame's background fill
+      ctx.shadowBlur = 0
 
       animationId = requestAnimationFrame(draw)
     }
