@@ -172,7 +172,7 @@ export default function HomePage() {
         <div className="grid gap-8 md:grid-cols-2 md:items-center">
           <div className="overflow-hidden rounded-2xl border border-border/60">
             <Image
-              src="/images/event-recap.png"
+              src="/images/xona.jpg"
               alt="Women networking at a recent BAWISA aerospace industry event"
               width={800}
               height={600}
