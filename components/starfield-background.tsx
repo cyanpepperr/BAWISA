@@ -46,40 +46,8 @@ export function StarfieldBackground() {
         return
       }
 
-      const gradient = ctx.createLinearGradient(0, 0, 0, height)
-      gradient.addColorStop(0, '#0a0620')
-      gradient.addColorStop(1, '#1a0f3d')
-      ctx.fillStyle = gradient
+      ctx.fillStyle = 'magenta'
       ctx.fillRect(0, 0, width, height)
-
-      const cx = width / 2
-      const cy = height / 2
-
-      for (const star of stars) {
-        star.z -= SPEED
-
-        if (star.z <= 0) {
-          star.x = (Math.random() - 0.5) * width
-          star.y = (Math.random() - 0.5) * height
-          star.z = width
-          star.color = COLORS[Math.floor(Math.random() * COLORS.length)]
-        }
-
-        const k = 128 / star.z
-        const sx = star.x * k + cx
-        const sy = star.y * k + cy
-
-        if (sx < 0 || sx > width || sy < 0 || sy > height) continue
-
-        const depthRatio = 1 - star.z / width
-        const size = depthRatio * 2.8 + 0.4
-        const opacity = Math.min(1, depthRatio * 1.3 + 0.25) // floor so stars are always visible
-
-        ctx.beginPath()
-        ctx.fillStyle = `rgba(${star.color}, ${opacity})`
-        ctx.arc(sx, sy, size, 0, Math.PI * 2)
-        ctx.fill()
-      }
 
       animationId = requestAnimationFrame(draw)
     }
