@@ -59,34 +59,19 @@ export function SiteFooter() {
             <h3 className="text-sm font-semibold text-foreground">Connect</h3>
             <ul className="mt-4 space-y-3">
               <li>
-                
-                  href={joinFormUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
-                >
+                <a href={joinFormUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground">
                   <Users className="h-4 w-4" aria-hidden="true" />
                   Join Us
                 </a>
                 <ul className="mt-2 ml-6 space-y-2">
                   <li>
-                    
-                      href={joinFormUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
-                    >
+                    <a href={joinFormUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground">
                       <MessageSquare className="h-4 w-4" aria-hidden="true" />
                       Slack
                     </a>
                   </li>
                   <li>
-                    
-                      href={joinFormUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
-                    >
+                    <a href={joinFormUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground">
                       <Mail className="h-4 w-4" aria-hidden="true" />
                       Email
                     </a>
@@ -94,12 +79,7 @@ export function SiteFooter() {
                 </ul>
               </li>
               <li>
-                
-                  href="https://www.linkedin.com/company/bay-area-women-in-space-aerospace"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
-                >
+                <a href="https://www.linkedin.com/company/bay-area-women-in-space-aerospace" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground">
                   <Linkedin className="h-4 w-4" aria-hidden="true" />
                   LinkedIn
                 </a>
