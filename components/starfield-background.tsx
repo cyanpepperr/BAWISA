@@ -11,12 +11,12 @@ export function StarfieldBackground() {
     const ctx = canvas.getContext('2d')
     if (!ctx) return
 
-    let width = (canvas.width = canvas.offsetWidth)
-    let height = (canvas.height = canvas.offsetHeight)
+    let width = 0
+    let height = 0
     let animationId: number
 
     const STAR_COUNT = 350
-    const SPEED = 0.6 // lower = slower drift
+    const SPEED = 0.6
 
     type Star = { x: number; y: number; z: number }
     let stars: Star[] = []
@@ -32,19 +32,12 @@ export function StarfieldBackground() {
       }
     }
 
-    function resize() {
-      width = canvas.width = canvas.offsetWidth
-      height = canvas.height = canvas.offsetHeight
-      initStars()
-    }
-
-    resize()
-    window.addEventListener('resize', resize)
-
     function draw() {
-      if (!ctx) return
+      if (!ctx || width === 0 || height === 0) {
+        animationId = requestAnimationFrame(draw)
+        return
+      }
 
-      // deep space blue-to-purple background, redrawn each frame
       const gradient = ctx.createLinearGradient(0, 0, 0, height)
       gradient.addColorStop(0, '#0a0620')
       gradient.addColorStop(1, '#1a0f3d')
@@ -81,10 +74,19 @@ export function StarfieldBackground() {
       animationId = requestAnimationFrame(draw)
     }
 
+    const resizeObserver = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        width = canvas.width = entry.contentRect.width
+        height = canvas.height = entry.contentRect.height
+        initStars()
+      }
+    })
+
+    resizeObserver.observe(canvas)
     draw()
 
     return () => {
-      window.removeEventListener('resize', resize)
+      resizeObserver.disconnect()
       cancelAnimationFrame(animationId)
     }
   }, [])
