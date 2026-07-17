@@ -52,7 +52,7 @@ export default function HomePage() {
           </h1>
           <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground md:text-xl">
             BAWISA connects, celebrates, and empowers women across the Bay Area
-            space and aerospace community through events, support, and
+            aerospace community through events, support, and
             shared ambition.
           </p>
           <div className="mt-9 flex flex-wrap gap-4">
@@ -74,9 +74,9 @@ export default function HomePage() {
             aria-hidden="true"
           />
           <p className="text-balance font-display text-2xl font-medium leading-relaxed text-foreground md:text-3xl">
-            Our mission is to build a thriving network where women in space and
-            aerospace find community, visibility, and the support to launch
-            their boldest ideas.
+            Our mission is to build a thriving network where women in
+            aerospace find community, visibility, and the support to 
+            pursue their boldest ideas.
           </p>
         </div>
       </section>
@@ -120,15 +120,13 @@ export default function HomePage() {
               </span>
             </div>
             <h2 className="font-display text-3xl font-bold text-foreground">
-              Summer Networking Night &amp; Speaker Panel
+              Stay tuned for our next event! Details will be announced soon.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Thursday, July 23, 2026 · 6:00 PM · South Bay
+              TBD
             </p>
             <p className="mt-4 max-w-md leading-relaxed text-muted-foreground">
-              Join us for an evening of connection with a panel of leaders
-              across launch, satellites, and mission operations. Grab your
-              ticket on Eventbrite.
+              TBD
             </p>
             <div className="mt-7 flex flex-wrap gap-4">
               <ButtonLink href={LINKS.eventbrite} external>
@@ -142,10 +140,10 @@ export default function HomePage() {
           <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/20 to-accent/20 p-8">
             <div className="flex items-baseline gap-2">
               <span className="font-display text-6xl font-bold text-foreground">
-                23
+                TBD
               </span>
               <span className="font-display text-2xl font-medium text-muted-foreground">
-                July
+                TBD
               </span>
             </div>
             <div className="mt-6 space-y-3 text-sm text-muted-foreground">
@@ -155,14 +153,14 @@ export default function HomePage() {
               </p>
               <p className="flex items-center gap-2">
                 <Sparkles className="h-4 w-4 text-accent" aria-hidden="true" />
-                Panel + open networking
+                TBD
               </p>
               <p className="flex items-center gap-2">
                 <CalendarDays
                   className="h-4 w-4 text-accent"
                   aria-hidden="true"
                 />
-                Doors at 6:00 PM
+                TBD
               </p>
             </div>
           </div>
@@ -183,22 +181,29 @@ export default function HomePage() {
           </div>
           <div>
             <span className="text-sm font-semibold uppercase tracking-widest text-accent">
-              Event Recap
+              Event Recap | July 8, 2026
             </span>
             <h2 className="mt-3 font-display text-3xl font-bold text-foreground">
-              Spring Mixer at the Innovation Hub
+              Bay Area Women in Space and Aerospace Happy Hour with Xona!
             </h2>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              More than 120 members gathered for an evening of lightning talks,
-              hands-on demos, and connection. Highlights included a fireside
-              chat with a mission director and the launch of our new mentorship
-              circles.
+              BAWISA closed out Women's History Month with a happy hour hosted by Xona Space Systems in Burlingame. Guests got a look inside Xona's offices, home to the team building Pulsar, the first commercial navigation constellation designed for modern positioning needs.
+              The evening centered on Collective Wisdom Peer Roundtables, giving attendees space for honest conversation and problem-solving with other women in the industry, alongside plenty of time to mingle over food and drinks provided by Xona.
+              Thanks to Xona for hosting and to everyone who came out to connect and share the room.
             </p>
             <Link
               href="/events"
               className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
             >
               View photos and past events <ArrowRight className="h-4 w-4" />
+            </Link>
+            <Link
+              href="https://www.xonaspace.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+            >
+              Visit Xona Space Systems <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </div>
