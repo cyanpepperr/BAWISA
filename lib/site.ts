@@ -3,7 +3,6 @@ export const NAV_LINKS = [
   { href: '/about', label: 'About Us' },
   { href: '/spotlight', label: 'Member Spotlight' },
   { href: '/events', label: 'Events' },
-  { href: '/connect', label: 'Connect' },
   { href: '/resources', label: 'Resources' },
 ]
 

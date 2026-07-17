@@ -2,13 +2,18 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Users, MessageSquare, Mail } from 'lucide-react'
 import { NAV_LINKS, QUOTES } from '@/lib/site'
+import { StarfieldBackground } from '@/components/starfield-background'
 
 export function SiteFooter() {
   const quote = QUOTES[0]
   const joinFormUrl = 'https://forms.gle/dCEazkBewWQZVrru9'
 
   return (
-    <footer className="border-t border-border/60 bg-card/40">
+    <footer className="relative isolate overflow-hidden border-t border-border/60">
+      <div className="absolute inset-0 -z-10">
+        <StarfieldBackground />
+      </div>
+
       <div className="mx-auto max-w-6xl px-4 py-12 md:px-6">
         <figure className="mx-auto mb-12 max-w-2xl text-center">
           <blockquote className="font-display text-balance text-xl font-medium text-foreground md:text-2xl">
