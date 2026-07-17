@@ -20,17 +20,17 @@ export const LINKS = {
 export const QUOTES = [
   {
     quote:
-      'The sky is not the limit — it is just the beginning of what we can reach together.',
-    author: 'A BAWISA Member',
+      "Sometimes the most important journey isn't to space — it's beyond the limits others place on you.",
+    author: 'Eileen Collins',
   },
   {
     quote:
-      'When women support women, incredible things launch.',
-    author: 'A BAWISA Member',
+      "You can't be what you can't see",
+    author: 'Sally Ride',
   },
   {
     quote:
-      'Representation in aerospace is not a destination, it is a trajectory we build every day.',
-    author: 'A BAWISA Member',
+      "I like to learn. That is an art and a study. You never stop learning.",
+    author: 'Katherine Johnson',
   },
 ]
