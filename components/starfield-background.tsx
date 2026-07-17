@@ -15,10 +15,17 @@ export function StarfieldBackground() {
     let height = 0
     let animationId: number
 
-    const STAR_COUNT = 350
-    const SPEED = 0.6
+    const STAR_COUNT = 400
+    const SPEED = 0.8
 
-    type Star = { x: number; y: number; z: number }
+    // light purple and light blue tones to alternate between
+    const COLORS = [
+      '186, 166, 255', // light purple
+      '166, 210, 255', // light blue
+      '255, 255, 255', // white, for variety
+    ]
+
+    type Star = { x: number; y: number; z: number; color: string }
     let stars: Star[] = []
 
     function initStars() {
@@ -28,6 +35,7 @@ export function StarfieldBackground() {
           x: (Math.random() - 0.5) * width,
           y: (Math.random() - 0.5) * height,
           z: Math.random() * width,
+          color: COLORS[Math.floor(Math.random() * COLORS.length)],
         })
       }
     }
@@ -54,6 +62,7 @@ export function StarfieldBackground() {
           star.x = (Math.random() - 0.5) * width
           star.y = (Math.random() - 0.5) * height
           star.z = width
+          star.color = COLORS[Math.floor(Math.random() * COLORS.length)]
         }
 
         const k = 128 / star.z
@@ -62,11 +71,12 @@ export function StarfieldBackground() {
 
         if (sx < 0 || sx > width || sy < 0 || sy > height) continue
 
-        const size = (1 - star.z / width) * 2.2
-        const opacity = 1 - star.z / width
+        const depthRatio = 1 - star.z / width
+        const size = depthRatio * 2.8 + 0.4
+        const opacity = Math.min(1, depthRatio * 1.3 + 0.25) // floor so stars are always visible
 
         ctx.beginPath()
-        ctx.fillStyle = `rgba(255, 255, 255, 1)`
+        ctx.fillStyle = `rgba(${star.color}, ${opacity})`
         ctx.arc(sx, sy, size, 0, Math.PI * 2)
         ctx.fill()
       }
