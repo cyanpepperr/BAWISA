@@ -37,6 +37,7 @@ export default function HomePage() {
         <div className="absolute inset-0 -z-10">
           <StarfieldBackground />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background" />
+        </div>
         <div className="mx-auto max-w-6xl px-4 py-24 md:px-6 md:py-36">
           <p className="mb-5 text-sm font-semibold uppercase tracking-widest text-primary">
             Bay Area Women in Space &amp; Aerospace
@@ -58,7 +59,7 @@ export default function HomePage() {
             </ButtonLink>
           </div>
         </div>
-      </section>
+      </section>>
 
       {/* Mission statement band */}
       <section className="border-y border-border/60 bg-card/40">
