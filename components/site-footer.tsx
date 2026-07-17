@@ -1,10 +1,11 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Users } from 'lucide-react'
+import { Users, MessageSquare, Mail, Linkedin } from 'lucide-react'
 import { NAV_LINKS, QUOTES } from '@/lib/site'
 
 export function SiteFooter() {
   const quote = QUOTES[0]
+  const joinFormUrl = 'https://forms.gle/dCEazkBewWQZVrru9'
 
   return (
     <footer className="border-t border-border/60 bg-card/40">
@@ -58,13 +59,45 @@ export function SiteFooter() {
             <h3 className="text-sm font-semibold text-foreground">Connect</h3>
             <ul className="mt-4 space-y-3">
               <li>
-                <a
-                  href="https://forms.gle/dCEazkBewWQZVrru9"
+                
+                  href={joinFormUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
                   <Users className="h-4 w-4" aria-hidden="true" /> Join Us
+                </a>
+                <ul className="mt-2 ml-6 space-y-2">
+                  <li>
+                    
+                      href={joinFormUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                    >
+                      <MessageSquare className="h-4 w-4" aria-hidden="true" /> Slack
+                    </a>
+                  </li>
+                  <li>
+                    
+                      href={joinFormUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                    >
+                      <Mail className="h-4 w-4" aria-hidden="true" /> Email
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                
+                  href="https://www.linkedin.com/company/bay-area-women-in-space-aerospace"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  <Linkedin className="h-4 w-4" aria-hidden="true" /> LinkedIn
                 </a>
               </li>
             </ul>
