@@ -16,7 +16,7 @@ export function StarfieldBackground() {
     let animationId: number
 
     const STAR_COUNT = 400
-    const SPEED = 0.8
+    const SPEED = 0.2
 
     // light purple and light blue tones to alternate between
     const COLORS = [
