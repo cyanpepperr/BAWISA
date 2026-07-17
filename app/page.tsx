@@ -82,35 +82,37 @@ export default function HomePage() {
       </section>
 
       {/* Latest news */}
-      <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
-        <div className="mb-10 flex items-center gap-3">
-          <Megaphone className="h-6 w-6 text-primary" aria-hidden="true" />
-          <h2 className="font-display text-3xl font-bold text-foreground">
-            Latest News
-          </h2>
-        </div>
-        <div className="grid gap-6 md:grid-cols-3">
-          {announcements.map((item) => (
-            <article
-              key={item.title}
-              className="flex flex-col rounded-xl border border-border/60 bg-card p-6"
-            >
-              <span className="text-xs font-semibold uppercase tracking-widest text-accent">
-                {item.date}
-              </span>
-              <h3 className="mt-3 font-display text-lg font-semibold text-foreground">
-                {item.title}
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                {item.body}
-              </p>
-            </article>
-          ))}
+      <section className="bg-gradient-to-br from-primary/10 to-background">
+        <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
+          <div className="mb-10 flex items-center gap-3">
+            <Megaphone className="h-6 w-6 text-primary" aria-hidden="true" />
+            <h2 className="font-display text-3xl font-bold text-foreground">
+              Latest News
+            </h2>
+          </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            {announcements.map((item) => (
+              <article
+                key={item.title}
+                className="flex flex-col rounded-xl border border-border/60 bg-card p-6"
+              >
+                <span className="text-xs font-semibold uppercase tracking-widest text-accent">
+                  {item.date}
+                </span>
+                <h3 className="mt-3 font-display text-lg font-semibold text-foreground">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  {item.body}
+                </p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Next event */}
-      <section className="border-y border-border/60 bg-card/40">
+      <section className="border-y border-border/60 bg-gradient-to-br from-accent/15 to-background">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 py-16 md:grid-cols-2 md:items-center md:px-6 md:py-20">
           <div>
             <div className="mb-4 flex items-center gap-3">
@@ -168,46 +170,48 @@ export default function HomePage() {
       </section>
 
       {/* Event recap */}
-      <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
-        <div className="grid gap-8 md:grid-cols-2 md:items-center">
-          <div className="overflow-hidden rounded-2xl border border-border/60">
-            <Image
-              src="/images/xona.jpg"
-              alt="Women networking at a recent BAWISA aerospace industry event"
-              width={800}
-              height={600}
-              className="h-full w-full object-cover"
-            />
-          </div>
-          <div>
-            <span className="text-sm font-semibold uppercase tracking-widest text-accent">
-              Event Recap   |   July 8, 2026
-            </span>
-            <h2 className="mt-3 font-display text-3xl font-bold text-foreground">
-              BAWISA Happy Hour with Xona!
-            </h2>
-            <div className="mt-4 space-y-4 text-muted-foreground">
-              <p className="leading-relaxed">
-                BAWISA closed out Women&apos;s History Month with a happy hour hosted by Xona Space Systems in Burlingame. Guests got a look inside Xona&apos;s offices, home to the team building Pulsar, the first commercial navigation constellation designed for modern positioning needs.
-              </p>
-              <p className="leading-relaxed">
-                The evening centered on Collective Wisdom Peer Roundtables, giving attendees space for honest conversation and problem-solving with other women in the industry, alongside plenty of time to mingle over food and drinks provided by Xona.
-              </p>
-              <p className="leading-relaxed">
-                Thanks to Xona for hosting and to everyone who came out to connect and share the room.
-              </p>
+      <section className="bg-gradient-to-br from-secondary/30 to-background">
+        <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
+          <div className="grid gap-8 md:grid-cols-2 md:items-center">
+            <div className="overflow-hidden rounded-2xl border border-border/60">
+              <Image
+                src="/images/xona.jpg"
+                alt="Women networking at a recent BAWISA aerospace industry event"
+                width={800}
+                height={600}
+                className="h-full w-full object-cover"
+              />
             </div>
-            <div className="mt-6 flex flex-wrap gap-4">
-              <ButtonLink href="/events">
-                View photos and past events <ArrowRight className="h-4 w-4" />
-              </ButtonLink>
-              <ButtonLink
-                href="https://www.xonaspace.com/"
-                external
-                variant="outline"
-              >
-                Visit Xona Space Systems <ArrowRight className="h-4 w-4" />
-              </ButtonLink>
+            <div>
+              <span className="text-sm font-semibold uppercase tracking-widest text-accent">
+                Event Recap   |   July 8, 2026
+              </span>
+              <h2 className="mt-3 font-display text-3xl font-bold text-foreground">
+                BAWISA Happy Hour with Xona!
+              </h2>
+              <div className="mt-4 space-y-4 text-muted-foreground">
+                <p className="leading-relaxed">
+                  BAWISA closed out Women&apos;s History Month with a happy hour hosted by Xona Space Systems in Burlingame. Guests got a look inside Xona&apos;s offices, home to the team building Pulsar, the first commercial navigation constellation designed for modern positioning needs.
+                </p>
+                <p className="leading-relaxed">
+                  The evening centered on Collective Wisdom Peer Roundtables, giving attendees space for honest conversation and problem-solving with other women in the industry, alongside plenty of time to mingle over food and drinks provided by Xona.
+                </p>
+                <p className="leading-relaxed">
+                  Thanks to Xona for hosting and to everyone who came out to connect and share the room.
+                </p>
+              </div>
+              <div className="mt-6 flex flex-wrap gap-4">
+                <ButtonLink href="/events">
+                  View photos and past events <ArrowRight className="h-4 w-4" />
+                </ButtonLink>
+                <ButtonLink
+                  href="https://www.xonaspace.com/"
+                  external
+                  variant="outline"
+                >
+                  Visit Xona Space Systems <ArrowRight className="h-4 w-4" />
+                </ButtonLink>
+              </div>
             </div>
           </div>
         </div>
