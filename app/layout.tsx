@@ -4,6 +4,7 @@ import { Montserrat } from 'next/font/google'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import './globals.css'
+import { StarfieldBackground } from '@/components/starfield-background'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -40,6 +41,9 @@ export default function RootLayout({
         />
       </head>
       <body className={montserrat.variable}>
+        <div className="fixed inset-0 -z-10">
+          <StarfieldBackground />
+        </div>
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />

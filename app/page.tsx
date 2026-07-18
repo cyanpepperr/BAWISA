@@ -90,7 +90,7 @@ export default function HomePage() {
             {announcements.map((item) => (
               <article
                 key={item.title}
-                className="flex flex-col rounded-xl border border-border/60 bg-card p-6"
+                className="flex flex-col rounded-xl border border-border/60 bg-gradient-to-br from-primary/20 to-accent/20 p-6"
               >
                 <span className="text-xs font-semibold uppercase tracking-widest text-accent">
                   {item.date}
@@ -214,8 +214,7 @@ export default function HomePage() {
       </section>
 
       {/* Member spotlight teaser */}
-      <section className="border-t border-border/70 bg-gradient-to-br from-secondary/25 via-primary/10 to-background">
-        <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
+      <section className="border-t border-border/70 bg-gradient-to-br from-secondary/50 via-primary/25 to-background">        <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
           <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
             <div className="max-w-xl">
               <span className="text-sm font-semibold uppercase tracking-widest text-accent">
