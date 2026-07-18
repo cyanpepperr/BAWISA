@@ -214,7 +214,7 @@ export default function HomePage() {
       </section>
 
       {/* Member spotlight teaser */}
-      <section className="border-t border-border/50 bg-gradient-to-br from-purple-800/30 via-purple-900/30 to-purple-950/40">
+      <section className="border-t border-border/50 bg-gradient-to-br from-purple-800/20 via-purple-900/20 to-purple-950/30">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
           <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
             <div className="max-w-xl">
