@@ -63,7 +63,7 @@ export default function HomePage() {
       </section>
 
       {/* Mission statement band */}
-      <section className="border-y border-border/60 bg-card/50">
+      <section className="border-y border-border/60 bg-card/45">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center md:px-6">
           <Sparkles
             className="mx-auto mb-5 h-8 w-8 text-accent"
@@ -78,7 +78,7 @@ export default function HomePage() {
       </section>
 
       {/* Latest news */}
-      <section className="bg-gradient-to-br from-primary/10 to-background">
+      <section>
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
           <div className="mb-10 flex items-center gap-3">
             <Megaphone className="h-6 w-6 text-primary" aria-hidden="true" />
@@ -214,7 +214,7 @@ export default function HomePage() {
       </section>
 
       {/* Member spotlight teaser */}
-      <section className="border-t border-border/60 bg-gradient-to-br from-secondary/15 via-primary/5 to-background">
+      <section className="border-t border-border/60 bg-gradient-to-br from-secondary/15 via-primary/10 to-background">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
           <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
             <div className="max-w-xl">
