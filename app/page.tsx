@@ -166,7 +166,7 @@ export default function HomePage() {
       </section>
 
       {/* Event recap */}
-      <section className="border-t border-border/70 bg-gradient-to-br from-purple-800/40 via-purple-900/40 to-purple-950/60">
+      <section className="border-t border-border/60 bg-gradient-to-br from-primary/20 to-accent/20 p-6">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-2xl border border-border/60">
