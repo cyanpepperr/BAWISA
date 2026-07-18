@@ -108,7 +108,7 @@ export default function HomePage() {
       </section>
 
       {/* Next event */}
-      <section className="border-y border-border/60 bg-gradient-to-tr from-primary/10 to-background">
+      <section className="border-y border-border/60 bg-gradient-to-tr from-primary/5 to-background">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 py-16 md:grid-cols-2 md:items-center md:px-6 md:py-20">
           <div>
             <div className="mb-4 flex items-center gap-3">
@@ -166,7 +166,7 @@ export default function HomePage() {
       </section>
 
       {/* Event recap */}
-      <section className="border-t border-border/60 bg-gradient-to-br from-primary/30 to-accent/30 p-6">
+      <section className="border-t border-border/60 bg-gradient-to-br from-primary/25 to-accent/25 p-6">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-2xl border border-border/60">
