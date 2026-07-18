@@ -33,7 +33,7 @@ export default function HomePage() {
   return (
     <div className="relative isolate">
       {/* Page-wide starfield background */}
-      <div className="absolute inset-0 -z-10">
+      <div className="fixed inset-0 -z-10">
         <StarfieldBackground />
       </div>
 
