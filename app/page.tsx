@@ -135,7 +135,7 @@ export default function HomePage() {
               </ButtonLink>
             </div>
           </div>
-          <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/20 to-accent/20 p-6">
+          <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/20 to-accent/20 p-8">
             <div className="flex items-baseline gap-2">
               <span className="font-display text-6xl font-bold text-foreground">
                 TBD
@@ -215,6 +215,8 @@ export default function HomePage() {
 
       {/* Member spotlight teaser */}
       <section className="border-t border-border/70 bg-gradient-to-br from-purple-800/40 via-purple-900/40 to-purple-950/60">
+        <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
+          <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
             <div className="max-w-xl">
               <span className="text-sm font-semibold uppercase tracking-widest text-accent">
                 Member Spotlight
