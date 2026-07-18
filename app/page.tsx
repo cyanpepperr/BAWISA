@@ -166,7 +166,7 @@ export default function HomePage() {
       </section>
 
       {/* Event recap */}
-      <section className="bg-gradient-to-l from-accent/10 to-background">
+      <section className="bg-gradient-to-r from-background to-accent/10">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-2xl border border-border/60">
@@ -214,8 +214,7 @@ export default function HomePage() {
       </section>
 
       {/* Member spotlight teaser */}
-      <section className="border-t border-border/70 bg-gradient-to-br from-secondary/50 via-primary/25 to-background">        <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
-          <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
+      <section className="border-t border-border/70 bg-gradient-to-br from-purple-800/40 via-purple-900/40 to-purple-950/60">
             <div className="max-w-xl">
               <span className="text-sm font-semibold uppercase tracking-widest text-accent">
                 Member Spotlight

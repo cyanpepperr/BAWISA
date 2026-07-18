@@ -8,8 +8,7 @@ export function SiteFooter() {
   const joinFormUrl = 'https://forms.gle/dCEazkBewWQZVrru9'
 
   return (
-    <footer className="border-t border-border/60 bg-gradient-to-br from-secondary/40 to-transparent">
-      <div className="mx-auto max-w-6xl px-4 py-12 md:px-6">
+    <footer className="relative z-10 border-t border-border/60 bg-gradient-to-br from-secondary/40 to-transparent">
         <figure className="mx-auto mb-12 max-w-2xl text-center">
           <blockquote className="font-display text-balance text-xl font-medium text-foreground md:text-2xl">
             &ldquo;{quote.quote}&rdquo;
