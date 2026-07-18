@@ -63,7 +63,7 @@ export default function HomePage() {
       </section>
 
       {/* Mission statement band */}
-      <section className="border-y border-border/60 bg-gradient-to-br from-primary/30 to-accent/10 p-6"
+      <section className="border-y border-border/60 bg-gradient-to-br from-primary/30 to-accent/10 p-6"?
         <div className="mx-auto max-w-4xl px-4 py-16 text-center md:px-6">
           <Sparkles
             className="mx-auto mb-5 h-8 w-8 text-accent"
