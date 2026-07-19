@@ -134,7 +134,7 @@ export default function HomePage() {
               </ButtonLink>
             </div>
           </div>
-          <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/60 to-accent/30 p-8">
+          <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/80 to-accent/40 p-8">
             <div className="flex items-baseline gap-2">
               <span className="font-display text-6xl font-bold text-foreground">
                 TBD
@@ -165,7 +165,7 @@ export default function HomePage() {
       </section>
 
       {/* Event recap */}
-      <section className="border-t border-border/50 bg-gradient-to-br from-primary/70 to-accent/40 p-6">
+      <section className="border-t border-border/50 bg-gradient-to-br from-primary/80 to-accent/50 p-6">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-2xl border border-border/60">
