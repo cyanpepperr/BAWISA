@@ -178,10 +178,10 @@ export default function HomePage() {
               />
             </div>
             <div>
-              <span className="text-sm font-semibold uppercase tracking-widest text-deep-lilac">
+              <span className="text-sm font-semibold uppercase tracking-widest text-amethyst-smoke">
                 Event Recap    |    July 8, 2026
               </span>
-              <h2 className="mt-3 font-display text-3xl font-bold text-baltic-blue">
+              <h2 className="mt-3 font-display text-3xl font-bold text-baby-blue-ice">
                 BAWISA Happy Hour with Xona!
               </h2>
               <div className="mt-4 space-y-4 text-foreground">
