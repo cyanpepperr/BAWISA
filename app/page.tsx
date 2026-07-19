@@ -134,7 +134,7 @@ export default function HomePage() {
               </ButtonLink>
             </div>
           </div>
-          <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/30 p-8">
+          <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/50 to-accent/25 p-6">
             <div className="flex items-baseline gap-2">
               <span className="font-display text-6xl font-bold text-foreground">
                 TBD
@@ -178,13 +178,13 @@ export default function HomePage() {
               />
             </div>
             <div>
-              <span className="text-sm font-semibold uppercase tracking-widest text-accent">
+              <span className="text-sm font-semibold uppercase tracking-widest text-white">
                 Event Recap    |    July 8, 2026
               </span>
-              <h2 className="mt-3 font-display text-3xl font-bold text-foreground">
+              <h2 className="mt-3 font-display text-3xl font-bold text-white">
                 BAWISA Happy Hour with Xona!
               </h2>
-              <div className="mt-4 space-y-4 text-muted-foreground">
+              <div className="mt-4 space-y-4 text-white/85">
                 <p className="leading-relaxed">
                   BAWISA closed out Women&apos;s History Month with a happy hour hosted by Xona Space Systems in Burlingame. Guests got a look inside Xona&apos;s offices, home to the team building Pulsar, the first commercial navigation constellation designed for modern positioning needs.
                 </p>
