@@ -70,7 +70,7 @@ export default function HomePage() {
             aria-hidden="true"
           />
           <p className="text-balance font-display text-2xl font-medium leading-relaxed text-foreground md:text-3xl">
-            Our mission is to build a network where women in
+            Our mission is to build an uplifting network where women in
             aerospace find community, visibility, and support.
           </p>
         </div>
@@ -165,7 +165,7 @@ export default function HomePage() {
       </section>
 
       {/* Event recap */}
-      <section className="border-t border-border/50 bg-gradient-to-br from-primary/70 to-accent/30 p-6">
+      <section className="border-t border-border/50 bg-gradient-to-br from-primary/70 to-accent/40 p-6">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-2xl border border-border/60">
