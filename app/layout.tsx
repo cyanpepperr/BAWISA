@@ -41,10 +41,10 @@ export default function RootLayout({
         />
       </head>
       <body className={`${montserrat.variable} min-h-screen`}>
+        <div className="fixed inset-0 -z-10">
+          <StarfieldBackground />
+        </div>
         <div className="relative isolate flex min-h-screen flex-col">
-          <div className="absolute inset-0 -z-10">
-            <StarfieldBackground />
-          </div>
           <SiteHeader />
           <main className="relative z-10 flex-1">{children}</main>
           <SiteFooter />

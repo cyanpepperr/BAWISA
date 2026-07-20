@@ -6,6 +6,7 @@ type PageHeroProps = {
   description?: string
   className?: string
   children?: React.ReactNode
+  transparent?: boolean
 }
 
 export function PageHero({
@@ -14,6 +15,7 @@ export function PageHero({
   description,
   className,
   children,
+  transparent = false,
 }: PageHeroProps) {
   return (
     <section
@@ -22,10 +24,12 @@ export function PageHero({
         className,
       )}
     >
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_-10%,color-mix(in_oklch,var(--color-primary)_35%,transparent),transparent_55%),radial-gradient(circle_at_85%_10%,color-mix(in_oklch,var(--color-accent)_28%,transparent),transparent_50%)]"
-      />
+      {!transparent && (
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_-10%,color-mix(in_oklch,var(--color-primary)_35%,transparent),transparent_55%),radial-gradient(circle_at_85%_10%,color-mix(in_oklch,var(--color-accent)_28%,transparent),transparent_50%)]"
+        />
+      )}
       <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
         {eyebrow && (
           <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-primary">
