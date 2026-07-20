@@ -28,6 +28,7 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
+        transparent
         eyebrow="About Us"
         title="Building community among women and gender minorities in aerospace"
         description="BAWISA is a quarterly speaker series connecting and inspiring women and gender minorities in aerospace. Since 2016, we've grown into a network across the Bay Area."
@@ -91,7 +92,7 @@ export default function AboutPage() {
       </section>
 
       {/* The person behind BAWISA */}
-      <section className="border-y border-border/60 bg-gradient-to-tr from-primary/10 to-transparent">
+      <section className="border-y border-border/60 bg-gradient-to-br from-primary/70 to-accent/40">
         <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 md:grid-cols-[auto_1fr] md:items-center md:px-6 md:py-20">
           <div className="mx-auto w-48 shrink-0 overflow-hidden rounded-2xl border border-border/60 md:w-60">
             <Image

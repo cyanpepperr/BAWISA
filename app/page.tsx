@@ -217,13 +217,13 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
           <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
             <div className="max-w-xl">
-              <span className="text-sm font-semibold uppercase tracking-widest text-accent">
+              <span className="text-sm font-semibold uppercase tracking-widest text-primary">
                 Member Spotlight
               </span>
               <h2 className="mt-3 font-display text-3xl font-bold text-foreground">
                 Celebrating the women shaping our industry
               </h2>
-              <p className="mt-4 leading-relaxed text-baby-blue-ice">
+              <p className="mt-4 leading-relaxed text-muted foreground">
                 Each month we spotlight a member&apos;s journey, career, and
                 advice. Know someone inspiring? Nominate them to be featured
                 next.
