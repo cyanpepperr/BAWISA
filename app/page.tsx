@@ -31,7 +31,11 @@ const announcements = [
 
 export default function HomePage() {
   return (
-    <div className='relative isolate'>
+    <div className="relative isolate">
+      {/* Page-wide starfield background */}
+      <div className="fixed inset-0 -z-10">
+        <StarfieldBackground />
+      </div>
 
       {/* Hero */}
       <section className="relative min-h-[600px] overflow-hidden md:min-h-[700px]">
