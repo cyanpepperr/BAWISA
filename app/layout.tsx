@@ -40,13 +40,15 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={`${montserrat.variable} flex min-h-screen flex-col`}>
-        <div className="fixed inset-0 -z-10">
-          <StarfieldBackground />
+      <body className={`${montserrat.variable} min-h-screen`}>
+        <div className="relative isolate flex min-h-screen flex-col">
+          <div className="absolute inset-0 -z-10">
+            <StarfieldBackground />
+          </div>
+          <SiteHeader />
+          <main className="relative z-10 flex-1">{children}</main>
+          <SiteFooter />
         </div>
-        <SiteHeader />
-        <main className="relative z-10 flex-1">{children}</main>
-        <SiteFooter />
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
