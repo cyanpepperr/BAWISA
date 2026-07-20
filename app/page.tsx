@@ -31,7 +31,7 @@ const announcements = [
 
 export default function HomePage() {
   return (
-    
+    <div className='relative isolate'>
 
       {/* Hero */}
       <section className="relative min-h-[600px] overflow-hidden md:min-h-[700px]">
