@@ -100,7 +100,7 @@ export default function AboutPage() {
       </section>
 
       {/* The person behind BAWISA */}
-      <section className="border-t border-border/50 bg-gradient-to-br from-primary/70 to-accent/45 p-6">
+      <section className="border-y border-border/60 bg-gradient-to-tr from-primary/3 to-background">
         <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 md:grid-cols-[auto_1fr] md:items-center md:px-6 md:py-20">
           <div className="mx-auto w-48 shrink-0 overflow-hidden rounded-2xl border border-border/60 md:w-60">
             <Image
@@ -115,7 +115,7 @@ export default function AboutPage() {
             <span className="text-sm font-semibold uppercase tracking-widest text-accent">
               The person behind BAWISA
             </span>
-            <h2 className="mt-3 font-display text-3xl font-bold text-foreground">
+            <h2 className="mt-3 font-display text-3xl font-bold text-primary">
               Meet Jeanette
             </h2>
             <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
@@ -133,14 +133,14 @@ export default function AboutPage() {
               &ldquo;When we build community, we build the future of this
               industry.&rdquo;
             </blockquote>
-            <a
-              href="https://www.linkedin.com/in/jeanettequinlan/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
-            >
-              Connect with Jeanette on LinkedIn <ArrowRight className="h-4 w-4" />
-            </a>
+            <div className="mt-6">
+              <ButtonLink
+                href="https://www.linkedin.com/in/jeanettequinlan/"
+                external
+              >
+                Connect with Jeanette on LinkedIn <ArrowRight className="h-4 w-4" />
+              </ButtonLink>
+            </div>
           </div>
         </div>
       </section>
