@@ -100,7 +100,7 @@ export default function AboutPage() {
       </section>
 
       {/* The person behind BAWISA */}
-      <section className="border-y border-border/60 bg-gradient-to-br from-primary/70 to-accent/40">
+      <section className="border-t border-border/50 bg-gradient-to-br from-primary/70 to-accent/45 p-6">
         <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 md:grid-cols-[auto_1fr] md:items-center md:px-6 md:py-20">
           <div className="mx-auto w-48 shrink-0 overflow-hidden rounded-2xl border border-border/60 md:w-60">
             <Image
