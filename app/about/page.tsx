@@ -112,20 +112,20 @@ export default function AboutPage() {
             />
           </div>
           <div>
-            <span className="text-sm font-semibold uppercase tracking-widest text-accent">
+            <span className="text-sm font-semibold uppercase tracking-widest text-amethyst-smoke">
               The person behind BAWISA
             </span>
-            <h2 className="mt-3 font-display text-3xl font-bold text-primary">
+            <h2 className="mt-3 font-display text-3xl font-bold text-baby-blue-ice">
               Meet Jeanette
             </h2>
-            <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
+            <p className="mt-4 max-w-2xl leading-relaxed text-foreground">
               Jeanette founded BAWISA in 2016 to create the community she
               wished she had earlier in her own career. Passionate about
               mentorship and connection, she leads the group's mission to
               make the Bay Area space and aerospace industry more welcoming,
               visible, and supportive for women and gender minorities.
             </p>
-            <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
+            <p className="mt-4 max-w-2xl leading-relaxed text-foreground">
               Jeanette is so grateful for the support of the women (and men)
               who make this all possible.
             </p>
