@@ -4,6 +4,7 @@ import { ArrowRight, Building2, CalendarDays, MapPin } from 'lucide-react'
 import { PageHero } from '@/components/page-hero'
 import { ButtonLink } from '@/components/button-link'
 import { LINKS } from '@/lib/site'
+import { StarfieldBackground } from '@/components/starfield-background'
 
 export const metadata: Metadata = {
   title: 'Events | BAWISA',
@@ -49,8 +50,14 @@ const past = [
 
 export default function EventsPage() {
   return (
-    <>
+    <div className="relative isolate">
+      {/* Page-wide starfield background */}
+      <div className="fixed inset-0 -z-10">
+        <StarfieldBackground />
+      </div>
+
       <PageHero
+        transparent
         eyebrow="Events"
         title="Gather, learn, and connect with the community"
         description="From networking nights to facility tours, our events bring together women across the Bay Area space and aerospace industry."
@@ -69,7 +76,7 @@ export default function EventsPage() {
           {upcoming.map((event) => (
             <article
               key={event.title}
-              className="flex flex-col gap-4 rounded-xl border border-border/60 bg-card p-6 md:flex-row md:items-center md:justify-between"
+              className="flex flex-col gap-4 rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6 md:flex-row md:items-center md:justify-between"
             >
               <div className="flex-1">
                 <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted-foreground">
@@ -100,9 +107,9 @@ export default function EventsPage() {
       </section>
 
       {/* Host sign up */}
-      <section className="border-y border-border/60 bg-card/40">
+      <section className="border-y border-border/60 bg-gradient-to-tr from-primary/10 to-transparent">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
-          <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/15 to-accent/15 p-8 md:p-12">
+          <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-8 md:p-12">
             <Building2 className="mb-4 h-8 w-8 text-primary" aria-hidden="true" />
             <h2 className="max-w-2xl text-balance font-display text-3xl font-bold text-foreground">
               Companies: host a BAWISA event
@@ -130,7 +137,7 @@ export default function EventsPage() {
           {past.map((event) => (
             <article
               key={event.title}
-              className="overflow-hidden rounded-xl border border-border/60 bg-card"
+              className="overflow-hidden rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40"
             >
               <div className="relative h-44">
                 <Image
@@ -150,6 +157,6 @@ export default function EventsPage() {
           ))}
         </div>
       </section>
-    </>
+    </div>
   )
 }
