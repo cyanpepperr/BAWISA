@@ -4,6 +4,7 @@ import { ArrowRight, Compass, Heart, MapPin, Rocket } from 'lucide-react'
 import { PageHero } from '@/components/page-hero'
 import { ButtonLink } from '@/components/button-link'
 import { LINKS } from '@/lib/site'
+import { StarfieldBackground } from '@/components/starfield-background'
 
 export const metadata: Metadata = {
   title: 'About Us | BAWISA',
@@ -26,7 +27,12 @@ const values = [
 
 export default function AboutPage() {
   return (
-    <>
+    <div className="relative isolate">
+      {/* Page-wide starfield background */}
+      <div className="fixed inset-0 -z-10">
+        <StarfieldBackground />
+      </div>
+
       <PageHero
         transparent
         eyebrow="About Us"
@@ -150,6 +156,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   )
 }
