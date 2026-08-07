@@ -119,3 +119,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+html,
+body {
+  transform: none !important;
+  filter: none !important;
+  backdrop-filter: none !important;
+  perspective: none !important;
+  contain: none !important;
+  will-change: auto !important;
+}
