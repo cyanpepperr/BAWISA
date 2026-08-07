@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Award, Briefcase, ExternalLink, GraduationCap } from 'lucide-react'
 import { PageHero } from '@/components/page-hero'
 import { LINKS } from '@/lib/site'
+import { StarfieldBackground } from '@/components/starfield-background'
 
 export const metadata: Metadata = {
   title: 'Resources | BAWISA',
@@ -42,8 +43,14 @@ const scholarships = [
 
 export default function ResourcesPage() {
   return (
-    <>
+    <div className="relative isolate">
+      {/* Page-wide starfield background */}
+      <div className="fixed inset-0 -z-10">
+        <StarfieldBackground />
+      </div>
+
       <PageHero
+        transparent
         eyebrow="Resources"
         title="Tools to help you launch and grow your career"
         description="A curated collection of job boards, scholarships, and fellowships for women in space and aerospace."
@@ -64,7 +71,7 @@ export default function ResourcesPage() {
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-col rounded-xl border border-border/60 bg-card p-6 transition-colors hover:border-primary/60"
+              className="group flex flex-col rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6 transition-colors hover:border-primary/60"
             >
               <div className="flex items-start justify-between gap-3">
                 <h3 className="font-display text-lg font-semibold text-foreground">
@@ -84,7 +91,7 @@ export default function ResourcesPage() {
       </section>
 
       {/* Scholarships & fellowships */}
-      <section className="border-t border-border/60 bg-card/40">
+      <section className="border-t border-border/60 bg-gradient-to-br from-secondary/25 via-primary/10 to-transparent">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
           <div className="mb-10 flex items-center gap-3">
             <GraduationCap
@@ -102,7 +109,7 @@ export default function ResourcesPage() {
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex flex-col rounded-2xl border border-border/60 bg-background p-8 transition-colors hover:border-accent/60"
+                className="group flex flex-col rounded-2xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-8 transition-colors hover:border-accent/60"
               >
                 <Award
                   className="mb-4 h-8 w-8 text-accent"
@@ -137,6 +144,6 @@ export default function ResourcesPage() {
           </p>
         </div>
       </section>
-    </>
+    </div>
   )
 }

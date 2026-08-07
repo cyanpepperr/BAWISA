@@ -47,7 +47,7 @@ export default function SpotlightPage() {
         transparent
         eyebrow="Member Spotlight"
         title="Celebrating the women shaping space and aerospace"
-        description="Each month we feature a member's journey, career, and advice — and invite the community to nominate the next person to shine."
+        description="Each month we feature a member's journey, career, and advice, as well as invite the community to nominate the next spotlight."
       />
 
       {/* Current spotlight */}
