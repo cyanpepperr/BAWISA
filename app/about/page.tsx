@@ -45,54 +45,56 @@ export default function AboutPage() {
       </PageHero>
 
       {/* How it started */}
-      <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
-        <div className="grid gap-10 md:grid-cols-[1.2fr_1fr] md:items-start">
-          <div>
-            <div className="mb-4 flex items-center gap-3">
-              <Compass className="h-6 w-6 text-primary" aria-hidden="true" />
-              <h2 className="font-display text-3xl font-bold text-foreground">
-                How it started
-              </h2>
-            </div>
-            <div className="space-y-4 leading-relaxed text-muted-foreground">
-              <p>
-                BAWISA was formed by Jeanette Quinlan in September 2016.
-                Inspired to connect the incredible women she had met
-                throughout her career in the male-dominated world of
-                aerospace, Jeanette held the first happy hour in the common
-                room of her condominium building in downtown San Francisco.
-                The next two happy hours that year, hosted at Stanford and
-                NASA Ames, brought in even more of a following. Starting in
-                2017, happy hours began to feature women speaking on a
-                variety of aerospace-related topics.
-              </p>
-              <p>
-                Today, BAWISA is a quarterly speaker series connecting and
-                inspiring women and gender minorities in aerospace — helping
-                with hiring, retention, and community in a historically
-                male-dominated field. Whether you are just starting out or
-                decades into your career, there is a place for you here.
-              </p>
-            </div>
-          </div>
-          <div className="grid gap-4">
-            {values.map((value) => (
-              <div
-                key={value.title}
-                className="rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-5"
-              >
-                <value.icon
-                  className="mb-3 h-6 w-6 text-accent"
-                  aria-hidden="true"
-                />
-                <h3 className="font-display text-lg font-semibold text-foreground">
-                  {value.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {value.body}
+      <section className="border-y border-border/60 bg-gradient-to-tr from-primary/3 to-background">
+        <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
+          <div className="grid gap-10 md:grid-cols-[1.2fr_1fr] md:items-start">
+            <div>
+              <div className="mb-4 flex items-center gap-3">
+                <Compass className="h-6 w-6 text-primary" aria-hidden="true" />
+                <h2 className="font-display text-3xl font-bold text-foreground">
+                  How it started
+                </h2>
+              </div>
+              <div className="space-y-4 leading-relaxed text-muted-foreground">
+                <p>
+                  BAWISA was formed by Jeanette Quinlan in September 2016.
+                  Inspired to connect the incredible women she had met
+                  throughout her career in the male-dominated world of
+                  aerospace, Jeanette held the first happy hour in the common
+                  room of her condominium building in downtown San Francisco.
+                  The next two happy hours that year, hosted at Stanford and
+                  NASA Ames, brought in even more of a following. Starting in
+                  2017, happy hours began to feature women speaking on a
+                  variety of aerospace-related topics.
+                </p>
+                <p>
+                  Today, BAWISA is a quarterly speaker series connecting and
+                  inspiring women and gender minorities in aerospace — helping
+                  with hiring, retention, and community in a historically
+                  male-dominated field. Whether you are just starting out or
+                  decades into your career, there is a place for you here.
                 </p>
               </div>
-            ))}
+            </div>
+            <div className="grid gap-4">
+              {values.map((value) => (
+                <div
+                  key={value.title}
+                  className="rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-5"
+                >
+                  <value.icon
+                    className="mb-3 h-6 w-6 text-accent"
+                    aria-hidden="true"
+                  />
+                  <h3 className="font-display text-lg font-semibold text-foreground">
+                    {value.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {value.body}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
