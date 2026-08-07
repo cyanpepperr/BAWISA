@@ -29,7 +29,9 @@ export default function AboutPage() {
   return (
     <div className="relative isolate">
       {/* Page-wide starfield background */}
-      <div className="fixed inset-0 -z-10" style={{ backgroundColor: 'magenta' }} />
+      <div className="fixed inset-0 -z-10">
+        <StarfieldBackground />
+      </div>
 
       <PageHero
         transparent
