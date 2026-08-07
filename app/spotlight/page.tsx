@@ -4,6 +4,7 @@ import { ArrowRight, Quote, Star } from 'lucide-react'
 import { PageHero } from '@/components/page-hero'
 import { ButtonLink } from '@/components/button-link'
 import { LINKS } from '@/lib/site'
+import { StarfieldBackground } from '@/components/starfield-background'
 
 export const metadata: Metadata = {
   title: 'Member Spotlight | BAWISA',
@@ -36,8 +37,14 @@ const pastSpotlights = [
 
 export default function SpotlightPage() {
   return (
-    <>
+    <div className="relative isolate">
+      {/* Page-wide starfield background */}
+      <div className="fixed inset-0 -z-10">
+        <StarfieldBackground />
+      </div>
+
       <PageHero
+        transparent
         eyebrow="Member Spotlight"
         title="Celebrating the women shaping space and aerospace"
         description="Each month we feature a member's journey, career, and advice — and invite the community to nominate the next person to shine."
@@ -45,7 +52,7 @@ export default function SpotlightPage() {
 
       {/* Current spotlight */}
       <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
-        <div className="grid gap-10 rounded-2xl border border-border/60 bg-card p-6 md:grid-cols-[auto_1fr] md:items-center md:p-10">
+        <div className="grid gap-10 rounded-2xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6 md:grid-cols-[auto_1fr] md:items-center md:p-10">
           <div className="mx-auto w-56 shrink-0 overflow-hidden rounded-2xl border border-border/60 md:w-72">
             <Image
               src="/images/spotlight-current.png"
@@ -87,40 +94,20 @@ export default function SpotlightPage() {
       </section>
 
       {/* Nominate */}
-      <section className="border-y border-border/60 bg-card/40">
+      <section className="border-y border-border/60 bg-gradient-to-tr from-primary/10 to-transparent">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
-          <div className="grid gap-6 md:grid-cols-2">
-            <div className="rounded-2xl border border-border/60 bg-background p-8">
-              <h2 className="font-display text-2xl font-bold text-foreground">
-                Nominate a member
-              </h2>
-              <p className="mt-3 leading-relaxed text-muted-foreground">
-                Know someone inspiring in space or aerospace? Nominate them to
-                be featured in an upcoming spotlight.
-              </p>
-              <div className="mt-6">
-                <ButtonLink href={LINKS.nominateForm} external>
-                  Submit a nomination <ArrowRight />
-                </ButtonLink>
-              </div>
-            </div>
-            <div className="rounded-2xl border border-border/60 bg-background p-8">
-              <h2 className="font-display text-2xl font-bold text-foreground">
-                Nominee follow-up
-              </h2>
-              <p className="mt-3 leading-relaxed text-muted-foreground">
-                Been nominated for a spotlight? Complete the follow-up form to
-                share your story, bio, and photo with our team.
-              </p>
-              <div className="mt-6">
-                <ButtonLink
-                  href={LINKS.nomineeFollowUpForm}
-                  external
-                  variant="outline"
-                >
-                  Complete follow-up form <ArrowRight />
-                </ButtonLink>
-              </div>
+          <div className="mx-auto max-w-xl rounded-2xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-8 text-center">
+            <h2 className="font-display text-2xl font-bold text-foreground">
+              Nominate a member
+            </h2>
+            <p className="mt-3 leading-relaxed text-muted-foreground">
+              Know someone inspiring in space or aerospace? Nominate them to
+              be featured in an upcoming spotlight.
+            </p>
+            <div className="mt-6 flex justify-center">
+              <ButtonLink href={LINKS.nominateForm} external>
+                Submit a nomination <ArrowRight />
+              </ButtonLink>
             </div>
           </div>
         </div>
@@ -135,7 +122,7 @@ export default function SpotlightPage() {
           {pastSpotlights.map((person) => (
             <article
               key={person.name}
-              className="flex flex-col rounded-xl border border-border/60 bg-card p-6"
+              className="flex flex-col rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6"
             >
               <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-primary/30 to-accent/30 font-display text-lg font-bold text-foreground">
                 {person.name
@@ -155,6 +142,6 @@ export default function SpotlightPage() {
           ))}
         </div>
       </section>
-    </>
+    </div>
   )
 }
