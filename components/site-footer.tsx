@@ -19,14 +19,14 @@ export function SiteFooter() {
           </figcaption>
         </figure>
 
-        <div className="grid gap-8 border-t border-border/60 pt-10 md:grid-cols-3">
+        <div className="grid gap-8 border-t border-border/60 pt-10 md:grid-cols-3 md:gap-12 lg:gap-20">
           <div className="flex flex-col items-center text-center">
             <Link href="/" className="flex flex-col items-center gap-2">
               <Image
                 src="/white-logo.png"
                 alt="BAWISA logo"
-                width={110}
-                height={110}
+                width={120}
+                height={120}
                 className="rounded-md"
               />
               <span className="font-display text-lg font-bold text-foreground">
@@ -39,7 +39,7 @@ export function SiteFooter() {
             </p>
           </div>
 
-          <div>
+          <div className="md:pl-6 lg:pl-12">
             <h3 className="text-sm font-semibold text-foreground">Explore</h3>
             <ul className="mt-4 space-y-2">
               {NAV_LINKS.map((link) => (
@@ -55,7 +55,7 @@ export function SiteFooter() {
             </ul>
           </div>
 
-          <div>
+          <div className="md:pl-6 lg:pl-12">
             <h3 className="text-sm font-semibold text-foreground">Connect</h3>
             <ul className="mt-4 space-y-3">
               <li>
