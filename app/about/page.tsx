@@ -126,12 +126,11 @@ export default function AboutPage() {
               visible, and supportive for women and gender minorities.
             </p>
             <p className="mt-4 max-w-2xl leading-relaxed text-foreground">
-              Jeanette is so grateful for the support of the women (and men)
+              Jeanette is so grateful for the support of the women (and men!)
               who make this all possible.
             </p>
             <blockquote className="mt-6 border-l-2 border-accent pl-4 font-display text-lg italic text-foreground">
-              &ldquo;When we build community, we build the future of this
-              industry.&rdquo;
+              &ldquo;some cool quote.&rdquo;
             </blockquote>
             <div className="mt-6">
               <ButtonLink
