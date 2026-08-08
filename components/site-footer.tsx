@@ -23,7 +23,7 @@ export function SiteFooter() {
           <div>
             <Link href="/" className="flex flex-col items-start gap-2 text-left">
               <Image
-                src="/logo.png"
+                src="/white-logo.png"
                 alt="BAWISA logo"
                 width={100}
                 height={100}

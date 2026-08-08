@@ -22,7 +22,7 @@ export function SiteHeader() {
           onClick={() => setOpen(false)}
         >
           <Image
-            src="/logo.png"
+            src="/white-logo.png"
             alt="BAWISA logo"
             width={56}
             height={56}
