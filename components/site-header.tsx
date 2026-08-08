@@ -24,8 +24,8 @@ export function SiteHeader() {
           <Image
             src="/white-logo.png"
             alt="BAWISA logo"
-            width={56}
-            height={56}
+            width={50}
+            height={50}
             className="rounded-md"
           />
           <span className="flex flex-col leading-none">
