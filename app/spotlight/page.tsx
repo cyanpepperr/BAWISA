@@ -63,7 +63,7 @@ export default function SpotlightPage() {
             />
           </div>
           <div>
-            <span className="inline-flex items-center rounded-full bg-baby-blue-ice/15 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-baby-blue-ice">
+            <span className="inline-flex items-center rounded-full bg-amethyst-smoke/15 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-amethyst-smoke">
               Current Spotlight
             </span>
             <h2 className="mt-4 font-display text-3xl font-bold text-baby-blue-ice">
@@ -76,7 +76,7 @@ export default function SpotlightPage() {
               Career bio/life journey. Hobbies, interests, fun facts. 
             </p>
             <blockquote className="mt-6 border-l-2 border-accent pl-4 font-display text-lg italic text-foreground">
-              Advice from their career journey, or a quote that inspires them
+              "Advice from their career journey, or a quote that inspires them"
             </blockquote>
           </div>
         </div>
