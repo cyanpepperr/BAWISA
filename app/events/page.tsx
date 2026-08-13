@@ -84,7 +84,6 @@ export default function EventsPage() {
               negotiation, founding a startup, data analytics, self-branding,
               and company features. 
             </p>
-            </h2>
             <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
               Interested in hosting a networking night,
               tour, or workshop for our community? We would love to partner
