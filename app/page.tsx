@@ -44,7 +44,7 @@ export default function HomePage() {
             Bay Area Women in Space &amp; Aerospace
           </p>
           <h1 className="max-w-3xl text-balance font-display text-4xl font-bold leading-tight text-foreground md:text-6xl">
-            Reaching for the stars, together.
+            Reaching for the stars, together
           </h1>
           <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground md:text-xl">
             BAWISA connects, celebrates, and empowers women across the Bay Area
