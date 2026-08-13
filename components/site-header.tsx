@@ -33,7 +33,7 @@ export function SiteHeader() {
               BAWISA
             </span>
             <span className="text-[10px] uppercase tracking-widest text-muted-foreground">
-              Women in Space &amp; Aerospace
+              Bay Area Women in Space &amp; Aerospace
             </span>
           </span>
         </Link>
