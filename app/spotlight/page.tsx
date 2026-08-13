@@ -17,21 +17,25 @@ const pastSpotlights = [
     name: 'Name',
     role: 'Job title/career',
     quote: 'One sentence from their career bio/journey/advice',
+    image: '/images/spotlight/galaxy.png',
   },
   {
     name: 'Name',
     role: 'Job title/career',
     quote: 'One sentence from their career bio/journey/advice',
+    image: '/images/spotlight/galaxy.png',
   },
   {
     name: 'Name',
     role: 'Job title/career',
     quote: 'One sentence from their career bio/journey/advice',
+    image: '/images/spotlight/galaxy.png',
   },
   {
     name: 'Name',
     role: 'Job title/career',
     quote: 'One sentence from their career bio/journey/advice',
+    image: '/images/spotlight/galaxy.png',
   },
 ]
 
@@ -55,7 +59,7 @@ export default function SpotlightPage() {
         <div className="grid gap-10 rounded-2xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6 md:grid-cols-[auto_1fr] md:items-center md:p-10">
           <div className="mx-auto w-56 shrink-0 overflow-hidden rounded-2xl border border-border/60 md:w-72">
             <Image
-              src="/images/spotlight-current.png"
+              src="/images/galaxy.png"
               alt="Current BAWISA member spotlight"
               width={500}
               height={600}
@@ -113,18 +117,20 @@ export default function SpotlightPage() {
               key={person.name}
               className="flex flex-col rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6"
             >
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-primary/30 to-accent/30 font-display text-lg font-bold text-foreground">
-                {person.name
-                  .split(' ')
-                  .slice(-2)
-                  .map((n) => n[0])
-                  .join('')}
+              <div className="mx-auto h-24 w-24 shrink-0 overflow-hidden rounded-full border border-border/60">
+                <Image
+                  src={person.image}
+                  alt={person.name}
+                  width={200}
+                  height={200}
+                  className="h-full w-full object-cover"
+                />
               </div>
-              <h3 className="mt-4 font-display text-lg font-semibold text-foreground">
+              <h3 className="mt-4 text-center font-display text-lg font-semibold text-foreground">
                 {person.name}
               </h3>
-              <p className="text-sm text-primary">{person.role}</p>
-              <p className="mt-3 text-sm italic leading-relaxed text-muted-foreground">
+              <p className="text-center text-sm text-primary">{person.role}</p>
+              <p className="mt-3 text-center text-sm italic leading-relaxed text-muted-foreground">
                 &ldquo;{person.quote}&rdquo;
               </p>
             </article>
