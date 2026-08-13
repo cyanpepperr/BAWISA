@@ -82,12 +82,11 @@ export default function EventsPage() {
               BAWISA is a quarterly speaker series featuring women doing
               extraordinary things in aerospace, covering topics like
               negotiation, founding a startup, data analytics, self-branding,
-              and company features. 
+              and company features.
             </p>
             <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
-              Interested in hosting a networking night,
-              tour, or workshop for our community? We would love to partner
-              with you.
+              Interested in hosting a networking night, tour, or workshop for
+              our community? We would love to partner with you.
             </p>
             <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
               We&apos;ll work with you to figure out the specific details —
@@ -112,8 +111,8 @@ export default function EventsPage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-2xl border border-border/60">
               <Image
-                src="/images/event-recap.png"
-                alt="Photos from a past BAWISA event"
+                src="/images/events/xona/xona.jpg"
+                alt="Women networking at the BAWISA happy hour hosted by Xona Space Systems"
                 width={800}
                 height={600}
                 className="h-full w-full object-cover"
@@ -124,12 +123,38 @@ export default function EventsPage() {
                 Event Recap    |    July 8, 2026
               </span>
               <h2 className="mt-3 font-display text-3xl font-bold text-baby-blue-ice">
-                Event title
+                BAWISA Happy Hour with Xona!
               </h2>
               <div className="mt-4 space-y-4 text-foreground">
                 <p className="leading-relaxed">
-                  Event description goes here.
+                  BAWISA closed out Women&apos;s History Month with a happy
+                  hour hosted by Xona Space Systems at their office at 828
+                  Airport Blvd in Burlingame. Guests got a look inside
+                  Xona&apos;s offices, home to the team building Pulsar, the
+                  first commercial navigation constellation designed
+                  specifically for the modern era — built to deliver
+                  stronger, more precise, and more resilient positioning to
+                  devices worldwide, without requiring new hardware.
                 </p>
+                <p className="leading-relaxed">
+                  The evening ran from mix-and-mingle through Collective
+                  Wisdom Peer Roundtables, giving attendees space for honest
+                  conversation and problem-solving, with time to connect over
+                  food and drinks generously provided by Xona.
+                </p>
+                <p className="leading-relaxed">
+                  Thank you to Xona for hosting and to everyone who came out
+                  to connect.
+                </p>
+              </div>
+              <div className="mt-6 flex flex-wrap gap-4">
+                <ButtonLink
+                  href="https://www.xonaspace.com/"
+                  external
+                  variant="outline"
+                >
+                  Visit Xona Space Systems <ArrowRight className="h-4 w-4" />
+                </ButtonLink>
               </div>
             </div>
           </div>
