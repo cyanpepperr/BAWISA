@@ -1,27 +1,35 @@
 import Image from 'next/image'
-import type { Metadata } from 'next'
-import { ArrowRight, Building2, CalendarDays, MapPin } from 'lucide-react'
-import { PageHero } from '@/components/page-hero'
+import Link from 'next/link'
+import {
+  ArrowRight,
+  CalendarDays,
+  Megaphone,
+  Sparkles,
+  Users,
+} from 'lucide-react'
 import { ButtonLink } from '@/components/button-link'
 import { LINKS } from '@/lib/site'
 import { StarfieldBackground } from '@/components/starfield-background'
 
-export const metadata: Metadata = {
-  title: 'Events | BAWISA',
-  description:
-    'Upcoming BAWISA events, hosting sign-ups for companies, and recaps from past gatherings.',
-}
-
-const upcoming = [
+const announcements = [
   {
-    date: 'Date TBD',
-    title: 'Event title',
-    location: 'Location TBD',
-    body: 'Details for our next event are coming soon — check back or join our list to be the first to know.',
+    date: 'June 2026',
+    title: 'Some title',
+    body: 'description',
+  },
+  {
+    date: 'May 2026',
+    title: 'Another title',
+    body: 'description',
+  },
+  {
+    date: 'April 2026',
+    title: 'Another title',
+    body: 'description',
   },
 ]
 
-export default function EventsPage() {
+export default function HomePage() {
   return (
     <div className="relative isolate">
       {/* Page-wide starfield background */}
@@ -29,90 +37,141 @@ export default function EventsPage() {
         <StarfieldBackground />
       </div>
 
-      <PageHero
-        transparent
-        eyebrow="Events"
-        title="Bringing together women in space and aerospace"
-        description="From networking nights to facility tours, we organize quarterly events hosted by volunteering companies to bring our community together across the Bay Area space and aerospace industry."
-      />
-
-      {/* Upcoming events */}
-      <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
-        <h2 className="mb-10 font-display text-3xl font-bold text-foreground">
-          Upcoming events
-        </h2>
-        <div className="space-y-4">
-          {upcoming.map((event) => (
-            <article
-              key={event.title}
-              className="flex flex-col gap-4 rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6 md:flex-row md:items-center md:justify-between"
-            >
-              <div className="flex-1">
-                <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted-foreground">
-                  <span className="flex items-center gap-1.5 font-semibold text-accent">
-                    <CalendarDays className="h-4 w-4" aria-hidden="true" />
-                    {event.date}
-                  </span>
-                  <span className="flex items-center gap-1.5">
-                    <MapPin className="h-4 w-4" aria-hidden="true" />
-                    {event.location}
-                  </span>
-                </div>
-                <h3 className="mt-2 font-display text-xl font-semibold text-foreground">
-                  {event.title}
-                </h3>
-                <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-                  {event.body}
-                </p>
-              </div>
-            </article>
-          ))}
+      {/* Hero */}
+      <section className="relative min-h-[600px] overflow-hidden md:min-h-[700px]">
+        <div className="mx-auto max-w-6xl px-4 py-24 md:px-6 md:py-36">
+          <p className="mb-5 text-sm font-semibold uppercase tracking-widest text-primary">
+            Bay Area Women in Space &amp; Aerospace
+          </p>
+          <h1 className="max-w-3xl text-balance font-display text-4xl font-bold leading-tight text-foreground md:text-6xl">
+            Reaching for the stars, together
+          </h1>
+          <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground md:text-xl">
+            BAWISA connects, celebrates, and empowers women across the Bay Area
+            aerospace community through events, support, and
+            shared ambition.
+          </p>
+          <div className="mt-9 flex flex-wrap gap-4">
+            <ButtonLink href={LINKS.joinForm} external size="lg">
+              Join the Community <ArrowRight />
+            </ButtonLink>
+            <ButtonLink href="/about" variant="outline" size="lg">
+              Learn About Us
+            </ButtonLink>
+          </div>
         </div>
       </section>
 
-      {/* Host sign up */}
-      <section className="border-y border-border/60 bg-gradient-to-tr from-primary/10 to-transparent">
-        <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
-          <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-8 md:p-12">
-            <Building2 className="mb-4 h-8 w-8 text-primary" aria-hidden="true" />
-            <h2 className="max-w-2xl text-balance font-display text-3xl font-bold text-foreground">
-              Companies: host a BAWISA event
+      {/* Mission statement band */}
+      <section className="border-y border-border/60 bg-gradient-to-br from-primary/30 to-accent/10 p-6">
+        <div className="mx-auto max-w-4xl px-4 py-16 text-center md:px-6">
+          <Sparkles
+            className="mx-auto mb-5 h-8 w-8 text-accent"
+            aria-hidden="true"
+          />
+          <p className="text-balance font-display text-2xl font-medium leading-relaxed text-foreground md:text-3xl">
+            Our mission is to build an uplifting network where women in
+            aerospace find community, visibility, and support.
+          </p>
+        </div>
+      </section>
+
+      {/* Latest news */}
+      <section>
+        <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
+          <div className="mb-10 flex items-center gap-3">
+            <Megaphone className="h-6 w-6 text-primary" aria-hidden="true" />
+            <h2 className="font-display text-3xl font-bold text-foreground">
+              Latest News
             </h2>
-            <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
-              BAWISA is a quarterly speaker series featuring women doing
-              extraordinary things in aerospace, covering topics like
-              negotiation, founding a startup, data analytics, self-branding,
-              and company features.
+          </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            {announcements.map((item) => (
+              <article
+                key={item.title}
+                className="flex flex-col rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6"
+              >
+                <span className="text-xs font-semibold uppercase tracking-widest text-accent">
+                  {item.date}
+                </span>
+                <h3 className="mt-3 font-display text-lg font-semibold text-foreground">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  {item.body}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Next event */}
+      <section className="border-y border-border/60 bg-gradient-to-tr from-primary/3 to-background">
+        <div className="mx-auto grid max-w-6xl gap-8 px-4 py-16 md:grid-cols-2 md:items-center md:px-6 md:py-20">
+          <div>
+            <div className="mb-4 flex items-center gap-3">
+              <CalendarDays className="h-6 w-6 text-primary" aria-hidden="true" />
+              <span className="text-sm font-semibold uppercase tracking-widest text-primary">
+                Next Event
+              </span>
+            </div>
+            <h2 className="font-display text-3xl font-bold text-foreground">
+              Stay tuned for our next event!
+            </h2>
+            <p className="mt-4 text-muted-foreground">
+              Details for our next event are coming soon — check back or join our list to be the first to know.
             </p>
-            <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
-              Interested in hosting a networking night, tour, or workshop for
-              our community? We would love to partner with you.
+            <p className="mt-4 max-w-md leading-relaxed text-muted-foreground">
+              TBD
             </p>
-            <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
-              We&apos;ll work with you to figure out the specific details —
-              this form is just to gauge interest, so we can move forward
-              together.
-            </p>
-            <div className="mt-7">
-              <ButtonLink href={LINKS.hostForm} external size="lg">
-                Sign up to host <ArrowRight />
+            <div className="mt-7 flex flex-wrap gap-4">
+              <ButtonLink href={LINKS.eventbrite} external>
+                Get Tickets on Eventbrite <ArrowRight />
               </ButtonLink>
+              <ButtonLink href="/events" variant="ghost">
+                See all events
+              </ButtonLink>
+            </div>
+          </div>
+          <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/60 to-accent/34 p-6">
+            <div className="flex items-baseline gap-2">
+              <span className="font-display text-6xl font-bold text-foreground">
+                TBD
+              </span>
+              <span className="font-display text-2xl font-medium text-muted-foreground">
+                TBD
+              </span>
+            </div>
+            <div className="mt-6 space-y-3 text-sm text-muted-foreground">
+              <p className="flex items-center gap-2">
+                <Users className="h-4 w-4 text-accent" aria-hidden="true" />
+                Open to members and newcomers
+              </p>
+              <p className="flex items-center gap-2">
+                <Sparkles className="h-4 w-4 text-accent" aria-hidden="true" />
+                TBD
+              </p>
+              <p className="flex items-center gap-2">
+                <CalendarDays
+                  className="h-4 w-4 text-accent"
+                  aria-hidden="true"
+                />
+                TBD
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Past events */}
-      <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
-        <h2 className="mb-10 font-display text-3xl font-bold text-foreground">
-          Past events
-        </h2>
-        <div className="overflow-hidden rounded-2xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/45 p-6">
+      {/* Event recap */}
+      <section className="border-t border-border/50 bg-gradient-to-br from-primary/70 to-accent/45 p-6">
+        <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-2xl border border-border/60">
               <Image
                 src="/images/events/xona.jpg"
-                alt="Women networking at the BAWISA happy hour hosted by Xona Space Systems"
+                alt="Women networking at a recent BAWISA aerospace industry event"
                 width={800}
                 height={600}
                 className="h-full w-full object-cover"
@@ -127,25 +186,19 @@ export default function EventsPage() {
               </h2>
               <div className="mt-4 space-y-4 text-foreground">
                 <p className="leading-relaxed">
-                  BAWISA closed out Women&apos;s History Month with a happy
-                  hour hosted by Xona Space Systems at their office in
-                  Burlingame. Guests got a look inside Xona&apos;s offices,
-                  home to the team building Pulsar, the first commercial
-                  navigation constellation designed for modern positioning
-                  needs.
+                  BAWISA closed out Women&apos;s History Month with a happy hour hosted by Xona Space Systems in Burlingame. Guests got a look inside Xona&apos;s offices, home to the team building Pulsar, the first commercial navigation constellation designed for modern positioning needs.
                 </p>
                 <p className="leading-relaxed">
-                  The evening centered on Collective Wisdom Peer Roundtables,
-                  giving attendees space for honest conversation and
-                  problem-solving, with time to mingle over food and drinks
-                  provided by Xona.
+                  The evening centered on Collective Wisdom Peer Roundtables, giving attendees space for constructive conversation and problem-solving, with time to mingle over food and drinks provided by Xona.
                 </p>
                 <p className="leading-relaxed">
-                  Thank you to Xona for hosting and to everyone who came out
-                  to connect.
+                  Thank you to Xona for hosting and to everyone who came out to connect.
                 </p>
               </div>
               <div className="mt-6 flex flex-wrap gap-4">
+                <ButtonLink href="/events">
+                  View photos and past events <ArrowRight className="h-4 w-4" />
+                </ButtonLink>
                 <ButtonLink
                   href="https://www.xonaspace.com/"
                   external
@@ -154,6 +207,37 @@ export default function EventsPage() {
                   Visit Xona Space Systems <ArrowRight className="h-4 w-4" />
                 </ButtonLink>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Member spotlight teaser */}
+      <section>
+        <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
+          <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
+            <div className="max-w-xl">
+              <span className="text-sm font-semibold uppercase tracking-widest text-primary">
+                Member Spotlight
+              </span>
+              <h2 className="mt-3 font-display text-3xl font-bold text-foreground">
+                Celebrating the women shaping our industry
+              </h2>
+              <p className="mt-4 leading-relaxed text-muted-foreground">
+                Each month we spotlight a member&apos;s journey, career, and
+                advice. Know someone inspiring? Nominate them to be featured
+                next.
+              </p>
+            </div>
+            <div className="flex flex-col gap-3">
+              <ButtonLink href="/spotlight">See current spotlight</ButtonLink>
+              <ButtonLink
+                href={LINKS.nominateForm}
+                external
+                variant="outline"
+              >
+                Nominate a member
+              </ButtonLink>
             </div>
           </div>
         </div>
