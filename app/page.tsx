@@ -160,4 +160,3 @@ export default function EventsPage() {
       </section>
     </div>
   )
-}
