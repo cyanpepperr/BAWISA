@@ -32,7 +32,7 @@ export default function EventsPage() {
       <PageHero
         transparent
         eyebrow="Events"
-        title="Supporting and uplifting women in space and aerospace"
+        title="Bringing together women in space and aerospace"
         description="From networking nights to facility tours, we organize quarterly events hosted by volunteering companies to bring our community together across the Bay Area space and aerospace industry."
       />
 
@@ -82,7 +82,11 @@ export default function EventsPage() {
               BAWISA is a quarterly speaker series featuring women doing
               extraordinary things in aerospace, covering topics like
               negotiation, founding a startup, data analytics, self-branding,
-              and company features. Interested in hosting a networking night,
+              and company features. 
+            </p>
+            </h2>
+            <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
+              Interested in hosting a networking night,
               tour, or workshop for our community? We would love to partner
               with you.
             </p>

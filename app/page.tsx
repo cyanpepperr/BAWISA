@@ -120,7 +120,7 @@ export default function HomePage() {
               Stay tuned for our next event!
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Details will be announced soon
+              Details for our next event are coming soon — check back or join our list to be the first to know.
             </p>
             <p className="mt-4 max-w-md leading-relaxed text-muted-foreground">
               TBD
