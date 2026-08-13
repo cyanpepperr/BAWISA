@@ -90,6 +90,7 @@ export default function EventsPage() {
               tour, or workshop for our community? We would love to partner
               with you.
             </p>
+            </h2>
             <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
               We&apos;ll work with you to figure out the specific details —
               this form is just to gauge interest, so we can move forward
