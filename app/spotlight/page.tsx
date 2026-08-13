@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import type { Metadata } from 'next'
-import { ArrowRight, Quote, Star } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { PageHero } from '@/components/page-hero'
 import { ButtonLink } from '@/components/button-link'
 import { LINKS } from '@/lib/site'
@@ -14,24 +14,24 @@ export const metadata: Metadata = {
 
 const pastSpotlights = [
   {
-    name: 'Dr. Amara Okafor',
-    role: 'Propulsion Engineer',
-    quote: 'Curiosity is the fuel; persistence is the engine.',
+    name: 'Name',
+    role: 'Job title/career',
+    quote: 'One sentence from their career bio/journey/advice',
   },
   {
-    name: 'Sofia Reyes',
-    role: 'Mission Operations Lead',
-    quote: 'Every mission is a team of people who refused to give up.',
+    name: 'Name',
+    role: 'Job title/career',
+    quote: 'One sentence from their career bio/journey/advice',
   },
   {
-    name: 'Hana Kim',
-    role: 'Satellite Systems Architect',
-    quote: 'Design for the impossible, then make it reliable.',
+    name: 'Name',
+    role: 'Job title/career',
+    quote: 'One sentence from their career bio/journey/advice',
   },
   {
-    name: 'Priya Nair',
-    role: 'GNC Software Engineer',
-    quote: 'Precision is a form of care.',
+    name: 'Name',
+    role: 'Job title/career',
+    quote: 'One sentence from their career bio/journey/advice',
   },
 ]
 
@@ -63,31 +63,20 @@ export default function SpotlightPage() {
             />
           </div>
           <div>
-            <span className="inline-flex items-center gap-2 rounded-full bg-accent/15 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-accent">
-              <Star className="h-3.5 w-3.5" aria-hidden="true" /> Current
-              Spotlight
+            <span className="inline-flex items-center rounded-full bg-baby-blue-ice/15 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-baby-blue-ice">
+              Current Spotlight
             </span>
-            <h2 className="mt-4 font-display text-3xl font-bold text-foreground">
-              Dr. Elena Vasquez
+            <h2 className="mt-4 font-display text-3xl font-bold text-baby-blue-ice">
+              Name 
             </h2>
-            <p className="mt-1 text-primary">
-              Senior Systems Engineer · Launch Vehicles
+            <p className="mt-1 text-amethyst-smoke">
+              Job title/role
             </p>
-            <p className="mt-5 leading-relaxed text-muted-foreground">
-              Elena has spent over a decade working on launch vehicle systems,
-              contributing to missions that have carried scientific payloads to
-              orbit. She is a passionate mentor and advocate for bringing more
-              women into engineering leadership roles across the industry.
+            <p className="mt-5 leading-relaxed text-foreground">
+              Career bio/life journey. Hobbies, interests, fun facts. 
             </p>
-            <blockquote className="mt-6 flex gap-3 rounded-xl bg-secondary/40 p-5">
-              <Quote
-                className="h-6 w-6 shrink-0 text-accent"
-                aria-hidden="true"
-              />
-              <p className="font-display text-lg italic text-foreground">
-                Do not wait for permission to take up space. Your perspective is
-                exactly what this industry needs.
-              </p>
+            <blockquote className="mt-6 border-l-2 border-accent pl-4 font-display text-lg italic text-foreground">
+              Advice from their career journey, or a quote that inspires them
             </blockquote>
           </div>
         </div>
