@@ -37,7 +37,7 @@ export default function EventsPage() {
       />
 
       {/* Upcoming events */}
-      <section className="border-y border-border/60 bg-gradient-to-tr from-primary/3 to-background">
+      <section className="border-y border-border/60 bg-gradient-to-br from-primary/30 to-accent/10 p-6">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
           <h2 className="mb-10 font-display text-3xl font-bold text-foreground">
             Upcoming events
@@ -130,13 +130,10 @@ export default function EventsPage() {
               <div className="mt-4 space-y-4 text-foreground">
                 <p className="leading-relaxed">
                   BAWISA closed out Women&apos;s History Month with a happy
-                  hour hosted by Xona Space Systems at their office at 828
-                  Airport Blvd in Burlingame. Guests got a look inside
+                  hour hosted by Xona Space Systems. Guests got a look inside
                   Xona&apos;s offices, home to the team building Pulsar, the
                   first commercial navigation constellation designed
-                  specifically for the modern era — built to deliver
-                  stronger, more precise, and more resilient positioning to
-                  devices worldwide, without requiring new hardware.
+                  specifically for the modern era.
                 </p>
                 <p className="leading-relaxed">
                   The evening ran from mix-and-mingle through Collective
@@ -150,11 +147,7 @@ export default function EventsPage() {
                 </p>
               </div>
               <div className="mt-6 flex flex-wrap gap-4">
-                <ButtonLink
-                  href="https://www.xonaspace.com/"
-                  external
-                  variant="outline"
-                >
+                <ButtonLink href="https://www.xonaspace.com/" external>
                   Visit Xona Space Systems <ArrowRight className="h-4 w-4" />
                 </ButtonLink>
               </div>
