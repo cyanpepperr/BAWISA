@@ -3,6 +3,7 @@ import Link from 'next/link'
 import {
   ArrowRight,
   CalendarDays,
+  MapPin,
   Users,
 } from 'lucide-react'
 import { ButtonLink } from '@/components/button-link'
@@ -130,10 +131,10 @@ export default function HomePage() {
           <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/60 to-accent/34 p-6">
             <div className="flex items-baseline gap-2">
               <span className="font-display text-6xl font-bold text-foreground">
-                TBD
+                Day
               </span>
               <span className="font-display text-2xl font-medium text-muted-foreground">
-                TBD
+                Month
               </span>
             </div>
             <div className="mt-6 space-y-3 text-sm text-muted-foreground">
@@ -142,14 +143,15 @@ export default function HomePage() {
                 Open to members and newcomers
               </p>
               <p className="flex items-center gap-2">
-                TBD
+                <MapPin className="h-4 w-4 text-accent" aria-hidden="true" />
+                Location TBD
               </p>
               <p className="flex items-center gap-2">
                 <CalendarDays
                   className="h-4 w-4 text-accent"
                   aria-hidden="true"
                 />
-                TBD
+                Date TBD
               </p>
             </div>
           </div>
