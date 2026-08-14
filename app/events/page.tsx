@@ -77,7 +77,6 @@ export default function EventsPage() {
       <section className="bg-gradient-to-tr from-primary/10 to-transparent">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
           <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-8 md:p-12">
-            <Building2 className="mb-4 h-8 w-8 text-primary" aria-hidden="true" />
             <h2 className="text-balance font-display text-3xl font-bold text-foreground">
               Companies: host a BAWISA event
             </h2>

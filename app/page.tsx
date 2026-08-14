@@ -3,11 +3,10 @@ import Link from 'next/link'
 import {
   ArrowRight,
   CalendarDays,
-  Megaphone,
-  Sparkles,
   Users,
 } from 'lucide-react'
 import { ButtonLink } from '@/components/button-link'
+import { PopOnScroll } from '@/components/pop-on-scroll'
 import { LINKS } from '@/lib/site'
 import { StarfieldBackground } from '@/components/starfield-background'
 
@@ -65,10 +64,6 @@ export default function HomePage() {
       {/* Mission statement band */}
       <section className="border-y border-border/60 bg-gradient-to-br from-primary/30 to-accent/10 p-6">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center md:px-6">
-          <Sparkles
-            className="mx-auto mb-5 h-8 w-8 text-accent"
-            aria-hidden="true"
-          />
           <p className="text-balance font-display text-2xl font-medium leading-relaxed text-foreground md:text-3xl">
             Our mission is to build an uplifting network where women in
             aerospace find community, visibility, and support.
@@ -79,11 +74,10 @@ export default function HomePage() {
       {/* Latest news */}
       <section>
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
-          <div className="mb-10 flex items-center gap-3">
-            <Megaphone className="h-6 w-6 text-primary" aria-hidden="true" />
-            <h2 className="font-display text-3xl font-bold text-foreground">
+          <div className="mb-10">
+            <PopOnScroll className="font-display text-3xl font-bold text-foreground">
               Latest News
-            </h2>
+            </PopOnScroll>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {announcements.map((item) => (
@@ -110,15 +104,14 @@ export default function HomePage() {
       <section className="border-y border-border/60 bg-gradient-to-tr from-primary/3 to-background">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 py-16 md:grid-cols-2 md:items-center md:px-6 md:py-20">
           <div>
-            <div className="mb-4 flex items-center gap-3">
-              <CalendarDays className="h-6 w-6 text-primary" aria-hidden="true" />
+            <div className="mb-4">
               <span className="text-sm font-semibold uppercase tracking-widest text-primary">
                 Next Event
               </span>
             </div>
-            <h2 className="font-display text-3xl font-bold text-foreground">
+            <PopOnScroll className="font-display text-3xl font-bold text-foreground">
               Stay tuned for our next event!
-            </h2>
+            </PopOnScroll>
             <p className="mt-4 text-muted-foreground">
               Details for our next event are coming soon!
             </p>
@@ -149,7 +142,6 @@ export default function HomePage() {
                 Open to members and newcomers
               </p>
               <p className="flex items-center gap-2">
-                <Sparkles className="h-4 w-4 text-accent" aria-hidden="true" />
                 TBD
               </p>
               <p className="flex items-center gap-2">
@@ -222,9 +214,9 @@ export default function HomePage() {
               <span className="text-sm font-semibold uppercase tracking-widest text-primary">
                 Member Spotlight
               </span>
-              <h2 className="mt-3 font-display text-3xl font-bold text-foreground">
+              <PopOnScroll className="mt-3 font-display text-3xl font-bold text-foreground">
                 Celebrating the women shaping our industry
-              </h2>
+              </PopOnScroll>
               <p className="mt-4 leading-relaxed text-muted-foreground">
                 Each month we spotlight a member&apos;s journey, career, and
                 advice. Know someone inspiring? Nominate them to be featured
