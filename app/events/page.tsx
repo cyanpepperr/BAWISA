@@ -164,9 +164,9 @@ export default function EventsPage() {
           {/* More photos from the Xona event */}
           <div className="mt-10">
             <h3 className="mb-4 font-display text-lg font-semibold text-baby-blue-ice">
-              More from the night
+              More photos from Xona Happy Hour
             </h3>
-            <div className="max-w-md">
+            <div>
               <ImageCarousel
                 images={[
                   '/images/events/xona/xona2.jpg',

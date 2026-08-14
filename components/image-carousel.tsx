@@ -58,7 +58,7 @@ export function ImageCarousel({ images, altPrefix = 'Event photo' }: ImageCarous
         type="button"
         onClick={handleClick}
         className={`relative block w-full cursor-pointer ${
-          isFullscreen ? 'h-[90vh]' : 'h-64 md:h-72'
+          isFullscreen ? 'h-[90vh]' : 'aspect-[4/3]'
         }`}
         aria-label="View next photo"
       >
