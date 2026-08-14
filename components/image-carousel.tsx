@@ -18,7 +18,7 @@ export function ImageCarousel({ images, altPrefix = 'Event photo' }: ImageCarous
     if (images.length <= 1) return
     const timer = setInterval(() => {
       setIndex((prev) => (prev + 1) % images.length)
-    }, 3000)
+    }, 6000)
     return () => clearInterval(timer)
   }, [images.length])
 

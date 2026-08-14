@@ -166,7 +166,7 @@ export default function EventsPage() {
             <h3 className="mb-4 font-display text-lg font-semibold text-baby-blue-ice">
               More photos from Xona Happy Hour
             </h3>
-            <div>
+            <div className="mx-auto w-full md:w-1/2">
               <ImageCarousel
                 images={[
                   '/images/events/xona/xona2.jpg',
