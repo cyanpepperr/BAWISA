@@ -111,7 +111,7 @@ export default function HomePage() {
               </span>
             </div>
             <PopOnScroll className="font-display text-3xl font-bold text-foreground">
-              Stay tuned for our next event!
+              Stay tuned for ournext event!
             </PopOnScroll>
             <p className="mt-4 text-muted-foreground">
               Details for our next event are coming soon!
