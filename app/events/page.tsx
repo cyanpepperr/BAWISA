@@ -130,7 +130,7 @@ export default function EventsPage() {
               </h2>
               <div className="mt-4 space-y-4 text-foreground">
                 <p className="leading-relaxed">
-                  BAWISA closed out summer with a happy hour hosted by Xona
+                  BAWISA entered summer with a happy hour hosted by Xona
                   Space Systems and their Women and Gender Diverse ERG, held
                   right on the Bay at Xona&apos;s offices — home to the team
                   building Pulsar, the first commercial navigation
