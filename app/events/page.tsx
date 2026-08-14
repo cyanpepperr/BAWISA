@@ -129,24 +129,27 @@ export default function EventsPage() {
               </h2>
               <div className="mt-4 space-y-4 text-foreground">
                 <p className="leading-relaxed">
-                  BAWISA entered summer with a happy hour hosted by Xona
-                  Space Systems. Guests got a look inside Xona&apos;s
-                  offices, home to the team building Pulsar, the first
-                  commercial navigation constellation designed specifically
-                  for the modern era hoping to redefine what
-                  positioning, navigation, and timing can look like beyond
-                  GPS.
+                  BAWISA closed out summer with a happy hour hosted by Xona
+                  Space Systems and their Women and Gender Diverse ERG, held
+                  right on the Bay at Xona&apos;s offices — home to the team
+                  building Pulsar, the first commercial navigation
+                  constellation designed specifically for the modern era.
                 </p>
                 <p className="leading-relaxed">
-                  The evening ran from mix-and-mingle through Collective
+                  A huge thank you to Tatum DiOro, Sarah Parker, Allison
+                  Hampel, and Donna Mak-Carpenter for helping bring the
+                  evening together, along with the rest of the Xona team who
+                  made everyone feel welcome from the moment they walked in.
+                </p>
+                <p className="leading-relaxed">
+                  The night moved from mix-and-mingle through Collective
                   Wisdom Peer Roundtables, giving attendees space for honest
-                  conversation and problem-solving. Roundtables covered topics
-                  from navigating early-career decisions to learning to 
-                  negotiate for what they&apos;re worth.
+                  conversation and advocacy. Guests connected over food and drinks
+                  generously provided by Xona, with the Bay as a backdrop.
                 </p>
                 <p className="leading-relaxed">
-                  Thank you to Xona for generously hosting and providing refreshments, 
-                  and to everyone who came out to connect!
+                  Thank you to Xona for hosting and to everyone who took the
+                  time to spend their evening with us.
                 </p>
               </div>
               <div className="mt-6 flex flex-wrap gap-4">
