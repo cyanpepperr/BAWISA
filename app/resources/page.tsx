@@ -52,8 +52,8 @@ export default function ResourcesPage() {
       <PageHero
         transparent
         eyebrow="Resources"
-        title="Tools to help you launch and grow your career"
-        description="A curated collection of job boards, scholarships, and fellowships for women in space and aerospace."
+        title="Helping you launch and grow your career"
+        description="A collection of job boards shared by members, as well as scholarships and fellowships for women in space and aerospace."
       />
 
       {/* Job boards */}
