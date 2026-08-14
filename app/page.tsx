@@ -120,10 +120,10 @@ export default function HomePage() {
               Stay tuned for our next event!
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Details for our next event are coming soon — check back or join our list to be the first to know.
+              Details for our next event are coming soon!
             </p>
             <p className="mt-4 max-w-md leading-relaxed text-muted-foreground">
-              TBD
+              Check back or join our email list to be the first to know.
             </p>
             <div className="mt-7 flex flex-wrap gap-4">
               <ButtonLink href={LINKS.eventbrite} external>
