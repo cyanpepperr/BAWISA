@@ -13,26 +13,43 @@ export function RevealSection({ children, className = '' }: RevealSectionProps) 
 
   useEffect(() => {
     const node = ref.current
-    if (!node) return
+    if (!node) {
+      console.warn('[RevealSection] ref never attached')
+      return
+    }
 
-    // Fallback: if IntersectionObserver isn't available for some reason, just show it
     if (typeof IntersectionObserver === 'undefined') {
+      console.warn('[RevealSection] no IntersectionObserver support, revealing immediately')
       setRevealed(true)
       return
     }
 
+    console.log('[RevealSection] observing node', node)
+
     const observer = new IntersectionObserver(
       ([entry]) => {
+        console.log('[RevealSection] intersection event', entry.isIntersecting, entry.intersectionRatio)
         if (entry.isIntersecting) {
           setRevealed(true)
           observer.disconnect()
         }
       },
-      { threshold: 0.15 }
+      { threshold: 0, rootMargin: '0px 0px -10% 0px' }
     )
 
     observer.observe(node)
-    return () => observer.disconnect()
+
+    // Safety net: if for any reason the observer never fires, reveal after 4s
+    // so the content is never permanently invisible/inaccessible.
+    const fallback = setTimeout(() => {
+      console.warn('[RevealSection] fallback timeout fired, forcing reveal')
+      setRevealed(true)
+    }, 4000)
+
+    return () => {
+      observer.disconnect()
+      clearTimeout(fallback)
+    }
   }, [])
 
   return (
