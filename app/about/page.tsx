@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import type { Metadata } from 'next'
-import { ArrowRight, Compass, Heart, MapPin, Rocket } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { PageHero } from '@/components/page-hero'
 import { ButtonLink } from '@/components/button-link'
 import { LINKS } from '@/lib/site'
@@ -14,12 +14,10 @@ export const metadata: Metadata = {
 
 const values = [
   {
-    icon: Rocket,
     title: 'What we do',
     body: 'A quarterly speaker series featuring women doing extraordinary things in aerospace, covering topics like negotiation, founding a startup, data analytics, self-branding, and company features.',
   },
   {
-    icon: MapPin,
     title: 'Where we are',
     body: 'Hosted at startups and incubators throughout the Bay Area, and virtually.',
   },
@@ -49,28 +47,28 @@ export default function AboutPage() {
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
           <div className="grid gap-10 md:grid-cols-[1.2fr_1fr] md:items-start">
             <div>
-              <div className="mb-4 flex items-center gap-3">
-                <Compass className="h-6 w-6 text-primary" aria-hidden="true" />
+              <div className="mb-4">
                 <h2 className="font-display text-3xl font-bold text-foreground">
                   How it started
                 </h2>
               </div>
               <div className="space-y-4 leading-relaxed text-muted-foreground">
                 <p>
-                  BAWISA was formed by Jeanette Quinlan in September 2016.
-                  Inspired to connect the incredible women she had met
-                  throughout her career in the male-dominated world of
-                  aerospace, Jeanette held the first happy hour in the common
-                  room of her condominium building in downtown San Francisco.
-                  The next two happy hours that year, hosted at Stanford and
-                  NASA Ames, brought in even more of a following. Starting in
-                  2017, happy hours began to feature women speaking on a
-                  variety of aerospace-related topics.
+                  Bay Area Womin in Space and Aerospace (BAWISA) was formed 
+                  by Jeanette Quinlan in September 2016. Inspired to connect 
+                  the incredible women she had met throughout her career in 
+                  the male-dominated world of aerospace, Jeanette held the
+                  first happy hour in the common room of her condominium 
+                  building in downtown San Francisco. The next two happy hours 
+                  that year, hosted at Stanford and NASA Ames, brought in 
+                  even more of a following. Starting in 2017, happy hours 
+                  began to feature women speaking on a variety of 
+                  aerospace-related topics.
                 </p>
                 <p>
                   Today, BAWISA is a quarterly speaker series connecting and
-                  inspiring women and gender minorities in aerospace — helping
-                  with hiring, retention, and community in a historically
+                  inspiring women and gender minorities in aerospace; helping
+                  with career opportunities, retention, and community in a historically
                   male-dominated field. Whether you are just starting out or
                   decades into your career, there is a place for you here.
                 </p>
@@ -82,10 +80,6 @@ export default function AboutPage() {
                   key={value.title}
                   className="rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-5"
                 >
-                  <value.icon
-                    className="mb-3 h-6 w-6 text-accent"
-                    aria-hidden="true"
-                  />
                   <h3 className="font-display text-lg font-semibold text-foreground">
                     {value.title}
                   </h3>
