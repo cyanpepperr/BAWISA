@@ -129,3 +129,27 @@ body {
   contain: none !important;
   will-change: auto !important;
 }
+
+@keyframes star-converge {
+  0% {
+    opacity: 0;
+    transform: translate(var(--tx), var(--ty)) scale(0.4);
+    text-shadow: 0 0 6px currentColor, 0 0 14px currentColor;
+    filter: blur(1px);
+  }
+  55% {
+    opacity: 1;
+    text-shadow: 0 0 4px currentColor;
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+    text-shadow: 0 0 0 transparent;
+  }
+}
+
+.star-char {
+  opacity: 0;
+  animation: star-converge 350ms ease-out forwards;
+}
