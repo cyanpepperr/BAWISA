@@ -5,27 +5,27 @@ import { useEffect, useRef, useState } from 'react'
 interface RevealSectionProps {
   children: React.ReactNode
   className?: string
-  as?: 'section' | 'div'
 }
 
-export function RevealSection({
-  children,
-  className = '',
-  as = 'section',
-}: RevealSectionProps) {
-  const ref = useRef<HTMLElement>(null)
+export function RevealSection({ children, className = '' }: RevealSectionProps) {
+  const ref = useRef<HTMLDivElement>(null)
   const [revealed, setRevealed] = useState(false)
-  const Tag = as
 
   useEffect(() => {
     const node = ref.current
     if (!node) return
 
+    // Fallback: if IntersectionObserver isn't available for some reason, just show it
+    if (typeof IntersectionObserver === 'undefined') {
+      setRevealed(true)
+      return
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setRevealed(true)
-          observer.disconnect() // reveal once, stay revealed
+          observer.disconnect()
         }
       },
       { threshold: 0.15 }
@@ -36,12 +36,11 @@ export function RevealSection({
   }, [])
 
   return (
-    <Tag
-      // @ts-expect-error -- ref type varies with the polymorphic tag
+    <div
       ref={ref}
       className={`reveal-section ${revealed ? 'reveal-section--visible' : ''} ${className}`}
     >
       {children}
-    </Tag>
+    </div>
   )
 }

@@ -151,36 +151,38 @@ body {
 
 .star-char {
   opacity: 0;
-  animation: star-converge 2000ms ease-out forwards;
+  animation: star-converge 1000ms ease-out forwards;
 }
 
-.reveal-section {
-  position: relative;
-  clip-path: inset(0 100% 0 0);
-  opacity: 0;
-  transition:
-    clip-path 1.1s cubic-bezier(0.22, 1, 0.36, 1),
-    opacity 0.8s ease-out;
-}
+@layer utilities {
+  .reveal-section {
+    position: relative;
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
+    transition:
+      clip-path 1.1s cubic-bezier(0.22, 1, 0.36, 1),
+      opacity 0.8s ease-out;
+  }
 
-.reveal-section--visible {
-  clip-path: inset(0 0 0 0);
-  opacity: 1;
-}
+  .reveal-section--visible {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
 
-.reveal-section--visible::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(170, 142, 205, 0.45),
-    rgba(128, 85, 180, 0.25),
-    transparent
-  );
-  animation: reveal-glow-sweep 1.1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  .reveal-section--visible::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(170, 142, 205, 0.45),
+      rgba(128, 85, 180, 0.25),
+      transparent
+    );
+    animation: reveal-glow-sweep 1.1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
 }
 
 @keyframes reveal-glow-sweep {
