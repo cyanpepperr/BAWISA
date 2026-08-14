@@ -10,6 +10,7 @@ import { ButtonLink } from '@/components/button-link'
 import { PopOnScroll } from '@/components/pop-on-scroll'
 import { LINKS } from '@/lib/site'
 import { StarfieldBackground } from '@/components/starfield-background'
+import { RevealSection } from '@/components/reveal-section'
 
 const announcements = [
   {
@@ -63,14 +64,14 @@ export default function HomePage() {
       </section>
 
       {/* Mission statement band */}
-      <section className="border-y border-border/60 bg-gradient-to-br from-primary/30 to-accent/10 p-6">
+      <RevealSection className="border-y border-border/60 bg-gradient-to-br from-primary/30 to-accent/10 p-6">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center md:px-6">
           <p className="text-balance font-display text-2xl font-medium leading-relaxed text-foreground md:text-3xl">
             Our mission is to build an uplifting network where women in
             aerospace find community, visibility, and support.
           </p>
         </div>
-      </section>
+      </RevealSection>
 
       {/* Latest news */}
       <section>
@@ -159,7 +160,7 @@ export default function HomePage() {
       </section>
 
       {/* Event recap */}
-      <section className="border-t border-border/50 bg-gradient-to-br from-primary/70 to-accent/45 p-6">
+      <RevealSection className="border-t border-border/50 bg-gradient-to-br from-primary/70 to-accent/45 p-6">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-2xl border border-border/60">
@@ -206,7 +207,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </RevealSection>
 
       {/* Member spotlight teaser */}
       <section>
