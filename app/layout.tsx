@@ -17,8 +17,7 @@ export const metadata: Metadata = {
     'BAWISA is a community connecting, celebrating, and empowering women across the Bay Area space and aerospace industry through events and mentorship.',
   generator: 'v0.app',
   icons: {
-    icon: '/logo.png',
-    apple: '/logo.png',
+    icon: '/white-logo.png',
   },
 }
 
