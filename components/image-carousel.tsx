@@ -52,7 +52,7 @@ export function ImageCarousel({ images, altPrefix = 'Event photo' }: ImageCarous
           type="button"
           onClick={() => goTo(index + 1)}
           aria-label="View next photo"
-          className="relative aspect-[4/3] w-full shrink-0 cursor-pointer overflow-hidden rounded-2xl border border-border/60 md:w-[46%]"
+          className="relative aspect-[4/3] w-full shrink-0 cursor-pointer overflow-hidden rounded-2xl border border-border/60 md:w-[60%]"
         >
           <Image
             key={images[index]}
@@ -67,9 +67,9 @@ export function ImageCarousel({ images, altPrefix = 'Event photo' }: ImageCarous
         {showSides && (
           <button
             type="button"
-            onClick={() => goTo(index + 1)}
+            onClick={() => goTo(nextIndex)}
             aria-label="View next photo"
-            className="relative aspect-[4/3] w-full shrink-0 cursor-pointer overflow-hidden rounded-2xl border border-border/60 md:w-[60%]"
+            className="relative hidden aspect-[4/3] w-[23%] shrink-0 cursor-pointer overflow-hidden rounded-xl opacity-50 transition-opacity hover:opacity-80 md:block"
           >
             <Image
               src={images[nextIndex]}

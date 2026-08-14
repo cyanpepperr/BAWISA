@@ -3,14 +3,20 @@
 import { useEffect, useRef, useState } from 'react'
 
 interface PopOnScrollProps {
-  children: React.ReactNode
+  children: string
   className?: string
   as?: 'h1' | 'h2' | 'h3'
 }
 
+// Deterministic pseudo-random so server/client render match (no hydration mismatch)
+function seededRandom(seed: number) {
+  const x = Math.sin(seed * 9973) * 10000
+  return x - Math.floor(x)
+}
+
 export function PopOnScroll({ children, className = '', as = 'h2' }: PopOnScrollProps) {
   const ref = useRef<HTMLHeadingElement>(null)
-  const [animate, setAnimate] = useState(false)
+  const [playCount, setPlayCount] = useState(0)
   const Tag = as
 
   useEffect(() => {
@@ -20,9 +26,7 @@ export function PopOnScroll({ children, className = '', as = 'h2' }: PopOnScroll
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          // retrigger even if it was already true, by toggling off then on
-          setAnimate(false)
-          requestAnimationFrame(() => setAnimate(true))
+          setPlayCount((c) => c + 1)
         }
       },
       { threshold: 0.4 }
@@ -32,15 +36,46 @@ export function PopOnScroll({ children, className = '', as = 'h2' }: PopOnScroll
     return () => observer.disconnect()
   }, [])
 
+  // Before the first trigger, render plain text (avoids a pre-scroll flash)
+  if (playCount === 0) {
+    return (
+      <Tag ref={ref} className={className}>
+        {children}
+      </Tag>
+    )
+  }
+
+  const characters = children.split('')
+  const total = characters.length
+  // Cap total stagger window so long titles still finish around ~0.5s
+  const staggerStep = total > 1 ? Math.min(18, 160 / total) : 0
+
   return (
-    <Tag
-      ref={ref}
-      className={`${className} inline-block transition-transform duration-500 ease-out ${
-        animate ? 'scale-110' : 'scale-100'
-      }`}
-      onTransitionEnd={() => setAnimate(false)}
-    >
-      {children}
+    <Tag ref={ref} className={`${className} inline-block`}>
+      <span key={playCount} aria-hidden="true" className="inline-block">
+        {characters.map((char, i) => {
+          const angle = seededRandom(i + 1) * Math.PI * 2
+          const radius = 14 + seededRandom(i + 31) * 26
+          const tx = Math.cos(angle) * radius
+          const ty = Math.sin(angle) * radius
+          return (
+            <span
+              key={i}
+              className="star-char inline-block"
+              style={
+                {
+                  animationDelay: `${i * staggerStep}ms`,
+                  '--tx': `${tx}px`,
+                  '--ty': `${ty}px`,
+                } as React.CSSProperties
+              }
+            >
+              {char === ' ' ? '\u00A0' : char}
+            </span>
+          )
+        })}
+      </span>
+      <span className="sr-only">{children}</span>
     </Tag>
   )
 }
