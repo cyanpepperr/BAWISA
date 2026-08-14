@@ -47,8 +47,8 @@ export function PopOnScroll({ children, className = '', as = 'h2' }: PopOnScroll
 
   const characters = children.split('')
   const total = characters.length
-  // Cap total stagger window so long titles still finish around ~0.5s
-  const staggerStep = total > 1 ? Math.min(18, 160 / total) : 0
+  // Cap total stagger window so long titles still finish in a reasonable time
+  const staggerStep = total > 1 ? Math.min(40, 500 / total) : 0
 
   return (
     <Tag ref={ref} className={`${className} inline-block`}>
