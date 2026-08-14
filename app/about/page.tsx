@@ -110,9 +110,9 @@ export default function AboutPage() {
             <span className="text-sm font-semibold uppercase tracking-widest text-amethyst-smoke">
               The person behind BAWISA
             </span>
-            <PopOnScroll className="mt-3 font-display text-3xl font-bold text-baby-blue-ice">
+            <h2 className="mt-3 font-display text-3xl font-bold text-baby-blue-ice">
               Meet Jeanette
-            </PopOnScroll>
+            </h2>
             <p className="mt-4 max-w-2xl leading-relaxed text-foreground">
               Jeanette founded BAWISA in 2016 to create the community she
               wished she had earlier in her own career. Passionate about
