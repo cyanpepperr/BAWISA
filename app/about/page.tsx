@@ -5,6 +5,7 @@ import { PageHero } from '@/components/page-hero'
 import { ButtonLink } from '@/components/button-link'
 import { LINKS } from '@/lib/site'
 import { StarfieldBackground } from '@/components/starfield-background'
+import { PopOnScroll } from '@/components/pop-on-scroll'
 
 export const metadata: Metadata = {
   title: 'About Us | BAWISA',
@@ -48,9 +49,9 @@ export default function AboutPage() {
           <div className="grid gap-10 md:grid-cols-[1.2fr_1fr] md:items-start">
             <div>
               <div className="mb-4">
-                <h2 className="font-display text-3xl font-bold text-foreground">
+                <PopOnScroll className="font-display text-3xl font-bold text-foreground">
                   How it started
-                </h2>
+                </PopOnScroll>
               </div>
               <div className="space-y-4 leading-relaxed text-muted-foreground">
                 <p>
@@ -109,9 +110,9 @@ export default function AboutPage() {
             <span className="text-sm font-semibold uppercase tracking-widest text-amethyst-smoke">
               The person behind BAWISA
             </span>
-            <h2 className="mt-3 font-display text-3xl font-bold text-baby-blue-ice">
+            <PopOnScroll className="mt-3 font-display text-3xl font-bold text-baby-blue-ice">
               Meet Jeanette
-            </h2>
+            </PopOnScroll>
             <p className="mt-4 max-w-2xl leading-relaxed text-foreground">
               Jeanette founded BAWISA in 2016 to create the community she
               wished she had earlier in her own career. Passionate about

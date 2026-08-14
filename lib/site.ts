@@ -6,7 +6,7 @@ export const NAV_LINKS = [
   { href: '/resources', label: 'Resources' },
 ]
 
-// Replace these placeholder URLs with your real links.
+// Replace these urls as needed. Will need to update eventbrite!
 export const LINKS = {
   joinForm: 'https://forms.gle/KmwVYrtfotnWqHow8',
   nominateForm: 'https://forms.gle/KHo39ThnnUACxFhr8',
@@ -15,7 +15,7 @@ export const LINKS = {
   // need to update eventbrite link for each event! //
   eventbrite: 'https://www.eventbrite.com/o/bawisa',
 }
-
+// figure out how to make a rotating coursel 
 export const QUOTES = [
   {
     quote:
