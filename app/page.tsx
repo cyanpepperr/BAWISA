@@ -186,18 +186,20 @@ export default function HomePage() {
               </h2>
               <div className="mt-4 space-y-4 text-foreground">
                 <p className="leading-relaxed">
-                  BAWISA welcomed the summer with a happy hour hosted by Xona Space Systems in Burlingame. Guests got a look inside Xona&apos;s offices, home to the team building Pulsar, the first commercial navigation constellation designed for modern positioning needs.
+                  BAWISA welcomed summer with a happy hour hosted by Xona
+                  Space Systems and their Women and Gender Diverse ERG,
+                  right on the Bay. Guests connected over food, drinks, and
+                  honest conversation during our Collective Wisdom Peer
+                  Roundtables.
                 </p>
                 <p className="leading-relaxed">
-                  The evening centered on Collective Wisdom Peer Roundtables, giving attendees space for constructive conversation and problem-solving, with time to mingle over food and drinks provided by Xona.
-                </p>
-                <p className="leading-relaxed">
-                  Thank you to Xona for hosting and to everyone who came out to connect.
+                  Thank you to Xona for hosting and to everyone who came out
+                  to spend the evening with us.
                 </p>
               </div>
               <div className="mt-6 flex flex-wrap gap-4">
                 <ButtonLink href="/events">
-                  View photos and past events <ArrowRight className="h-4 w-4" />
+                  See the full recap and photos <ArrowRight className="h-4 w-4" />
                 </ButtonLink>
                 <ButtonLink
                   href="https://www.xonaspace.com/"

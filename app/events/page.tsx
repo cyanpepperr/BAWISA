@@ -144,7 +144,8 @@ export default function EventsPage() {
                 <p className="leading-relaxed">
                   The night moved from mix-and-mingle through Collective
                   Wisdom Peer Roundtables, giving attendees space for honest
-                  conversation and advocacy. Guests connected over food and drinks
+                  conversation, collective problem-solving, and advocacy. 
+                  Guests connected over food and drinks
                   generously provided by Xona, with the Bay as a backdrop.
                 </p>
                 <p className="leading-relaxed">
