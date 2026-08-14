@@ -137,17 +137,17 @@ export default function EventsPage() {
                   constellation designed specifically for the modern era.
                 </p>
                 <p className="leading-relaxed">
-                  A huge thank you to Tatum DiOro, Sarah Parker, Allison
-                  Hampel, and Donna Mak-Carpenter for helping bring the
-                  evening together, along with the rest of the Xona team who
-                  made everyone feel welcome from the moment they walked in.
-                </p>
-                <p className="leading-relaxed">
                   The night moved from mix-and-mingle through Collective
                   Wisdom Peer Roundtables, giving attendees space for honest
                   conversation, collective problem-solving, and advocacy. 
                   Guests connected over food and drinks
                   generously provided by Xona, with the Bay as a backdrop.
+                </p>
+                <p className="leading-relaxed">
+                  A huge thank you to Tatum DiOro, Sarah Parker, Allison
+                  Hampel, and Donna Mak-Carpenter for helping bring the
+                  evening together, along with the rest of the Xona team who
+                  made everyone feel welcome from the moment they walked in.
                 </p>
                 <p className="leading-relaxed">
                   Thank you to Xona for hosting and to everyone who took the
@@ -169,9 +169,16 @@ export default function EventsPage() {
             <div className="max-w-md">
               <ImageCarousel
                 images={[
-                  '/images/events/xona/xona2.png',
-                  '/images/events/xona/xona3.png',
-                  '/images/events/xona/xona4.png',
+                  '/images/events/xona/xona2.jpg',
+                  '/images/events/xona/xona3.jpg',
+                  '/images/events/xona/xona4.jpg',
+                  '/images/events/xona/xona5.jpg',
+                  '/images/events/xona/xona6.jpg',
+                  '/images/events/xona/xona7.jpg',
+                  '/images/events/xona/xona8.jpg',
+                  '/images/events/xona/xona9.jpg',
+                  '/images/events/xona/xona10.jpg',
+                  '/images/events/xona/xona11.jpg',
                 ]}
                 altPrefix="BAWISA happy hour with Xona"
               />
