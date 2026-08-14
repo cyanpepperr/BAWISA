@@ -5,6 +5,7 @@ import { PageHero } from '@/components/page-hero'
 import { ButtonLink } from '@/components/button-link'
 import { LINKS } from '@/lib/site'
 import { StarfieldBackground } from '@/components/starfield-background'
+import { ImageCarousel } from '@/components/image-carousel'
 
 export const metadata: Metadata = {
   title: 'Events | BAWISA',
@@ -158,6 +159,22 @@ export default function EventsPage() {
                   Visit Xona Space Systems <ArrowRight className="h-4 w-4" />
                 </ButtonLink>
               </div>
+            </div>
+          </div>
+          {/* More photos from the Xona event */}
+          <div className="mt-10">
+            <h3 className="mb-4 font-display text-lg font-semibold text-baby-blue-ice">
+              More from the night
+            </h3>
+            <div className="max-w-md">
+              <ImageCarousel
+                images={[
+                  '/images/events/xona/xona2.png',
+                  '/images/events/xona/xona3.png',
+                  '/images/events/xona/xona4.png',
+                ]}
+                altPrefix="BAWISA happy hour with Xona"
+              />
             </div>
           </div>
         </div>
