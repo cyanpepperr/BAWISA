@@ -49,13 +49,13 @@ export default function EventsPage() {
                 className="flex flex-col gap-4 rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6 md:flex-row md:items-center md:justify-between"
               >
                 <div className="flex-1">
-                  <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted-foreground">
-                    <span className="flex items-center gap-1.5 font-semibold text-accent">
-                      <CalendarDays className="h-4 w-4" aria-hidden="true" />
+                  <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
+                    <span className="flex items-center gap-1.5 font-semibold text-muted-foreground">
+                      <CalendarDays className="h-4 w-4 text-accent" aria-hidden="true" />
                       {event.date}
                     </span>
-                    <span className="flex items-center gap-1.5">
-                      <MapPin className="h-4 w-4" aria-hidden="true" />
+                    <span className="flex items-center gap-1.5 text-muted-foreground">
+                      <MapPin className="h-4 w-4 text-accent" aria-hidden="true" />
                       {event.location}
                     </span>
                   </div>
@@ -146,7 +146,7 @@ export default function EventsPage() {
                 </p>
                 <p className="leading-relaxed">
                   Thank you to Xona for generously hosting and providing refreshments, 
-                  and to everyone who came out to connect.
+                  and to everyone who came out to connect!
                 </p>
               </div>
               <div className="mt-6 flex flex-wrap gap-4">

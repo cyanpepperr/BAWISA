@@ -53,7 +53,7 @@ export default function ResourcesPage() {
         transparent
         eyebrow="Resources"
         title="Helping you launch and grow your career"
-        description="A collection of job boards shared by members, as well as scholarships and fellowships for women in space and aerospace."
+        description="A collection of job boards shared by members, and a curated list of scholarships and fellowships for women in space and aerospace."
       />
 
       {/* Job boards */}
