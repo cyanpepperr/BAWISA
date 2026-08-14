@@ -151,5 +151,5 @@ body {
 
 .star-char {
   opacity: 0;
-  animation: star-converge 700ms ease-out forwards;
+  animation: star-converge 2000ms ease-out forwards;
 }
