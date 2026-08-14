@@ -129,7 +129,7 @@ export default function EventsPage() {
               </h2>
               <div className="mt-4 space-y-4 text-foreground">
                 <p className="leading-relaxed">
-                  BAWISA closed out Women&apos;s History Month with a happy
+                  BAWISA entered summer with a happy
                   hour hosted by Xona Space Systems. Guests got a look inside
                   Xona&apos;s offices, home to the team building Pulsar, the
                   first commercial navigation constellation designed
