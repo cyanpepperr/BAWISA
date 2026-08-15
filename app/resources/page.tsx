@@ -88,7 +88,7 @@ export default function ResourcesPage() {
                   {item.name}
                 </h3>
                 <ExternalLink
-                  className="h-4 w-4 shrink-0 text-muted-foreground transition-colors group-hover:text-primary"
+                  className="h-4 w-4 shrink-0 text-muted-foreground transition-colors group-hover:text-accent"
                   aria-hidden="true"
                 />
               </div>
