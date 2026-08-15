@@ -103,14 +103,19 @@ export default function ResourcesPage() {
       {/* Scholarships & fellowships */}
       <section className="border-t border-border/60 bg-gradient-to-br from-secondary/25 via-primary/10 to-transparent">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
-          <div className="mb-10 flex items-center gap-3">
-            <GraduationCap
-              className="h-6 w-6 text-accent"
-              aria-hidden="true"
-            />
-            <h2 className="font-display text-3xl font-bold text-foreground">
-              Scholarships &amp; fellowships
-            </h2>
+          <div className="mb-6">
+            <div className="flex items-center gap-3 mb-3">
+              <GraduationCap
+                className="h-6 w-6 text-accent"
+                aria-hidden="true"
+              />
+              <h2 className="font-display text-3xl font-bold text-foreground">
+                Scholarships &amp; fellowships
+              </h2>
+            </div>
+            <p className="text-sm text-muted-foreground">
+              BAWISA is not affiliated with nor funding these scholarships. These are just good resources for students and professionals found by our community members!
+            </p>
           </div>
           <div className="grid gap-6 md:grid-cols-2">
             {scholarships.map((item) => (
