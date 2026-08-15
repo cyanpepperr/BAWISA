@@ -23,7 +23,7 @@ export function SiteFooter() {
           <div className="flex flex-col items-center text-center">
             <Link href="/" className="flex flex-col items-center gap-2">
               <Image
-                src="/amethyst-smoke-logo.png"
+                src="/lav-veil-logo.png"
                 alt="BAWISA logo"
                 width={100}
                 height={100}
