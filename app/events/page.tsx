@@ -38,7 +38,7 @@ export default function EventsPage() {
       />
 
       {/* Upcoming events */}
-      <section className="border-y border-border/60 bg-gradient-to-br from-primary/30 to-accent/10 p-6">
+      <RevealSection className="border-y border-border/60 bg-gradient-to-br from-primary/30 to-accent/10 p-6">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
           <h2 className="mb-10 font-display text-3xl font-bold text-foreground">
             Upcoming events
@@ -71,7 +71,7 @@ export default function EventsPage() {
             ))}
           </div>
         </div>
-      </section>
+      </RevealSection>
 
       {/* Host sign up */}
       <section className="bg-gradient-to-tr from-primary/10 to-transparent">
@@ -105,7 +105,7 @@ export default function EventsPage() {
       </section>
 
       {/* Past events */}
-      <section className="border-t border-border/50 bg-gradient-to-br from-primary/70 to-accent/45 p-6">
+      <RevealSection className="border-t border-border/50 bg-gradient-to-br from-primary/70 to-accent/45 p-6">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
           <h2 className="mb-10 font-display text-3xl font-bold text-foreground">
             Past events
@@ -184,7 +184,7 @@ export default function EventsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </RevealSection>
     </div>
   )
 }
