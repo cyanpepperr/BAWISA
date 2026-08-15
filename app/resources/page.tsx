@@ -112,10 +112,6 @@ export default function ResourcesPage() {
                 rel="noopener noreferrer"
                 className="group flex flex-col rounded-2xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-8 transition-colors hover:border-accent/60"
               >
-                <Award
-                  className="mb-4 h-8 w-8 text-accent"
-                  aria-hidden="true"
-                />
                 <div className="flex items-start justify-between gap-3">
                   <h3 className="font-display text-xl font-semibold text-foreground">
                     {item.name}
