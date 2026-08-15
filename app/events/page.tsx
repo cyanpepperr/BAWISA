@@ -6,6 +6,7 @@ import { ButtonLink } from '@/components/button-link'
 import { LINKS } from '@/lib/site'
 import { StarfieldBackground } from '@/components/starfield-background'
 import { ImageCarousel } from '@/components/image-carousel'
+import { RevealSection } from '@/components/reveal-section'
 
 export const metadata: Metadata = {
   title: 'Events | BAWISA',

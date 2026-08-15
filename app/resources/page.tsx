@@ -3,6 +3,7 @@ import { Award, Briefcase, ExternalLink, GraduationCap } from 'lucide-react'
 import { PageHero } from '@/components/page-hero'
 import { LINKS } from '@/lib/site'
 import { StarfieldBackground } from '@/components/starfield-background'
+import { RevealSection } from '@/components/reveal-section'
 
 export const metadata: Metadata = {
   title: 'Resources | BAWISA',

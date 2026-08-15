@@ -5,6 +5,7 @@ import { PageHero } from '@/components/page-hero'
 import { ButtonLink } from '@/components/button-link'
 import { LINKS } from '@/lib/site'
 import { StarfieldBackground } from '@/components/starfield-background'
+import { RevealSection } from '@/components/reveal-section'
 
 export const metadata: Metadata = {
   title: 'Member Spotlight | BAWISA',
