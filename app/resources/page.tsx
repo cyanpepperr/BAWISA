@@ -106,7 +106,7 @@ export default function ResourcesPage() {
           <div className="mb-6">
             <div className="flex items-center gap-3 mb-3">
               <GraduationCap
-                className="h-6 w-6 text-accent"
+                className="h-7 w-7 text-accent"
                 aria-hidden="true"
               />
               <h2 className="font-display text-3xl font-bold text-foreground">
