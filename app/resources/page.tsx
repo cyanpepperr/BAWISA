@@ -73,7 +73,11 @@ export default function ResourcesPage() {
               target="_blank"
               rel="noopener noreferrer"
               className="group flex flex-col rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6 transition-colors hover:border-primary/60"
-            >
+            >   
+              <Award
+                  className="mb-4 h-8 w-8 text-accent"
+                  aria-hidden="true"
+                />
               <div className="flex items-start justify-between gap-3">
                 <h3 className="font-display text-lg font-semibold text-foreground">
                   {item.name}
