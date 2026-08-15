@@ -7,7 +7,6 @@ import {
   Users,
 } from 'lucide-react'
 import { ButtonLink } from '@/components/button-link'
-import { PopOnScroll } from '@/components/pop-on-scroll'
 import { LINKS } from '@/lib/site'
 import { StarfieldBackground } from '@/components/starfield-background'
 import { RevealSection } from '@/components/reveal-section'
@@ -77,9 +76,9 @@ export default function HomePage() {
       <section>
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
           <div className="mb-10">
-            <PopOnScroll className="font-display text-3xl font-bold text-foreground">
+            <h2 className="font-display text-3xl font-bold text-foreground">
               Latest News
-            </PopOnScroll>
+            </h2>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {announcements.map((item) => (
@@ -111,9 +110,9 @@ export default function HomePage() {
                 Next Event
               </span>
             </div>
-            <PopOnScroll className="font-display text-3xl font-bold text-foreground">
+            <h2 className="font-display text-3xl font-bold text-foreground">
               Stay tuned for ournext event!
-            </PopOnScroll>
+            </h2>
             <p className="mt-4 text-muted-foreground">
               Details for our next event are coming soon!
             </p>
@@ -217,9 +216,9 @@ export default function HomePage() {
               <span className="text-sm font-semibold uppercase tracking-widest text-primary">
                 Member Spotlight
               </span>
-              <PopOnScroll className="mt-3 font-display text-3xl font-bold text-foreground">
+              <h2 className="mt-3 font-display text-3xl font-bold text-foreground">
                 Celebrating the women shaping our industry
-              </PopOnScroll>
+              </h2>
               <p className="mt-4 leading-relaxed text-muted-foreground">
                 Each month we spotlight a member&apos;s journey, career, and
                 advice. Know someone inspiring? Nominate them to be featured

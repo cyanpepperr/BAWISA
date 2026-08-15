@@ -5,7 +5,6 @@ import { PageHero } from '@/components/page-hero'
 import { ButtonLink } from '@/components/button-link'
 import { LINKS } from '@/lib/site'
 import { StarfieldBackground } from '@/components/starfield-background'
-import { PopOnScroll } from '@/components/pop-on-scroll'
 
 export const metadata: Metadata = {
   title: 'About Us | BAWISA',
@@ -49,9 +48,9 @@ export default function AboutPage() {
           <div className="grid gap-10 md:grid-cols-[1.2fr_1fr] md:items-start">
             <div>
               <div className="mb-4">
-                <PopOnScroll className="font-display text-3xl font-bold text-foreground">
+                <h2 className="font-display text-3xl font-bold text-foreground">
                   How it started
-                </PopOnScroll>
+                </h2>
               </div>
               <div className="space-y-4 leading-relaxed text-muted-foreground">
                 <p>
