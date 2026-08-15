@@ -22,7 +22,7 @@ export function SiteHeader() {
           onClick={() => setOpen(false)}
         >
           <Image
-            src="/amethyst-smoke-logo.png"
+            src="/lav-veil-logo.png"
             alt="BAWISA logo"
             width={45}
             height={45}
