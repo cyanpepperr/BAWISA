@@ -60,7 +60,7 @@ export default function ResourcesPage() {
       {/* Job boards */}
       <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
         <div className="mb-6 flex flex-col gap-1">
-          <div className="flex items-center gap-3 mb-2">
+          <div className="flex items-center gap-3 mb-3">
             <Briefcase className="h-6 w-6 text-primary" aria-hidden="true" />
             <h2 className="font-display text-3xl font-bold text-foreground">
               Job boards
