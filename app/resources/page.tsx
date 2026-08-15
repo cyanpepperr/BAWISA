@@ -59,16 +59,16 @@ export default function ResourcesPage() {
 
       {/* Job boards */}
       <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
-        <div className="mb-10 flex items-center gap-3">
-          <Briefcase className="h-6 w-6 text-primary" aria-hidden="true" />
-          <h2 className="font-display text-3xl font-bold text-foreground">
-            Job boards
-          </h2>
-        </div>
-        <div className="mb-5 flex items-center gap-3">
+        <div className="flex items-center gap-3">
+          <div className="mb-10 flex items-center gap-3">
+            <Briefcase className="h-6 w-6 text-primary" aria-hidden="true" />
+            <h2 className="font-display text-3xl font-bold text-foreground">
+              Job boards
+            </h2>
+          </div>
           <p className="text-sm text-muted-foreground mt-2">
             These job postings are from other women in the coummnity, found in our slack. Please reach out to them if you have any questions! 
-            </p>
+          </p>
         </div>
         <div className="grid gap-6 md:grid-cols-3">
           {jobBoards.map((item) => (
