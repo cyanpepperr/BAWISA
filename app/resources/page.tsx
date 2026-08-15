@@ -66,7 +66,7 @@ export default function ResourcesPage() {
               Job boards
             </h2>
           </div>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-muted-foreground mt-1">
             These job postings are from other women in the coummnity, found in our slack. Please reach out to them if you have any questions! 
           </p>
         </div>
