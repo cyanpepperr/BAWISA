@@ -13,17 +13,17 @@ import { RevealSection } from '@/components/reveal-section'
 
 const announcements = [
   {
-    date: 'June 2026',
+    date: 'Event date',
     title: 'Some title',
     body: 'description',
   },
   {
-    date: 'May 2026',
+    date: 'Event date',
     title: 'Another title',
     body: 'description',
   },
   {
-    date: 'April 2026',
+    date: 'Event date',
     title: 'Another title',
     body: 'description',
   },
