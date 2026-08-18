@@ -17,16 +17,6 @@ const jobBoards = [
     body: 'Fresh openings shared by members across the Bay Area, updated constantly.',
     href: LINKS.slack,
   },
-  {
-    name: 'Space & Aerospace Job Boards',
-    body: 'Explore roles at launch providers, satellite companies, research labs, and startups.',
-    href: 'https://www.spacecrew.com/',
-  },
-  {
-    name: 'SpaceCareers / Space Talent',
-    body: 'Aggregated listings across the commercial space ecosystem.',
-    href: 'https://spacetalent.org/',
-  },
 ]
 
 const scholarships = [
