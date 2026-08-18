@@ -67,7 +67,7 @@ export default function ResourcesPage() {
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-col rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6 transition-colors hover:border-primary/60"
+              className="group flex flex-col rounded-2xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-8 md:p-12 transition-colors hover:border-primary/60"
             >   
               <Award
                   className="mb-4 h-8 w-8 text-accent"
