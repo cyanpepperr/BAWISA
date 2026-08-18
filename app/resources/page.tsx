@@ -60,7 +60,7 @@ export default function ResourcesPage() {
             These job postings are from other women in the community, found in our slack. Please reach out to them if you have any questions! 
           </p>
         </div>
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-1">
           {jobBoards.map((item) => (
             <a
               key={item.name}
