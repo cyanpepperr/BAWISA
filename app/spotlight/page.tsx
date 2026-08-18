@@ -88,7 +88,7 @@ export default function SpotlightPage() {
       </section>
 
       {/* Nominate */}
-      <section className="border-y border-border/60 bg-gradient-to-tr from-primary/10 to-transparent">
+      <section className="border-y border-border/60 bg-gradient-to-br from-primary/70 to-accent/40">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
           <div className="mx-auto max-w-xl rounded-2xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-8 text-center">
             <h2 className="font-display text-2xl font-bold text-foreground">
