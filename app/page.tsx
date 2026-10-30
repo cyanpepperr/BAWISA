@@ -117,7 +117,6 @@ export default function HomePage() {
                 <MapPin className="h-4 w-4 text-accent" aria-hidden="true" />
                 761 Neeson Rd,Marina, CA
               </p>
-              <p className="flex items-center gap-2">
             </div>
           </div>
         </div>
