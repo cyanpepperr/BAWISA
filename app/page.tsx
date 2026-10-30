@@ -72,35 +72,6 @@ export default function HomePage() {
         </div>
       </RevealSection>
 
-{}      {/* Latest news */}
-{}      <section>
-{}        <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
-{}          <div className="mb-10">
-{}            <h2 className="font-display text-3xl font-bold text-foreground">
-{}              Latest News
-{}            </h2>
-{}          </div>
-{}          <div className="grid gap-6 md:grid-cols-3">
-{}            {announcements.map((item) => (
-{}              <article
-{}                key={item.title}
-{}                className="flex flex-col rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6"
-{}              >
-{}                <span className="text-xs font-semibold uppercase tracking-widest text-accent">
-{}                  {item.date}
-{}                </span>
-{}                <h3 className="mt-3 font-display text-lg font-semibold text-foreground">
-{}                  {item.title}
-{}                </h3>
-{}                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-{}                  {item.body}
-{}                </p>
-{}              </article>
-{}            ))}
-{}          </div>
-{}        </div>
-{}      </section>
-
       {/* Next event */}
       <section className="border-y border-border/60 bg-gradient-to-tr from-primary/3 to-background">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 py-16 md:grid-cols-2 md:items-center md:px-6 md:py-20">
