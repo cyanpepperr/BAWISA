@@ -16,10 +16,11 @@ export const metadata: Metadata = {
 
 const upcoming = [
   {
-    date: 'Date TBD',
-    title: 'Event title',
-    location: 'Location TBD',
-    body: 'Details for our next event are coming soon — check back or join our list to be the first to know.',
+    date: 'Date: November 6, 2026',
+    title: 'Bay Area Women in Space and Aerospace Friday Afternoon with Jobyy',
+    status: 'This event is full',
+    location: 'Location: 761 Neeson Rd, Marina, CA',
+    body: 'Join Bay Area Women in Space and Aerospace (BAWISA) for a special afternoon event hosted by Joby Aviation at their Marina facility near Santa Cruz on Friday, November 6! Hear from the women of Joby in a panel, tour their eVTOL composites and integration buildings, and enjoy a happy hour with dinner provided. Guest check-in starts at 3:30pm and an NDA is required, which you can complete online in advance. Wear close-toed shoes and comfortable clothing for walking.'
   },
 ]
 
@@ -64,6 +65,11 @@ export default function EventsPage() {
                   <h3 className="mt-2 font-display text-xl font-semibold text-foreground">
                     {event.title}
                   </h3>
+                  {event.status && (
+                    <p className="mt-3 inline-block rounded-full border border-accent/60 bg-accent/20 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-foreground">
+                      {event.status}
+                    </p>
+      )}
                   <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
                     {event.body}
                   </p>
