@@ -91,7 +91,7 @@ export default function HomePage() {
               This event has been filled!
             </p>
             <div className="mt-7 flex flex-wrap gap-4">
-              <ButtonLink href={LINKS.} external>
+              <ButtonLink href={LINKS.eventbrite} external>
                 Get Tickets on Eventbrite <ArrowRight />
               </ButtonLink>
               <ButtonLink href="/events" variant="ghost">
