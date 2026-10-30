@@ -62,15 +62,6 @@ export default function EventsPage() {
                       {event.location}
                     </span>
                   </div>
-                  <a
-                    href={LINKS.eventbrite}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex shrink-0 items-center justify-center gap-2 self-start rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-blue-500 md:self-center"
-                >
-                  View on Eventbrite <ArrowRight className="h-4 w-4" />
-                </a>
-              </article>
                   <h3 className="mt-2 font-display text-xl font-semibold text-foreground">
                     {event.title}
                   </h3>
@@ -83,6 +74,15 @@ export default function EventsPage() {
                     {event.body}
                   </p>
                 </div>
+
+                <a
+                  href={LINKS.eventbrite}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex shrink-0 items-center justify-center gap-2 self-start rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-blue-500 md:self-center"
+                >
+                  View on Eventbrite <ArrowRight className="h-4 w-4" />
+                </a>
               </article>
             ))}
           </div>
