@@ -72,34 +72,34 @@ export default function HomePage() {
         </div>
       </RevealSection>
 
-      {/* Latest news */}
-      <section>
-        <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
-          <div className="mb-10">
-            <h2 className="font-display text-3xl font-bold text-foreground">
-              Latest News
-            </h2>
-          </div>
-          <div className="grid gap-6 md:grid-cols-3">
-            {announcements.map((item) => (
-              <article
-                key={item.title}
-                className="flex flex-col rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6"
-              >
-                <span className="text-xs font-semibold uppercase tracking-widest text-accent">
-                  {item.date}
-                </span>
-                <h3 className="mt-3 font-display text-lg font-semibold text-foreground">
-                  {item.title}
-                </h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  {item.body}
-                </p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+{}      {/* Latest news */}
+{}      <section>
+{}        <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
+{}          <div className="mb-10">
+{}            <h2 className="font-display text-3xl font-bold text-foreground">
+{}              Latest News
+{}            </h2>
+{}          </div>
+{}          <div className="grid gap-6 md:grid-cols-3">
+{}            {announcements.map((item) => (
+{}              <article
+{}                key={item.title}
+{}                className="flex flex-col rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6"
+{}              >
+{}                <span className="text-xs font-semibold uppercase tracking-widest text-accent">
+{}                  {item.date}
+{}                </span>
+{}                <h3 className="mt-3 font-display text-lg font-semibold text-foreground">
+{}                  {item.title}
+{}                </h3>
+{}                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+{}                  {item.body}
+{}                </p>
+{}              </article>
+{}            ))}
+{}          </div>
+{}        </div>
+{}      </section>
 
       {/* Next event */}
       <section className="border-y border-border/60 bg-gradient-to-tr from-primary/3 to-background">
@@ -107,20 +107,20 @@ export default function HomePage() {
           <div>
             <div className="mb-4">
               <span className="text-sm font-semibold uppercase tracking-widest text-primary">
-                Next Event
+                Upcoming Event
               </span>
             </div>
             <h2 className="font-display text-3xl font-bold text-foreground">
-              Stay tuned for ournext event!
+              BAWISA Friday Afternoon with Joby!
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Details for our next event are coming soon!
+              Join Bay Area Women in Space and Aerospace (BAWISA) for a special afternoon event hosted by Joby Aviation at their Marina facility near Santa Cruz on Friday, November 6! Hear from the women of Joby in a panel, tour their eVTOL composites and integration buildings, and enjoy a happy hour with dinner provided. Guest check-in starts at 3:30pm and an NDA is required, which you can complete online in advance. Wear close-toed shoes and comfortable clothing for walking. RSVP on Eventbrite by Friday, October 30, and feel free to share the invite with anyone who may be interested.
             </p>
             <p className="mt-4 max-w-md leading-relaxed text-muted-foreground">
-              Check back or join our email list to be the first to know.
+              This event has been filled!
             </p>
             <div className="mt-7 flex flex-wrap gap-4">
-              <ButtonLink href={LINKS.eventbrite} external>
+              <ButtonLink href={LINKS.} external>
                 Get Tickets on Eventbrite <ArrowRight />
               </ButtonLink>
               <ButtonLink href="/events" variant="ghost">
@@ -131,10 +131,10 @@ export default function HomePage() {
           <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/60 to-accent/34 p-6">
             <div className="flex items-baseline gap-2">
               <span className="font-display text-6xl font-bold text-foreground">
-                Day
+                06
               </span>
               <span className="font-display text-2xl font-medium text-muted-foreground">
-                Month
+                Nov
               </span>
             </div>
             <div className="mt-6 space-y-3 text-sm text-muted-foreground">
@@ -144,15 +144,9 @@ export default function HomePage() {
               </p>
               <p className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-accent" aria-hidden="true" />
-                Location TBD
+                761 Neeson Rd,Marina, CA
               </p>
               <p className="flex items-center gap-2">
-                <CalendarDays
-                  className="h-4 w-4 text-accent"
-                  aria-hidden="true"
-                />
-                Date TBD
-              </p>
             </div>
           </div>
         </div>

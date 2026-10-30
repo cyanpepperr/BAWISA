@@ -13,7 +13,7 @@ export const LINKS = {
   nomineeFollowUpForm: 'https://forms.gle/QDzthjLEqBBXdBdo9',
   hostForm: 'https://forms.gle/CgCm3PCM8z39UrU27',
   // need to update eventbrite link for each event! //
-  eventbrite: 'https://www.eventbrite.com/o/bawisa',
+  eventbrite: 'https://www.eventbrite.com/e/bay-area-women-in-space-and-aerospace-friday-afternoon-with-joby-tickets-2002396018394',
 }
 // figure out how to make a rotating coursel 
 export const QUOTES = [
