@@ -40,7 +40,12 @@ const pastSpotlights = [
   },
 ]
 
+
+{/*hiding previous spotlights and current spotlight for now*/}
 const showPastSpotlights = false // set to true when you have spotlights to show
+const showPastSpotlights = false // set to true when you have spotlights to show
+
+
 export default function SpotlightPage() {
   return (
     <div className="relative isolate">
@@ -57,6 +62,7 @@ export default function SpotlightPage() {
       />
 
       {/* Current spotlight */}
+      {showCurrentSpotlight && (
       <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
         <div className="grid gap-10 rounded-2xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6 md:grid-cols-[auto_1fr] md:items-center md:p-10">
           <div className="mx-auto w-56 shrink-0 overflow-hidden rounded-2xl border border-border/60 md:w-72">
@@ -87,6 +93,7 @@ export default function SpotlightPage() {
           </div>
         </div>
       </section>
+      )}
 
       {/* Nominate */}
       <section className="border-y border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 py-16 md:py-20">
@@ -108,7 +115,7 @@ export default function SpotlightPage() {
 
       {/* Past spotlights */}
       {showPastSpotlights && (
-        <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">\
+        <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
           <h2 className="mb-10 font-display text-3xl font-bold text-foreground">
             Past spotlights
           </h2>
