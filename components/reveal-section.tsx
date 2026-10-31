@@ -44,7 +44,7 @@ export function RevealSection({ children, className = '' }: RevealSectionProps) 
     const fallback = setTimeout(() => {
       console.warn('[RevealSection] fallback timeout fired, forcing reveal')
       setRevealed(true)
-    }, 4000)
+    }, 5000)
 
     return () => {
       observer.disconnect()
