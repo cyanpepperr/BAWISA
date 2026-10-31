@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const upcoming = [
   {
     date: 'Date: November 6, 2026',
-    title: 'Bay Area Women in Space and Aerospace Friday Afternoon with Jobyy',
+    title: 'Bay Area Women in Space and Aerospace Friday Afternoon with Joby',
     status: 'This event is full',
     location: 'Location: 761 Neeson Rd, Marina, CA',
     body: 'Join Bay Area Women in Space and Aerospace (BAWISA) for a special afternoon event hosted by Joby Aviation at their Marina facility near Santa Cruz on Friday, November 6! Hear from the women of Joby in a panel, tour their eVTOL composites and integration buildings, and enjoy a happy hour with dinner provided. Guest check-in starts at 3:30pm and an NDA is required, which you can complete online in advance. Wear close-toed shoes and comfortable clothing for walking.'
@@ -49,8 +49,15 @@ export default function EventsPage() {
             {upcoming.map((event) => (
               <article
                 key={event.title}
-                className="flex flex-col gap-4 rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6 md:flex-row md:items-center md:justify-between"
+                className="relative flex flex-col gap-4 rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6 pt-20 md:flex-row md:items-center md:justify-between md:pt-6"
               >
+              <Image
+                src="/images/events/joby/joby_white_logo.png"
+                alt="Joby Aviation logo"
+                width={160}
+                height={48}
+                className="absolute right-6 top-5 h-8 w-auto md:h-10"
+              /> 
                 <div className="flex-1">
                   <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
                     <span className="flex items-center gap-1.5 text-muted-foreground">
@@ -177,11 +184,12 @@ export default function EventsPage() {
 
           {/* Pyka video */}
           <div className="mt-10">
-            <h3 className="mb-4 font-display text-lg font-semibold text-baby-blue-ice">
+            <h3 className="font-display text-lg font-semibold text-baby-blue-ice">
               Watch the Pyka Happy Hour recap!
-
-              This video was beautifully made by our hosts at pyka, and we are so grateful to them for sharing it with our community.
             </h3>
+            <p className="mb-4 mt-1 text-sm leading-relaxed text-muted-foreground">
+              This video was beautifully made by our hosts at Pyka. We are so grateful to them for sharing it with our community.
+            </p>
             <div className="mx-auto w-full md:w-3/4">
               <video
                 controls
