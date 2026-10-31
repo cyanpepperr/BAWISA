@@ -145,6 +145,7 @@ export default function HomePage() {
             <div>
               <span className="text-sm font-semibold uppercase tracking-widest text-amethyst-smoke">
                 Event Recap    |    September 16, 2026
+              </span>
               <div className="mt-3 flex items-center justify-between gap-4">
                 <h2 className="font-display text-3xl font-bold text-baby-blue-ice">
                   BAWISA Happy Hour with Pyka!
@@ -161,7 +162,7 @@ export default function HomePage() {
                 <p className="leading-relaxed">
                   BAWISA wrapped up the summer with a happy hour hosted by Pyka at their Alameda facility.
                   Guests mixed and mingled over light food and refreshments, then got a behind-the-scenes
-                  look at the shop floor during tours of the team building America’s leading dual-use, 
+                  look at the shop floor during tours of the team building America’s leading dual-use,
                   heavy-lift autonomous aircraft.
                 </p>
                 <p className="leading-relaxed">
