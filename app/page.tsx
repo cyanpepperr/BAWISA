@@ -80,7 +80,7 @@ export default function HomePage() {
               <span className="text-sm font-semibold uppercase tracking-widest text-primary">
                 Upcoming Event
               </span>
-            </div>
+            <div className="relative rounded-2xl border border-border/60 bg-gradient-to-br from-primary/60 to-accent/34 p-6">
             <h2 className="font-display text-3xl font-bold text-foreground">
               BAWISA Friday Afternoon with Joby!
             </h2>
@@ -105,7 +105,7 @@ export default function HomePage() {
               alt="Joby Aviation logo"
               width={160}
               height={48}
-              className="mb-5 h-8 w-auto md:h-10"
+              className="absolute right-6 top-6 h-8 w-auto md:h-10"
             />
             <div className="flex items-baseline gap-2">
               <span className="font-display text-6xl font-bold text-foreground">
@@ -151,7 +151,7 @@ export default function HomePage() {
                   BAWISA Happy Hour with Pyka!
                 </h2>
                 <Image
-                  src="/images/events/pyka/pyka_logo.png"
+                  src="/images/events/pyka/pyka_white_logo.png"
                   alt="Pyka logo"
                   width={160}
                   height={48}
