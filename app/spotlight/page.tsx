@@ -41,8 +41,8 @@ const pastSpotlights = [
 ]
 
 
-{/*hiding previous spotlights and current spotlight for now*/}
-const showPastSpotlights = false // set to true when you have spotlights to show
+// Hiding previous spotlights and current spotlight for now
+const showCurrentSpotlight = false // set to true when you have a spotlight to feature
 const showPastSpotlights = false // set to true when you have spotlights to show
 
 
