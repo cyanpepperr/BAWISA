@@ -40,6 +40,7 @@ const pastSpotlights = [
   },
 ]
 
+const showPastSpotlights = false // set to true when you have spotlights to show
 export default function SpotlightPage() {
   return (
     <div className="relative isolate">
@@ -106,36 +107,38 @@ export default function SpotlightPage() {
       </section>
 
       {/* Past spotlights */}
-      <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
-        <h2 className="mb-10 font-display text-3xl font-bold text-foreground">
-          Past spotlights
-        </h2>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {pastSpotlights.map((person) => (
-            <article
-              key={person.name}
-              className="flex flex-col rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6"
-            >
-              <div className="mx-auto h-24 w-24 shrink-0 overflow-hidden rounded-full border border-border/60">
-                <Image
-                  src={person.image}
-                  alt={person.name}
-                  width={200}
-                  height={200}
-                  className="h-full w-full object-cover"
-                />
-              </div>
-              <h3 className="mt-4 text-center font-display text-lg font-semibold text-foreground">
-                {person.name}
-              </h3>
-              <p className="text-center text-sm text-primary">{person.role}</p>
-              <p className="mt-3 text-center text-sm italic leading-relaxed text-muted-foreground">
-                &ldquo;{person.quote}&rdquo;
-              </p>
-            </article>
-          ))}
-        </div>
-      </section>
+      {showPastSpotlights && (
+        <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">\
+          <h2 className="mb-10 font-display text-3xl font-bold text-foreground">
+            Past spotlights
+          </h2>
+         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {pastSpotlights.map((person) => (
+              <article
+                key={person.name}
+                className="flex flex-col rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6"
+             >
+               <div className="mx-auto h-24 w-24 shrink-0 overflow-hidden rounded-full border border-border/60">
+                 <Image
+                    src={person.image}
+                    alt={person.name}
+                    width={200}
+                    height={200}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <h3 className="mt-4 text-center font-display text-lg font-semibold text-foreground">
+                  {person.name}
+                </h3>
+                <p className="text-center text-sm text-primary">{person.role}</p>
+                <p className="mt-3 text-center text-sm italic leading-relaxed text-muted-foreground">
+                  &ldquo;{person.quote}&rdquo;
+                </p>
+              </article>
+           ))}
+         </div>
+       </section>
+      )}
     </div>
   )
 }
