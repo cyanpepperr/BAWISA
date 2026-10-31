@@ -96,7 +96,7 @@ export default function SpotlightPage() {
       )}
 
       {/* Nominate */}
-      <section className="border-y border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 py-16 md:py-20">
+      <RevealSection className="border-y border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 py-16 md:py-20">
           <div className="mx-auto max-w-xl text-center">
             <h2 className="font-display text-2xl font-bold text-foreground">
               Nominate a member
@@ -111,7 +111,7 @@ export default function SpotlightPage() {
               </ButtonLink>
             </div>
           </div>
-      </section>
+      </RevealSection>
 
       {/* Past spotlights */}
       {showPastSpotlights && (
