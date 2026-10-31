@@ -128,7 +128,7 @@ export default function HomePage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-2xl border border-border/60">
               <Image
-                src="/images/events/xona/xona.jpg"
+                src="/images/events/pyka/pyka.jpg"
                 alt="Women networking at a recent BAWISA aerospace industry event"
                 width={800}
                 height={600}
@@ -137,22 +137,21 @@ export default function HomePage() {
             </div>
             <div>
               <span className="text-sm font-semibold uppercase tracking-widest text-amethyst-smoke">
-                Event Recap    |    July 8, 2026
+                Event Recap    |    September 16, 2026
               </span>
               <h2 className="mt-3 font-display text-3xl font-bold text-baby-blue-ice">
-                BAWISA Happy Hour with Xona!
+                BAWISA Happy Hour with Pyka!
               </h2>
               <div className="mt-4 space-y-4 text-foreground">
                 <p className="leading-relaxed">
-                  BAWISA entered summer with a happy hour hosted by Xona
-                  Space Systems and their Women and Gender Diverse ERG,
-                  right on the Bay. Guests connected over food, drinks, and
-                  honest conversation during our Collective Wisdom Peer
-                  Roundtables.
+                  BAWISA wrapped up the summer with a happy hour hosted by Pyka at their Alameda facility.
+                  Guests mixed and mingled over light food and refreshments, then got a behind-the-scenes
+                  look at the shop floor during tours of the team building America’s leading dual-use, 
+                  heavy-lift autonomous aircraft.
                 </p>
                 <p className="leading-relaxed">
-                  Thank you to Xona for hosting and to everyone who came out
-                  to spend the evening with us.
+                  Thank you to Pyka for hosting and to everyone
+                  who came out to spend the evening with us.
                 </p>
               </div>
               <div className="mt-6 flex flex-wrap gap-4">
@@ -160,11 +159,11 @@ export default function HomePage() {
                   See the full recap and photos <ArrowRight className="h-4 w-4" />
                 </ButtonLink>
                 <ButtonLink
-                  href="https://www.xonaspace.com/"
+                  href="https://www.flypyka.com/"
                   external
                   variant="outline"
                 >
-                  Visit Xona Space Systems <ArrowRight className="h-4 w-4" />
+                  Visit Pyka <ArrowRight className="h-4 w-4" />
                 </ButtonLink>
               </div>
             </div>
