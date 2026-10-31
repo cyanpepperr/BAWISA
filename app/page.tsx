@@ -81,15 +81,8 @@ export default function HomePage() {
           </div>
 
           {/* Joby logo + date card */}
-          <div className="flex flex-col items-center gap-5">
-            <Image
-              src="/images/events/joby/joby_white_logo.png"
-              alt="Joby Aviation logo"
-              width={160}
-              height={48}
-              className="h-12 w-auto md:h-14"
-            />
-            <div className="w-full rounded-2xl border border-border/60 bg-gradient-to-br from-primary/60 to-accent/34 p-6">
+          <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/60 to-accent/34 p-6">
+            <div className="flex items-center justify-between gap-4">
               <div className="flex items-baseline gap-2">
                 <span className="font-display text-6xl font-bold text-foreground">
                   06
@@ -98,16 +91,23 @@ export default function HomePage() {
                   Nov
                 </span>
               </div>
-              <div className="mt-6 space-y-3 text-sm text-muted-foreground">
-                <p className="flex items-center gap-2">
-                  <Users className="h-4 w-4 text-accent" aria-hidden="true" />
-                  Open to members and newcomers
-                </p>
-                <p className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-accent" aria-hidden="true" />
-                  761 Neeson Rd, Marina, CA
-                </p>
-              </div>
+              <Image
+                src="/images/events/joby/joby_white_logo.png"
+                alt="Joby Aviation logo"
+                width={160}
+                height={48}
+                className="h-12 w-auto md:h-14"
+              />
+            </div>
+            <div className="mt-6 space-y-3 text-sm text-muted-foreground">
+              <p className="flex items-center gap-2">
+                <Users className="h-4 w-4 text-accent" aria-hidden="true" />
+                Open to members and newcomers
+              </p>
+              <p className="flex items-center gap-2">
+                <MapPin className="h-4 w-4 text-accent" aria-hidden="true" />
+                761 Neeson Rd, Marina, CA
+              </p>
             </div>
           </div>
         </div>
