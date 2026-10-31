@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import type { Metadata } from 'next'
-import { ArrowRight, Building2, CalendarDays, MapPin } from 'lucide-react'
+import { ArrowRight, CalendarDays, MapPin } from 'lucide-react'
 import { PageHero } from '@/components/page-hero'
 import { ButtonLink } from '@/components/button-link'
 import { LINKS } from '@/lib/site'
@@ -20,7 +20,7 @@ const upcoming = [
     title: 'Bay Area Women in Space and Aerospace Friday Afternoon with Joby',
     status: 'This event is full',
     location: 'Location: 761 Neeson Rd, Marina, CA',
-    body: 'Join Bay Area Women in Space and Aerospace (BAWISA) for a special afternoon event hosted by Joby Aviation at their Marina facility near Santa Cruz on Friday, November 6! Hear from the women of Joby in a panel, tour their eVTOL composites and integration buildings, and enjoy a happy hour with dinner provided. Guest check-in starts at 3:30pm and an NDA is required, which you can complete online in advance. Wear close-toed shoes and comfortable clothing for walking.'
+    body: 'Join Bay Area Women in Space and Aerospace (BAWISA) for a special afternoon event hosted by Joby Aviation at their Marina facility near Santa Cruz on Friday, November 6! Hear from the women of Joby in a panel, tour their eVTOL composites and integration buildings, and enjoy a happy hour with dinner provided. Guest check-in starts at 3:30pm and an NDA is required, which you can complete online in advance. Wear close-toed shoes and comfortable clothing for walking.',
   },
 ]
 
@@ -51,13 +51,13 @@ export default function EventsPage() {
                 key={event.title}
                 className="relative flex flex-col gap-4 rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6 pt-20 md:flex-row md:items-center md:justify-between md:pt-6"
               >
-              <Image
-                src="/images/events/joby/joby_white_logo.png"
-                alt="Joby Aviation logo"
-                width={160}
-                height={48}
-                className="absolute right-6 top-5 h-8 w-auto md:h-10"
-              /> 
+                <Image
+                  src="/images/events/joby/joby_white_logo.png"
+                  alt="Joby Aviation logo"
+                  width={160}
+                  height={48}
+                  className="absolute right-6 top-5 h-8 w-auto md:h-10"
+                />
                 <div className="flex-1">
                   <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
                     <span className="flex items-center gap-1.5 text-muted-foreground">
@@ -76,7 +76,7 @@ export default function EventsPage() {
                     <p className="mt-3 inline-block rounded-full border border-accent/60 bg-accent/20 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-foreground">
                       {event.status}
                     </p>
-      )}
+                  )}
                   <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
                     {event.body}
                   </p>
@@ -130,6 +130,7 @@ export default function EventsPage() {
           <h2 className="mb-10 font-display text-3xl font-bold text-foreground">
             Past events
           </h2>
+
           {/* Pyka recap (most recent) */}
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-2xl border border-border/60">
@@ -142,12 +143,25 @@ export default function EventsPage() {
               />
             </div>
             <div>
-              <span className="text-sm font-semibold uppercase tracking-widest text-amethyst-smoke">
-                Event Recap    |    September 16, 2026
-              </span>
-              <h2 className="mt-3 font-display text-3xl font-bold text-baby-blue-ice">
-                BAWISA Happy Hour with Pyka!
-              </h2>
+              <div className="flex items-stretch justify-between gap-4">
+                <div>
+                  <span className="block text-sm font-semibold uppercase tracking-widest text-amethyst-smoke">
+                    Event Recap    |    September 16, 2026
+                  </span>
+                  <h2 className="mt-3 font-display text-3xl font-bold text-baby-blue-ice">
+                    BAWISA Happy Hour with Pyka!
+                  </h2>
+                </div>
+                <div className="relative w-28 shrink-0 md:w-40">
+                  <Image
+                    src="/images/events/pyka/pyka_white_logo.png"
+                    alt="Pyka logo"
+                    fill
+                    sizes="160px"
+                    className="object-contain object-right"
+                  />
+                </div>
+              </div>
               <div className="mt-4 space-y-4 text-foreground">
                 <p className="leading-relaxed">
                   BAWISA welcomed the community to Pyka HQ in Alameda for a
@@ -204,6 +218,7 @@ export default function EventsPage() {
 
           {/* Divider between events */}
           <hr className="my-16 border-t-2 border-amethyst-smoke/70" />
+
           {/* Xona recap */}
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-2xl border border-border/60">
@@ -216,12 +231,25 @@ export default function EventsPage() {
               />
             </div>
             <div>
-              <span className="text-sm font-semibold uppercase tracking-widest text-amethyst-smoke">
-                Event Recap    |    July 8, 2026
-              </span>
-              <h2 className="mt-3 font-display text-3xl font-bold text-baby-blue-ice">
-                BAWISA Happy Hour with Xona!
-              </h2>
+              <div className="flex items-stretch justify-between gap-4">
+                <div>
+                  <span className="block text-sm font-semibold uppercase tracking-widest text-amethyst-smoke">
+                    Event Recap    |    July 8, 2026
+                  </span>
+                  <h2 className="mt-3 font-display text-3xl font-bold text-baby-blue-ice">
+                    BAWISA Happy Hour with Xona!
+                  </h2>
+                </div>
+                <div className="relative w-28 shrink-0 md:w-40">
+                  <Image
+                    src="/images/events/xona/xona_white_logo.png"
+                    alt="Xona Space Systems logo"
+                    fill
+                    sizes="160px"
+                    className="object-contain object-right"
+                  />
+                </div>
+              </div>
               <div className="mt-4 space-y-4 text-foreground">
                 <p className="leading-relaxed">
                   BAWISA entered summer with a happy hour hosted by Xona
@@ -233,7 +261,7 @@ export default function EventsPage() {
                 <p className="leading-relaxed">
                   The night moved from mix-and-mingle through Collective
                   Wisdom Peer Roundtables, giving attendees space for honest
-                  conversation, collective problem-solving, and advocacy. 
+                  conversation, collective problem-solving, and advocacy.
                   Guests connected over food and drinks
                   generously provided by Xona, with the Bay as a backdrop.
                 </p>
@@ -255,6 +283,7 @@ export default function EventsPage() {
               </div>
             </div>
           </div>
+
           {/* More photos from the Xona event */}
           <div className="mt-10">
             <h3 className="mb-4 font-display text-lg font-semibold text-baby-blue-ice">
