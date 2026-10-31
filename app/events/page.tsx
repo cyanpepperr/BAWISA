@@ -123,6 +123,80 @@ export default function EventsPage() {
           <h2 className="mb-10 font-display text-3xl font-bold text-foreground">
             Past events
           </h2>
+          {/* Pyka recap (most recent) */}
+          <div className="grid gap-8 md:grid-cols-2 md:items-center">
+            <div className="overflow-hidden rounded-2xl border border-border/60">
+              <Image
+                src="/images/events/pyka/pyka.jpg"
+                alt="Women touring the manufacturing floor at the BAWISA happy hour hosted by Pyka"
+                width={800}
+                height={600}
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <div>
+              <span className="text-sm font-semibold uppercase tracking-widest text-amethyst-smoke">
+                Event Recap    |    September 16, 2026
+              </span>
+              <h2 className="mt-3 font-display text-3xl font-bold text-baby-blue-ice">
+                BAWISA Happy Hour with Pyka!
+              </h2>
+              <div className="mt-4 space-y-4 text-foreground">
+                <p className="leading-relaxed">
+                  BAWISA welcomed the community to Pyka HQ in Alameda for a
+                  happy hour hosted by the women of Pyka, a team building
+                  America&apos;s leading dual-use, heavy-lift autonomous
+                  aircraft. The evening opened with mix-and-mingle and light
+                  food and refreshments before moving to the main event: a
+                  tour of Pyka&apos;s manufacturing floor.
+                </p>
+                <p className="leading-relaxed">
+                  Attendees saw composites and assembly up close, got a
+                  tutorial of Pyka&apos;s flight control software, and watched
+                  a demonstration of the aircraft&apos;s electric rotary
+                  atomizers and how the autonomous electric aircraft works in
+                  the field. Hearing from so many talented professionals
+                  across the industry made it an inspiring night, and one
+                  guest called it the &ldquo;best event ever.&rdquo;
+                </p>
+                <p className="leading-relaxed">
+                  A huge thank you to Jenny Murphy and Grace Trueman for
+                  helping plan the evening, along with the rest of the Pyka
+                  team who opened their shop to our community. Thank you to
+                  Pyka for hosting and to everyone who came out to spend the
+                  evening with us.
+                </p>
+              </div>
+              <div className="mt-6 flex flex-wrap gap-4">
+                <ButtonLink href="https://flypyka.com/" external>
+                  Visit Pyka <ArrowRight className="h-4 w-4" />
+                </ButtonLink>
+              </div>
+            </div>
+          </div>
+
+          {/* Pyka video */}
+          <div className="mt-10">
+            <h3 className="mb-4 font-display text-lg font-semibold text-baby-blue-ice">
+              Watch the Pyka Happy Hour recap!
+
+              This video was beautifully made by our hosts at pyka, and we are so grateful to them for sharing it with our community.
+            </h3>
+            <div className="mx-auto w-full md:w-3/4">
+              <video
+                controls
+                preload="metadata"
+                playsInline
+                className="w-full rounded-2xl border border-border/60"
+              >
+                <source src="/images/events/pyka/pyka_video.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+
+          {/* Divider between events */}
+          <hr className="my-16 border-t-2 border-amethyst-smoke/70" />
+          {/* Xona recap */}
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-2xl border border-border/60">
               <Image
