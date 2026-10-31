@@ -1,8 +1,6 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import {
   ArrowRight,
-  CalendarDays,
   MapPin,
   Users,
 } from 'lucide-react'
@@ -10,7 +8,6 @@ import { ButtonLink } from '@/components/button-link'
 import { LINKS } from '@/lib/site'
 import { StarfieldBackground } from '@/components/starfield-background'
 import { RevealSection } from '@/components/reveal-section'
-
 
 export default function HomePage() {
   return (
@@ -62,7 +59,8 @@ export default function HomePage() {
             <div className="mb-4">
               <span className="text-sm font-semibold uppercase tracking-widest text-primary">
                 Upcoming Event
-              </span>            </div>
+              </span>
+            </div>
             <h2 className="font-display text-3xl font-bold text-foreground">
               BAWISA Friday Afternoon with Joby!
             </h2>
@@ -81,21 +79,25 @@ export default function HomePage() {
               </ButtonLink>
             </div>
           </div>
-          <div className="relative rounded-2xl border border-border/60 bg-gradient-to-br from-primary/60 to-accent/34 p-6">
-            <Image
-              src="/images/events/joby/joby_white_logo.png"
-              alt="Joby Aviation logo"
-              width={160}
-              height={48}
-              className="absolute right-6 top-6 h-8 w-auto md:h-10"
-            />
-            <div className="flex items-baseline gap-2">
-              <span className="font-display text-6xl font-bold text-foreground">
-                06
-              </span>
-              <span className="font-display text-2xl font-medium text-muted-foreground">
-                Nov
-              </span>
+
+          {/* Date card */}
+          <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/60 to-accent/34 p-6">
+            <div className="flex items-center justify-between gap-4">
+              <div className="flex items-baseline gap-2">
+                <span className="font-display text-6xl font-bold text-foreground">
+                  06
+                </span>
+                <span className="font-display text-2xl font-medium text-muted-foreground">
+                  Nov
+                </span>
+              </div>
+              <Image
+                src="/images/events/joby/joby_white_logo.png"
+                alt="Joby Aviation logo"
+                width={160}
+                height={48}
+                className="h-12 w-auto md:h-14"
+              />
             </div>
             <div className="mt-6 space-y-3 text-sm text-muted-foreground">
               <p className="flex items-center gap-2">
@@ -104,7 +106,7 @@ export default function HomePage() {
               </p>
               <p className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-accent" aria-hidden="true" />
-                761 Neeson Rd,Marina, CA
+                761 Neeson Rd, Marina, CA
               </p>
             </div>
           </div>
@@ -125,20 +127,24 @@ export default function HomePage() {
               />
             </div>
             <div>
-              <span className="text-sm font-semibold uppercase tracking-widest text-amethyst-smoke">
-                Event Recap    |    September 16, 2026
-              </span>
-              <div className="mt-3 flex items-center justify-between gap-4">
-                <h2 className="font-display text-3xl font-bold text-baby-blue-ice">
-                  BAWISA Happy Hour with Pyka!
-                </h2>
-                <Image
-                  src="/images/events/pyka/pyka_white_logo.png"
-                  alt="Pyka logo"
-                  width={160}
-                  height={48}
-                  className="h-8 w-auto shrink-0 md:h-10"
-                />
+              <div className="flex items-stretch justify-between gap-4">
+                <div>
+                  <span className="block text-sm font-semibold uppercase tracking-widest text-amethyst-smoke">
+                    Event Recap    |    September 16, 2026
+                  </span>
+                  <h2 className="mt-3 font-display text-3xl font-bold text-baby-blue-ice">
+                    BAWISA Happy Hour with Pyka!
+                  </h2>
+                </div>
+                <div className="relative w-28 shrink-0 md:w-40">
+                  <Image
+                    src="/images/events/pyka/pyka_white_logo.png"
+                    alt="Pyka logo"
+                    fill
+                    sizes="160px"
+                    className="object-contain object-right"
+                  />
+                </div>
               </div>
               <div className="mt-4 space-y-4 text-foreground">
                 <p className="leading-relaxed">
