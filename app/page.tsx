@@ -11,23 +11,6 @@ import { LINKS } from '@/lib/site'
 import { StarfieldBackground } from '@/components/starfield-background'
 import { RevealSection } from '@/components/reveal-section'
 
-const announcements = [
-  {
-    date: 'Event date',
-    title: 'Some title',
-    body: 'description',
-  },
-  {
-    date: 'Event date',
-    title: 'Another title',
-    body: 'description',
-  },
-  {
-    date: 'Event date',
-    title: 'Another title',
-    body: 'description',
-  },
-]
 
 export default function HomePage() {
   return (
@@ -79,8 +62,7 @@ export default function HomePage() {
             <div className="mb-4">
               <span className="text-sm font-semibold uppercase tracking-widest text-primary">
                 Upcoming Event
-              </span>
-            <div className="relative rounded-2xl border border-border/60 bg-gradient-to-br from-primary/60 to-accent/34 p-6">
+              </span>            </div>
             <h2 className="font-display text-3xl font-bold text-foreground">
               BAWISA Friday Afternoon with Joby!
             </h2>
@@ -99,7 +81,7 @@ export default function HomePage() {
               </ButtonLink>
             </div>
           </div>
-          <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/60 to-accent/34 p-6">
+          <div className="relative rounded-2xl border border-border/60 bg-gradient-to-br from-primary/60 to-accent/34 p-6">
             <Image
               src="/images/events/joby/joby_white_logo.png"
               alt="Joby Aviation logo"
