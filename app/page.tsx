@@ -135,7 +135,7 @@ export default function HomePage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-2xl border border-border/60">
               <Image
-                src="/images/events/pyka/pyka.jpg"
+                src="/images/events/pyka/pyka.png"
                 alt="Women networking at a recent BAWISA aerospace industry event"
                 width={800}
                 height={600}
@@ -145,12 +145,12 @@ export default function HomePage() {
             <div>
               <span className="text-sm font-semibold uppercase tracking-widest text-amethyst-smoke">
                 Event Recap    |    September 16, 2026
-              </span>
-              <h2 className="mt-3 font-display text-3xl font-bold text-baby-blue-ice">
-                BAWISA Happy Hour with Pyka!
-              </h2>
+              <div className="mt-3 flex items-center justify-between gap-4">
+                <h2 className="font-display text-3xl font-bold text-baby-blue-ice">
+                  BAWISA Happy Hour with Pyka!
+                </h2>
                 <Image
-                  src="/images/events/pyka/pyka_white_logo.png"
+                  src="/images/events/pyka/pyka_logo.png"
                   alt="Pyka logo"
                   width={160}
                   height={48}

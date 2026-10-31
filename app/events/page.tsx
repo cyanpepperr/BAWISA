@@ -134,7 +134,7 @@ export default function EventsPage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-2xl border border-border/60">
               <Image
-                src="/images/events/pyka/pyka.jpg"
+                src="/images/events/pyka/pyka.png"
                 alt="Women touring the manufacturing floor at the BAWISA happy hour hosted by Pyka"
                 width={800}
                 height={600}
