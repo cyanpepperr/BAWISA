@@ -63,36 +63,36 @@ export default function SpotlightPage() {
 
       {/* Current spotlight */}
       {showCurrentSpotlight && (
-      <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
-        <div className="grid gap-10 rounded-2xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6 md:grid-cols-[auto_1fr] md:items-center md:p-10">
-          <div className="mx-auto w-56 shrink-0 overflow-hidden rounded-2xl border border-border/60 md:w-72">
-            <Image
-              src="/images/spotlight/galaxy.jpg"
-              alt="Current BAWISA member spotlight"
-              width={500}
-              height={600}
-              className="h-full w-full object-cover"
-            />
+        <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
+          <div className="grid gap-10 rounded-2xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6 md:grid-cols-[auto_1fr] md:items-center md:p-10">
+            <div className="mx-auto w-56 shrink-0 overflow-hidden rounded-2xl border border-border/60 md:w-72">
+              <Image
+                src="/images/spotlight/galaxy.jpg"
+                alt="Current BAWISA member spotlight"
+                width={500}
+                height={600}
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <div>
+              <span className="inline-flex items-center rounded-full bg-amethyst-smoke/15 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-amethyst-smoke">
+                Current Spotlight
+              </span>
+              <h2 className="mt-4 font-display text-3xl font-bold text-baby-blue-ice">
+                Name 
+              </h2>
+              <p className="mt-1 text-amethyst-smoke">
+                Job title/role
+              </p>
+              <p className="mt-5 leading-relaxed text-foreground">
+                Career bio/life journey. Hobbies, interests, fun facts. 
+              </p>
+              <blockquote className="mt-6 border-l-2 border-accent pl-4 font-display text-lg italic text-foreground">
+                "Advice from their career journey, or a quote that inspires them"
+              </blockquote>
+            </div>
           </div>
-          <div>
-            <span className="inline-flex items-center rounded-full bg-amethyst-smoke/15 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-amethyst-smoke">
-              Current Spotlight
-            </span>
-            <h2 className="mt-4 font-display text-3xl font-bold text-baby-blue-ice">
-              Name 
-            </h2>
-            <p className="mt-1 text-amethyst-smoke">
-              Job title/role
-            </p>
-            <p className="mt-5 leading-relaxed text-foreground">
-              Career bio/life journey. Hobbies, interests, fun facts. 
-            </p>
-            <blockquote className="mt-6 border-l-2 border-accent pl-4 font-display text-lg italic text-foreground">
-              "Advice from their career journey, or a quote that inspires them"
-            </blockquote>
-          </div>
-        </div>
-      </section>
+        </section>
       )}
 
       {/* Nominate */}
