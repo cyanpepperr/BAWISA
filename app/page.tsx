@@ -100,6 +100,13 @@ export default function HomePage() {
             </div>
           </div>
           <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/60 to-accent/34 p-6">
+            <Image
+              src="/images/events/joby/joby_white_logo.png"
+              alt="Joby Aviation logo"
+              width={160}
+              height={48}
+              className="mb-5 h-8 w-auto md:h-10"
+            />
             <div className="flex items-baseline gap-2">
               <span className="font-display text-6xl font-bold text-foreground">
                 06
@@ -142,6 +149,14 @@ export default function HomePage() {
               <h2 className="mt-3 font-display text-3xl font-bold text-baby-blue-ice">
                 BAWISA Happy Hour with Pyka!
               </h2>
+                <Image
+                  src="/images/events/pyka/pyka_white_logo.png"
+                  alt="Pyka logo"
+                  width={160}
+                  height={48}
+                  className="h-8 w-auto shrink-0 md:h-10"
+                />
+              </div>
               <div className="mt-4 space-y-4 text-foreground">
                 <p className="leading-relaxed">
                   BAWISA wrapped up the summer with a happy hour hosted by Pyka at their Alameda facility.
