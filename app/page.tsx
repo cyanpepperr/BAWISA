@@ -65,8 +65,8 @@ export default function HomePage() {
               Next event coming soon!
             </h2>
             <p className="mt-4 max-w-md leading-relaxed text-muted-foreground">
-              We&apos;re planning our next gathering for 2027. Date and location
-              are still TBD. Join the community to be the first to hear when we
+              We&apos;re planning our next event for 2027. Date and location
+              are still TBD. Join the slack to be the first to hear when we
               announce it.
             </p>
             <div className="mt-7 flex flex-wrap gap-4">
@@ -112,7 +112,7 @@ export default function HomePage() {
             <div className="overflow-hidden rounded-2xl border border-border/60">
               <Image
                 src="/images/events/joby/joby.jpg"
-                alt="Guests at the BAWISA Friday Afternoon with Joby event"
+                alt="Guests at the BAWISA event"
                 width={800}
                 height={600}
                 className="h-full w-full object-cover"
