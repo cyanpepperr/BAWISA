@@ -18,7 +18,7 @@ export function QuoteCarousel({ quotes }: QuoteCarouselProps) {
     if (quotes.length <= 1) return
     const timer = setTimeout(() => {
       setIndex((prev) => (prev + 1) % quotes.length)
-    }, 3000)
+    }, 6000)
     return () => clearTimeout(timer)
   }, [index, quotes.length])
 

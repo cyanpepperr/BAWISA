@@ -62,17 +62,16 @@ export default function HomePage() {
               </span>
             </div>
             <h2 className="font-display text-3xl font-bold text-foreground">
-              BAWISA Friday Afternoon with Joby!
+              Next event coming soon!
             </h2>
-            <p className="mt-4 text-muted-foreground">
-              Join Bay Area Women in Space and Aerospace (BAWISA) for a special afternoon event hosted by Joby Aviation at their Marina facility near Santa Cruz on Friday, November 6! Hear from the women of Joby in a panel, tour their eVTOL composites and integration buildings, and enjoy a happy hour with dinner provided. Guest check-in starts at 3:30pm and an NDA is required, which you can complete online in advance. Wear close-toed shoes and comfortable clothing for walking. RSVP on Eventbrite by Friday, October 30, and feel free to share the invite with anyone who may be interested.
-            </p>
             <p className="mt-4 max-w-md leading-relaxed text-muted-foreground">
-              This event has been filled!
+              We&apos;re planning our next gathering for 2027. Date and location
+              are still TBD. Join the community to be the first to hear when we
+              announce it.
             </p>
             <div className="mt-7 flex flex-wrap gap-4">
-              <ButtonLink href={LINKS.eventbrite} external>
-                Get Tickets on Eventbrite <ArrowRight />
+              <ButtonLink href={LINKS.joinForm} external>
+                Join the Community <ArrowRight />
               </ButtonLink>
               <ButtonLink href="/events" variant="ghost">
                 See all events
@@ -80,24 +79,17 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Joby logo + date card */}
+          {/* Date card */}
           <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/60 to-accent/34 p-6">
             <div className="flex items-center justify-between gap-4">
               <div className="flex items-baseline gap-2">
                 <span className="font-display text-6xl font-bold text-foreground">
-                  06
+                  TBD
                 </span>
                 <span className="font-display text-2xl font-medium text-muted-foreground">
-                  Nov
+                  2027
                 </span>
               </div>
-              <Image
-                src="/images/events/joby/joby_white_logo.png"
-                alt="Joby Aviation logo"
-                width={160}
-                height={48}
-                className="h-12 w-auto md:h-14"
-              />
             </div>
             <div className="mt-6 space-y-3 text-sm text-muted-foreground">
               <p className="flex items-center gap-2">
@@ -106,7 +98,7 @@ export default function HomePage() {
               </p>
               <p className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-accent" aria-hidden="true" />
-                761 Neeson Rd, Marina, CA
+                Location TBD
               </p>
             </div>
           </div>
@@ -119,8 +111,8 @@ export default function HomePage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-2xl border border-border/60">
               <Image
-                src="/images/events/pyka/pyka.png"
-                alt="Women networking at a recent BAWISA aerospace industry event"
+                src="/images/events/joby/joby.jpg"
+                alt="Guests at the BAWISA Friday Afternoon with Joby event"
                 width={800}
                 height={600}
                 className="h-full w-full object-cover"
@@ -130,16 +122,16 @@ export default function HomePage() {
               <div className="flex items-stretch justify-between gap-4">
                 <div>
                   <span className="block text-sm font-semibold uppercase tracking-widest text-amethyst-smoke">
-                    Event Recap    |    September 16, 2026
+                    Event Recap    |    November 6, 2026
                   </span>
                   <h2 className="mt-3 font-display text-3xl font-bold text-baby-blue-ice">
-                    BAWISA Happy Hour with Pyka!
+                    BAWISA Friday Afternoon with Joby!
                   </h2>
                 </div>
                 <div className="relative w-28 shrink-0 md:w-40">
                   <Image
-                    src="/images/events/pyka/pyka_white_logo.png"
-                    alt="Pyka logo"
+                    src="/images/events/joby/joby_white_logo.png"
+                    alt="Joby Aviation logo"
                     fill
                     sizes="160px"
                     className="object-contain object-right"
@@ -148,14 +140,14 @@ export default function HomePage() {
               </div>
               <div className="mt-4 space-y-4 text-foreground">
                 <p className="leading-relaxed">
-                  BAWISA wrapped up the summer with a happy hour hosted by Pyka at their Alameda facility.
-                  Guests mixed and mingled over light food and refreshments, then got a behind-the-scenes
-                  look at the shop floor during tours of the team building America’s leading dual-use,
-                  heavy-lift autonomous aircraft.
+                  BAWISA spent a Friday afternoon at Joby Aviation&apos;s Marina
+                  facility near Santa Cruz. The afternoon featured a panel with
+                  the women of Joby, tours of their eVTOL composites and
+                  integration buildings, and a happy hour with dinner.
                 </p>
                 <p className="leading-relaxed">
-                  Thank you to Pyka for hosting and to everyone
-                  who came out to spend the evening with us.
+                  Thank you to Joby for hosting and to everyone
+                  who came out to spend the afternoon with us.
                 </p>
               </div>
               <div className="mt-6 flex flex-wrap gap-4">
@@ -163,11 +155,11 @@ export default function HomePage() {
                   See the full recap and photos <ArrowRight className="h-4 w-4" />
                 </ButtonLink>
                 <ButtonLink
-                  href="https://www.flypyka.com/"
+                  href="https://www.jobyaviation.com/"
                   external
                   variant="outline"
                 >
-                  Visit Pyka <ArrowRight className="h-4 w-4" />
+                  Visit Joby <ArrowRight className="h-4 w-4" />
                 </ButtonLink>
               </div>
             </div>
@@ -204,7 +196,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </RevealSection>
     </div>
   )
 }
