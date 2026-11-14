@@ -196,7 +196,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </RevealSection>
+      </section>
     </div>
   )
 }
