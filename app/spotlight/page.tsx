@@ -61,14 +61,14 @@ export default function SpotlightPage() {
 
       {/* Current spotlight */}
       {showCurrentSpotlight && (
-        <section className="mx-auto max-w-[90rem] px-3 py-16 md:px-4 md:py-24">
+        <section className="mx-auto max-w-[120rem] px-3 py-16 md:px-4 md:py-24">
           <div className="grid gap-10 rounded-2xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6 md:grid-cols-[auto_1fr] md:items-center md:p-10">
-            <div className="mx-auto w-56 shrink-0 overflow-hidden rounded-2xl border border-border/60 md:w-72">
+            <div className="mx-auto w-64 shrink-0 overflow-hidden rounded-2xl border border-border/60 md:w-[26rem]">
               <Image
                 src="/images/spotlight/NogueiraHeadshot.jpeg"
                 alt="Current BAWISA member spotlight"
-                width={500}
-                height={600}
+                width={800}
+                height={960}
                 className="h-full w-full object-cover"
               />
             </div>
@@ -98,7 +98,7 @@ export default function SpotlightPage() {
 
       {/* Nominate */}
       <RevealSection className="border-y border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 py-16 md:py-20">
-        <div className="mx-auto max-w-xl text-center">
+        <div className="mx-auto max-w-4xl text-center">
           <h2 className="font-display text-2xl font-bold text-foreground">
             Nominate a member
           </h2>
@@ -116,7 +116,7 @@ export default function SpotlightPage() {
 
       {/* Past spotlights */}
       {showPastSpotlights && (
-        <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
+        <section className="mx-auto max-w-[120rem] px-3 py-16 md:px-4 md:py-24">
           <h2 className="mb-10 font-display text-3xl font-bold text-foreground">
             Past spotlights
           </h2>
