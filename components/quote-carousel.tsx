@@ -32,8 +32,10 @@ export function QuoteCarousel({ quotes }: QuoteCarouselProps) {
           <figure
             key={q.author}
             aria-hidden={i !== index}
-            className={`col-start-1 row-start-1 transition-opacity duration-700 motion-reduce:transition-none ${
-              i === index ? 'opacity-100' : 'opacity-0'
+            className={`col-start-1 row-start-1 transition-opacity duration-1000 ease-in-out ${
+              i === index
+                ? 'opacity-100 delay-1000'
+                : 'pointer-events-none opacity-0 delay-0'
             }`}
           >
             <blockquote className="font-display text-balance text-xl font-medium text-foreground md:text-2xl">
