@@ -61,11 +61,11 @@ export default function SpotlightPage() {
 
       {/* Current spotlight */}
       {showCurrentSpotlight && (
-        <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
+        <section className="mx-auto max-w-[90rem] px-3 py-16 md:px-4 md:py-24">
           <div className="grid gap-10 rounded-2xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6 md:grid-cols-[auto_1fr] md:items-center md:p-10">
             <div className="mx-auto w-56 shrink-0 overflow-hidden rounded-2xl border border-border/60 md:w-72">
               <Image
-                src="/images/spotlight/NogueiraHeadshot.jpg"
+                src="/images/spotlight/NogueiraHeadshot.jpeg"
                 alt="Current BAWISA member spotlight"
                 width={500}
                 height={600}
@@ -80,7 +80,7 @@ export default function SpotlightPage() {
                 Natasha Nogueira
               </h2>
               <p className="mt-1 text-amethyst-smoke">
-                Space Systems Engineer at Planet Labs
+                Space Systems Engineer and SmallSat Operations Manager at Planet Labs
               </p>
               <p className="mt-5 leading-relaxed text-foreground">
                 Natasha Nogueira is a space systems engineer and the SmallSat Operations Manager at Planet Labs PBC, where she leads one of the operations teams for one of the world’s largest Earth observation fleets. Over eight years at Planet, she has combined deep on-orbit expertise with a systems-level perspective to lead complex commissioning campaigns and drive structural improvements in reliability, scalability, and time-to-revenue. Starting on Planet’s SkySat mission operations team, Natasha mastered high-resolution satellite operations, from flight software releases and anomaly resolution to establishing baseline procedures still used today. After serving as a SkySat systems optimization team lead, she helped shape operations for Planet’s next-generation SmallSat program, developing early stage software implementations and commissioning processes, and where she now manages the team overseeing the Pelican and Tanager constellations.
