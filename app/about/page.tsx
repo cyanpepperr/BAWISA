@@ -84,7 +84,7 @@ export default function AboutPage() {
                   <h3 className="font-display text-lg font-semibold text-foreground">
                     {value.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  <p className="mt-2 leading-relaxed text-muted-foreground">
                     {value.body}
                   </p>
                 </div>
