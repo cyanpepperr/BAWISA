@@ -8,6 +8,42 @@ interface ImageCarouselProps {
   altPrefix?: string
 }
 
+interface FadeStackProps {
+  images: string[]
+  activeIndex: number
+  altPrefix: string
+  sizes: string
+  priorityFirst?: boolean
+}
+
+// Renders every image stacked in the same spot and fades the active one in.
+function FadeStack({
+  images,
+  activeIndex,
+  altPrefix,
+  sizes,
+  priorityFirst = false,
+}: FadeStackProps) {
+  return (
+    <>
+      {images.map((src, i) => (
+        <Image
+          key={`${src}-${i}`}
+          src={src}
+          alt={`${altPrefix} ${i + 1}`}
+          aria-hidden={i !== activeIndex}
+          fill
+          sizes={sizes}
+          priority={priorityFirst && i === 0}
+          className={`object-cover transition-opacity duration-1000 ease-in-out ${
+            i === activeIndex ? 'opacity-100' : 'opacity-0'
+          }`}
+        />
+      ))}
+    </>
+  )
+}
+
 export function ImageCarousel({ images, altPrefix = 'Event photo' }: ImageCarouselProps) {
   const [index, setIndex] = useState(0)
 
@@ -39,11 +75,11 @@ export function ImageCarousel({ images, altPrefix = 'Event photo' }: ImageCarous
             aria-label="View previous photo"
             className="relative hidden aspect-[4/3] w-[23%] shrink-0 cursor-pointer overflow-hidden rounded-xl opacity-50 transition-opacity hover:opacity-80 md:block"
           >
-            <Image
-              src={images[prevIndex]}
-              alt={`${altPrefix} ${prevIndex + 1}`}
-              fill
-              className="object-cover"
+            <FadeStack
+              images={images}
+              activeIndex={prevIndex}
+              altPrefix={altPrefix}
+              sizes="23vw"
             />
           </button>
         )}
@@ -54,13 +90,12 @@ export function ImageCarousel({ images, altPrefix = 'Event photo' }: ImageCarous
           aria-label="View next photo"
           className="relative aspect-[4/3] w-full shrink-0 cursor-pointer overflow-hidden rounded-2xl border border-border/60 md:w-[60%]"
         >
-          <Image
-            key={images[index]}
-            src={images[index]}
-            alt={`${altPrefix} ${index + 1}`}
-            fill
-            priority
-            className="object-cover"
+          <FadeStack
+            images={images}
+            activeIndex={index}
+            altPrefix={altPrefix}
+            sizes="(min-width: 768px) 60vw, 100vw"
+            priorityFirst
           />
         </button>
 
@@ -71,11 +106,11 @@ export function ImageCarousel({ images, altPrefix = 'Event photo' }: ImageCarous
             aria-label="View next photo"
             className="relative hidden aspect-[4/3] w-[23%] shrink-0 cursor-pointer overflow-hidden rounded-xl opacity-50 transition-opacity hover:opacity-80 md:block"
           >
-            <Image
-              src={images[nextIndex]}
-              alt={`${altPrefix} ${nextIndex + 1}`}
-              fill
-              className="object-cover"
+            <FadeStack
+              images={images}
+              activeIndex={nextIndex}
+              altPrefix={altPrefix}
+              sizes="23vw"
             />
           </button>
         )}
