@@ -19,7 +19,7 @@ const upcoming = [
     date: 'Date: TBD 2027',
     title: 'Next event coming soon!',
     location: 'Location: TBD',
-    body: "We're planning our next gathering for 2027. Date and location are still TBD. Join the community to be the first to hear when we announce it.",
+    body: "We're planning our next event for 2027. Date and location are still TBD. Join the slack to be the first to hear.",
   },
 ]
 
@@ -87,17 +87,17 @@ export default function EventsPage() {
             <h2 className="text-balance font-display text-3xl font-bold text-foreground">
               Companies: host a BAWISA event
             </h2>
-            <p className="mx-auto mt-4 max-w-3xl leading-relaxed text-muted-foreground">
+            <p className="mt-4 leading-relaxed text-muted-foreground">
               BAWISA is a quarterly speaker series featuring women doing
               extraordinary things in aerospace, covering topics like
               negotiation, founding a startup, data analytics, self-branding,
               and company features.
             </p>
-            <p className="mx-auto mt-4 max-w-3xl leading-relaxed text-muted-foreground">
+            <p className="mt-4 leading-relaxed text-muted-foreground">
               Interested in hosting a networking night, tour, or workshop for
               our community? We would love to partner with you.
             </p>
-            <p className="mx-auto mt-4 max-w-3xl leading-relaxed text-muted-foreground">
+            <p className="mt-4 leading-relaxed text-muted-foreground">
               We&apos;ll work with you to figure out the specific details —
               this form is just to gauge interest, so we can move forward
               together.
@@ -148,8 +148,8 @@ export default function EventsPage() {
               </div>
               <div className="mt-4 space-y-4 text-foreground">
                 <p className="leading-relaxed">
-                  BAWISA spent a Friday afternoon at Joby Aviation&apos;s
-                  Marina facility near Santa Cruz. The afternoon opened with a
+                  Joby Aviation&apos;s invited BAWISA to spend the Friday afternoon at 
+                  their Marina facility near Santa Cruz. The afternoon opened with a
                   panel featuring the women of Joby, followed by tours of
                   their eVTOL composites and integration buildings.
                 </p>
@@ -203,7 +203,7 @@ export default function EventsPage() {
               </div>
               <div className="mt-4 space-y-4 text-foreground">
                 <p className="leading-relaxed">
-                  BAWISA welcomed the community to Pyka HQ in Alameda for a
+                  BAWISA was welcomed to Pyka headquarters in Alameda for a
                   happy hour hosted by the women of Pyka, a team building
                   America&apos;s leading dual-use, heavy-lift autonomous
                   aircraft. The evening opened with mix-and-mingle and light
