@@ -55,7 +55,7 @@ export default function ResourcesPage() {
               Job boards
             </h2>
           </div>
-          <p className="text-sm text-muted-foreground">
+          <p className="leading-relaxed text-muted-foreground">
             These job postings are from other women in the community, found in our slack. Please reach out to them if you have any questions! 
           </p>
         </div>
@@ -69,15 +69,15 @@ export default function ResourcesPage() {
               className="group flex flex-col rounded-2xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-8 md:p-12 transition-colors hover:border-primary/60"
             >   
               <div className="flex items-start justify-between gap-3">
-                <h3 className="font-display text-lg font-semibold text-foreground">
+                <h3 className="font-display text-xl font-semibold text-foreground">
                   {item.name}
                 </h3>
                 <ExternalLink
-                  className="h-4 w-4 shrink-0 text-muted-foreground transition-colors group-hover:text-accent"
+                  className="h-5 w-5 shrink-0 text-muted-foreground transition-colors group-hover:text-accent"
                   aria-hidden="true"
                 />
               </div>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-3 leading-relaxed text-muted-foreground">
                 {item.body}
               </p>
             </a>
@@ -94,7 +94,7 @@ export default function ResourcesPage() {
                 Scholarships &amp; fellowships
               </h2>
             </div>
-            <p className="text-sm text-muted-foreground">
+            <p className="leading-relaxed text-muted-foreground">
               BAWISA is not affiliated with nor funding these scholarships. These are just good resources for students and professionals found by our community members!
             </p>
           </div>
@@ -122,7 +122,7 @@ export default function ResourcesPage() {
               </a>
             ))}
           </div>
-          <p className="mt-8 text-sm text-muted-foreground">
+          <p className="mt-8 leading-relaxed text-muted-foreground">
             Know a resource we should add? Share it in our{' '}
             <a
               href={LINKS.slack}
