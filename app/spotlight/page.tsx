@@ -89,9 +89,9 @@ export default function SpotlightPage() {
                 <p className="mt-4 leading-relaxed text-foreground">
                   Beyond mission operations, Natasha is deeply committed to outreach and mentorship. At Planet, she leads initiatives for the Wonder Women employee resource group, including an annual Girls Day to inspire the next generation of aerospace talent. She has mentored through TechWomen and contributed to the Space Generation Congress, and currently volunteers with Tech2Empower, IGNITE Worldwide, and the Yosemite Conservancy. Outside of work, she enjoys the outdoors through hiking, biking, swimming, and running, and embraces her love of the arts through painting and singing in a choir.
                 </p>
-                <blockquote className="mt-6 border-l-2 border-accent pl-4 font-display text-lg italic text-foreground">
+                <p className="mt-6 border-l-2 border-accent pl-4 font-display text-lg italic text-foreground">
                   “Don’t wait for a formal invitation to chase what excites you. In high school, I cold-emailed various professors at the Naval Postgraduate School expressing my interest in doing summer research with them, and the only one who replied was a former NASA astronaut who mentored me for the next four years and even hired me full time during my gap year (after high school). I got the unique opportunity to work in a small satellite lab early on in my educational journey that ultimately launched my career in space.”
-                </blockquote>
+                </p>
               </div>
             </div>
           </div>
@@ -99,9 +99,9 @@ export default function SpotlightPage() {
       )}
 
       {/* Nominate */}
-      <section className="mx-auto max-w-[120rem] px-3 py-16 md:px-4 md:py-24">
-        <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6 py-12 md:p-10 md:py-16">
-          <div className="mx-auto max-w-4xl text-center">
+      <section className="mx-auto max-w-3xl px-4 py-12 md:px-6 md:py-16">
+        <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 px-6 py-10 md:px-10 md:py-12">
+          <div className="mx-auto text-center">
             <h2 className="font-display text-2xl font-bold text-foreground">
               Nominate a member
             </h2>

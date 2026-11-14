@@ -2,22 +2,15 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Users, MessageSquare, Mail } from 'lucide-react'
 import { NAV_LINKS, QUOTES } from '@/lib/site'
+import { QuoteCarousel } from '@/components/quote-carousel'
 
 export function SiteFooter() {
-  const quote = QUOTES[0]
   const joinFormUrl = 'https://forms.gle/dCEazkBewWQZVrru9'
 
   return (
     <footer className="relative z-10 border-t border-border/60 bg-gradient-to-br from-secondary/40 to-transparent">
       <div className="mx-auto max-w-6xl px-4 py-12 md:px-6">
-        <figure className="mx-auto mb-12 max-w-2xl text-center">
-          <blockquote className="font-display text-balance text-xl font-medium text-foreground md:text-2xl">
-            &ldquo;{quote.quote}&rdquo;
-          </blockquote>
-          <figcaption className="mt-3 text-sm text-muted-foreground">
-            — {quote.author}
-          </figcaption>
-        </figure>
+        <QuoteCarousel quotes={QUOTES} />
 
         <div className="grid gap-8 border-t border-border/60 pt-10 md:grid-cols-3 md:gap-12 lg:gap-20">
           <div className="flex flex-col items-center text-center">
