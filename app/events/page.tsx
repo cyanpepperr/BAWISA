@@ -16,11 +16,10 @@ export const metadata: Metadata = {
 
 const upcoming = [
   {
-    date: 'Date: November 6, 2026',
-    title: 'Bay Area Women in Space and Aerospace Friday Afternoon with Joby',
-    status: 'This event is full',
-    location: 'Location: 761 Neeson Rd, Marina, CA',
-    body: 'Join Bay Area Women in Space and Aerospace (BAWISA) for a special afternoon event hosted by Joby Aviation at their Marina facility near Santa Cruz on Friday, November 6! Hear from the women of Joby in a panel, tour their eVTOL composites and integration buildings, and enjoy a happy hour with dinner provided. Guest check-in starts at 3:30pm and an NDA is required, which you can complete online in advance. Wear close-toed shoes and comfortable clothing for walking.',
+    date: 'Date: TBD 2027',
+    title: 'Next event coming soon!',
+    location: 'Location: TBD',
+    body: "We're planning our next gathering for 2027. Date and location are still TBD. Join the community to be the first to hear when we announce it.",
   },
 ]
 
@@ -49,15 +48,8 @@ export default function EventsPage() {
             {upcoming.map((event) => (
               <article
                 key={event.title}
-                className="relative flex flex-col gap-4 rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6 pt-20 md:flex-row md:items-center md:justify-between md:pt-6"
+                className="flex flex-col gap-4 rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6 md:flex-row md:items-center md:justify-between"
               >
-                <Image
-                  src="/images/events/joby/joby_white_logo.png"
-                  alt="Joby Aviation logo"
-                  width={160}
-                  height={48}
-                  className="absolute right-6 top-5 h-8 w-auto md:h-10"
-                />
                 <div className="flex-1">
                   <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
                     <span className="flex items-center gap-1.5 text-muted-foreground">
@@ -72,19 +64,14 @@ export default function EventsPage() {
                   <h3 className="mt-2 font-display text-xl font-semibold text-foreground">
                     {event.title}
                   </h3>
-                  {event.status && (
-                    <p className="mt-3 inline-block rounded-full border border-accent/60 bg-accent/20 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-foreground">
-                      {event.status}
-                    </p>
-                  )}
                   <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
                     {event.body}
                   </p>
                 </div>
 
                 <div className="shrink-0 self-start md:self-center">
-                  <ButtonLink href={LINKS.eventbrite} external>
-                    View on Eventbrite <ArrowRight className="h-4 w-4" />
+                  <ButtonLink href={LINKS.joinForm} external>
+                    Join the Community <ArrowRight className="h-4 w-4" />
                   </ButtonLink>
                 </div>
               </article>
@@ -96,26 +83,26 @@ export default function EventsPage() {
       {/* Host sign up */}
       <section className="bg-gradient-to-tr from-primary/10 to-transparent">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
-          <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-8 md:p-12">
+          <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-8 text-center md:p-12">
             <h2 className="text-balance font-display text-3xl font-bold text-foreground">
               Companies: host a BAWISA event
             </h2>
-            <p className="mt-4 leading-relaxed text-muted-foreground">
+            <p className="mx-auto mt-4 max-w-3xl leading-relaxed text-muted-foreground">
               BAWISA is a quarterly speaker series featuring women doing
               extraordinary things in aerospace, covering topics like
               negotiation, founding a startup, data analytics, self-branding,
               and company features.
             </p>
-            <p className="mt-4 leading-relaxed text-muted-foreground">
+            <p className="mx-auto mt-4 max-w-3xl leading-relaxed text-muted-foreground">
               Interested in hosting a networking night, tour, or workshop for
               our community? We would love to partner with you.
             </p>
-            <p className="mt-4 leading-relaxed text-muted-foreground">
+            <p className="mx-auto mt-4 max-w-3xl leading-relaxed text-muted-foreground">
               We&apos;ll work with you to figure out the specific details —
               this form is just to gauge interest, so we can move forward
               together.
             </p>
-            <div className="mt-7">
+            <div className="mt-7 flex justify-center">
               <ButtonLink href={LINKS.hostForm} external size="lg">
                 Sign up to host <ArrowRight />
               </ButtonLink>
@@ -131,7 +118,59 @@ export default function EventsPage() {
             Past events
           </h2>
 
-          {/* Pyka recap (most recent) */}
+          {/* Joby recap (most recent) */}
+          <div className="grid gap-8 md:grid-cols-2 md:items-center">
+            {/* Photo placeholder: swap for an <Image> once photos are ready */}
+            <div className="flex aspect-[4/3] items-center justify-center rounded-2xl border border-border/60 bg-gradient-to-br from-primary/40 to-accent/20">
+              <span className="text-sm font-semibold uppercase tracking-widest text-amethyst-smoke">
+                Photos coming soon
+              </span>
+            </div>
+            <div>
+              <div className="flex items-stretch justify-between gap-4">
+                <div>
+                  <span className="block text-sm font-semibold uppercase tracking-widest text-amethyst-smoke">
+                    Event Recap    |    November 6, 2026
+                  </span>
+                  <h2 className="mt-3 font-display text-3xl font-bold text-baby-blue-ice">
+                    BAWISA Friday Afternoon with Joby!
+                  </h2>
+                </div>
+                <div className="relative w-28 shrink-0 md:w-40">
+                  <Image
+                    src="/images/events/joby/joby_white_logo.png"
+                    alt="Joby Aviation logo"
+                    fill
+                    sizes="160px"
+                    className="object-contain object-right"
+                  />
+                </div>
+              </div>
+              <div className="mt-4 space-y-4 text-foreground">
+                <p className="leading-relaxed">
+                  BAWISA spent a Friday afternoon at Joby Aviation&apos;s
+                  Marina facility near Santa Cruz. The afternoon opened with a
+                  panel featuring the women of Joby, followed by tours of
+                  their eVTOL composites and integration buildings.
+                </p>
+                <p className="leading-relaxed">
+                  The afternoon wrapped up with a happy hour and dinner
+                  provided by Joby. Thank you to Joby for hosting and to
+                  everyone who came out to spend the afternoon with us.
+                </p>
+              </div>
+              <div className="mt-6 flex flex-wrap gap-4">
+                <ButtonLink href="https://www.jobyaviation.com/" external>
+                  Visit Joby <ArrowRight className="h-4 w-4" />
+                </ButtonLink>
+              </div>
+            </div>
+          </div>
+
+          {/* Divider between events */}
+          <hr className="my-16 border-t-2 border-amethyst-smoke/70" />
+
+          {/* Pyka recap */}
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-2xl border border-border/60">
               <Image
